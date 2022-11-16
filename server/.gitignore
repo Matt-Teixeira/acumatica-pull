@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+controllers/testData.js
+db/backup/*.tar
+deltaStore
+*.sh

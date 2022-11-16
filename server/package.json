@@ -1,0 +1,25 @@
+{
+   "name": "acumatica-data-pull",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "node index.js",
+      "pull": "node jobs/acumaticaDataPull.js",
+      "delta": "node jobs/testDeltas.js",
+      "backup": "node jobs/backupTables.js",
+      "restore": "node jobs/restoreTables.js",
+      "accept": "node controllers/acumaticaAPI/delta/acceptDeltas.js"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "axios": "^0.27.2",
+      "dotenv": "^16.0.1",
+      "node-fetch": "^3.2.10",
+      "pg": "^8.7.3",
+      "remove": "^0.1.5",
+      "winston": "^3.8.1"
+   }
+}
