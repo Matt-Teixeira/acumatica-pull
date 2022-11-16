@@ -20,7 +20,7 @@ const runJob = async (acumaticLogin, acumaticEquipEndpoint) => {
 
   // PROCESS PAYLOAD & INSERT PAYLOAD
   // let data = testData;
-  return testData;
+  return await testData;
 };
 
 const apiCall = async () => {

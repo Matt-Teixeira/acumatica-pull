@@ -6,8 +6,8 @@ const {
   formatApiData,
   getDelta,
   updateWithAdditions,
+  acceptDeltas,
 } = require("./jobs");
-//const testData = require("../controllers/acumaticaAPI/delta/testData.js");
 
 const onBoot = async () => {
   // TYPE (info, warn, error), JOBID (NA FOR NOW), SME (NA FOR NOW), FN NAME, FN EVENT, {k/v}s
@@ -16,11 +16,50 @@ const onBoot = async () => {
   const equipmentData = await apiCall();
   const formattedData = await formatApiData(equipmentData);
 
-  const deltas = await getDelta(formattedData);
+  const delta = await getDelta(formattedData);
 
-  //console.log(deltas);
+  console.log(delta);
 
-  await updateWithAdditions(deltas.add);
+  //await updateWithAdditions(delta.add);
+
+  //await acceptDeltas(delta.deltas);
 };
 
 onBoot();
+/* 
+let deltas = {
+  "sites": [
+    {
+      "site": "C096920",
+      "current": {
+        "state": "undefined"
+      },
+      "incoming": {}
+    },
+    {
+      "site": "C0057",
+      "current": {
+        "state": "undefined",
+        "city": "undefined",
+        "zip": "undefined"
+      },
+      "incoming": {}
+    },
+    {
+      "site": "C083123",
+      "current": {
+        "state": "undefined",
+        "zip": "undefined"
+      },
+      "incoming": {}
+    },
+    {
+      "site": "C082482",
+      "current": {
+        "state": "undefined",
+        "zip": "undefined"
+      },
+      "incoming": {}
+    }
+  ],
+} */

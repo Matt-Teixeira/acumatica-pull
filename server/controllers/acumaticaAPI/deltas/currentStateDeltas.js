@@ -10,6 +10,14 @@ async function currentStateDeltas(
   delta
 ) {
   try {
+    const distinctManufacturers = [
+      "Siemens",
+      "GE",
+      "Philips",
+      "Toshiba",
+      "Americomp",
+    ];
+
     // Find customer deltas
 
     // Loop through each customer object from db and find the API customer with same id
@@ -69,6 +77,8 @@ async function currentStateDeltas(
       }
     }
 
+    // Find system deltas
+
     for (let system of systemDbData) {
       let foundSystem = await equipmentData.systems.find((sys) => {
         return sys.id === system.id;
@@ -81,6 +91,10 @@ async function currentStateDeltas(
           incoming: {},
         };
         for (let prop in foundSystem) {
+          // Check for and prevent change in manufacturer name
+          if (distinctManufacturers.includes(system[prop])) {
+            break;
+          }
           let equalValues = foundSystem[prop] === system[prop];
           if (!equalValues) {
             deltaObj.current[prop] = system[prop];
