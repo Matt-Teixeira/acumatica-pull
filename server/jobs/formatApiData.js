@@ -35,6 +35,7 @@ async function filterApiData(systemData, obj) {
   if (!obj.siteIDs.includes(systemData.ServiceContractCustomerID.value)) {
     const site = {
       id: systemData.ServiceContractCustomerID.value,
+      customer_id: systemData.CustomerContractCustomerID.value,
       name: systemData.ServiceContractCustomerName.value,
       state: systemData.State.value,
       city: systemData.City.value,

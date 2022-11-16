@@ -18,7 +18,7 @@ const sitesQuery = async () => {
 };
 
 const systemQuery = async () => {
-  const data = await pgPool.query(`SELECT * FROM systems`);
+  const data = await pgPool.query(`SELECT id, customer_id, site_id, manufacturer, modality, model, serial_number, room FROM systems`);
   return data.rows;
 };
 

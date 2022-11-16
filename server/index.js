@@ -1,7 +1,12 @@
 ("use strict");
 require("dotenv").config();
 const { log } = require("./logger");
-const { apiCall, formatApiData, getDelta } = require("./jobs");
+const {
+  apiCall,
+  formatApiData,
+  getDelta,
+  updateWithAdditions,
+} = require("./jobs");
 //const testData = require("../controllers/acumaticaAPI/delta/testData.js");
 
 const onBoot = async () => {
@@ -11,7 +16,11 @@ const onBoot = async () => {
   const equipmentData = await apiCall();
   const formattedData = await formatApiData(equipmentData);
 
-  await getDelta(formattedData);
+  const deltas = await getDelta(formattedData);
+
+  //console.log(deltas);
+
+  await updateWithAdditions(deltas.add);
 };
 
 onBoot();

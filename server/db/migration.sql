@@ -40,3 +40,12 @@ REFERENCES sites(id);
 
 COMMIT;
 ROLLBACK;
+
+
+BEGIN;
+
+ALTER TABLE systems
+ADD COLUMN customer_id TEXT;
+
+COMMIT;
+ROLLBACK;

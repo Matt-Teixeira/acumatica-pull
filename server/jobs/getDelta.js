@@ -5,6 +5,7 @@ const { systemQuery, customersQuery, sitesQuery } = require("../utils/queries");
 const {
   proposeRemoveFromDb,
   proposeAddToDb,
+  currentStateDeltas,
 } = require("../controllers/acumaticaAPI/deltas");
 
 const getDelta = async (equipmentData) => {
@@ -12,8 +13,10 @@ const getDelta = async (equipmentData) => {
     remove: {},
     add: {},
     deltas: {
-      customers: []
-    }
+      customers: [],
+      sites: [],
+      systems: [],
+    },
   };
 
   // Get existing customer, site, and system ids in the database
@@ -41,34 +44,15 @@ const getDelta = async (equipmentData) => {
 
   // for in Loop through API Customer Data and compare it to corrolated db data
 
-  for (let customer of customerDbData) {
-    let foundCustomer = await equipmentData.customers.find((cust) => {
-      return cust.id === customer.id;
-    });
+  await currentStateDeltas(
+    equipmentData,
+    systemDbData,
+    customerDbData,
+    siteDbData,
+    delta
+  );
 
-    if (foundCustomer) {
-      console.log("API CUSTOMER: ", foundCustomer);
-      console.log("DB CUSTOMER: ", customer);
-      for (let prop in foundCustomer) {
-        let equalValues = foundCustomer[prop] === customer[prop]
-        if(!equalValues) {
-          delta.deltas.customers.push(
-            {
-              current: customer,
-              incoming: foundCustomer
-            }
-          )
-        }
-      }
-    } else {
-      //console.log("NOT FOUND IN API: ", customer)
-    }
-  }
-
-  console.log(delta.deltas.customers)
-  //console.log(equipmentData.customers);
-  //console.log(customerDbData)
-  return;
+  return delta;
 };
 
 module.exports = getDelta;
