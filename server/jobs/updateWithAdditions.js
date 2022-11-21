@@ -1,5 +1,6 @@
 ("use strict");
 require("dotenv").config();
+const fs = require("fs").promises;
 const { log } = require("../logger");
 const pgPool = require("../db/pg-pool");
 const {
@@ -7,8 +8,10 @@ const {
   checkForNullCustomers,
   checkForNullSites,
 } = require("../utils/checkForNullInserts");
+const date_time = require("../utils/dateFormat");
 
 async function updateWithAdditions(deltas) {
+  let date = date_time()
   try {
     await log("info", "NA", "NA", "updateWithAdditions", `FN CALL`);
     for await (customer of deltas.customers) {
@@ -17,9 +20,17 @@ async function updateWithAdditions(deltas) {
 
       const hasNulls = await checkForNullCustomers(customer);
       if (!hasNulls) {
+        const migrationString =
+          `INSERT INTO customers(id, name) VALUES('${customer.id}', '${customer.name}');` +
+          "\n";
+        await fs.writeFile(
+          `./migrationQueries/additionQueries_${date}.txt`,
+          migrationString,
+          { encoding: "utf-8", flag: "a" }
+        );
         await pgPool.query(queryStr, values);
         await log("info", "NA", "NA", "updateWithAdditions", `FN CALL`, {
-            inserted: customer
+          inserted: customer,
         });
       } else {
         await log("warn", "NA", "NA", "updateWithAdditions", `FN CALL`, {
@@ -41,11 +52,20 @@ async function updateWithAdditions(deltas) {
         site.street_address,
         site.zip,
       ];
+
       const hasNulls = await checkForNullSites(site);
       if (!hasNulls) {
+        const migrationString =
+          `INSERT INTO sites(id, customer_id, name, state, city, street_address, zip) VALUES('${site.id}', '${site.customer_id}', '${site.name}', '${site.state}', '${site.city}', '${site.street_address}', '${site.zip}');` +
+          "\n";
+        await fs.writeFile(
+          `./migrationQueries/additionQueries_${date}.txt`,
+          migrationString,
+          { encoding: "utf-8", flag: "a" }
+        );
         await pgPool.query(queryStr, values);
         await log("info", "NA", "NA", "updateWithAdditions", `FN CALL`, {
-            inserted: site
+          inserted: site,
         });
       } else {
         await log("warn", "NA", "NA", "updateWithAdditions", `FN CALL`, {
@@ -70,9 +90,17 @@ async function updateWithAdditions(deltas) {
       ];
       const hasNulls = await checkForNullSystems(system);
       if (!hasNulls) {
+        const migrationString =
+          `INSERT INTO systems(id, customer_id, site_id, manufacturer, modality, model, serial_number, room) VALUES('${system.id}', '${system.customer_id}', '${system.site_id}', '${system.manufacturer}', '${system.modality}', '${system.model}', '${system.serial_number}', '${system.room}');` +
+          "\n";
+        await fs.writeFile(
+          `./migrationQueries/additionQueries_${date}.txt`,
+          migrationString,
+          { encoding: "utf-8", flag: "a" }
+        );
         await pgPool.query(queryStr, values);
         await log("info", "NA", "NA", "updateWithAdditions", `FN CALL`, {
-            inserted: system
+          inserted: system,
         });
       } else {
         await log("warn", "NA", "NA", "updateWithAdditions", `FN CALL`, {
