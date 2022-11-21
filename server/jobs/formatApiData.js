@@ -26,34 +26,45 @@ const formatApiData = async (equipmentData) => {
 async function filterApiData(systemData, obj) {
   if (!obj.customerIDs.includes(systemData.CustomerContractCustomerID.value)) {
     const customer = {
-      id: systemData.CustomerContractCustomerID.value,
-      name: systemData.CustomerContractCustomerName.value,
+      id: systemData.CustomerContractCustomerID.value || null,
+      name: systemData.CustomerContractCustomerName.value || null,
     };
     obj.customerIDs.push(systemData.CustomerContractCustomerID.value);
     obj.customers.push(customer);
   }
   if (!obj.siteIDs.includes(systemData.ServiceContractCustomerID.value)) {
     const site = {
-      id: systemData.ServiceContractCustomerID.value,
-      name: systemData.ServiceContractCustomerName.value,
-      state: systemData.State.value,
-      city: systemData.City.value,
-      street_address: systemData.AddressLine1.value,
-      zip: systemData.PostalCode.value,
+      id: systemData.ServiceContractCustomerID.value || null,
+      customer_id: systemData.CustomerContractCustomerID.value || null,
+      name: systemData.ServiceContractCustomerName.value || null,
+      state: systemData.State.value || null,
+      city: systemData.City.value || null,
+      street_address: systemData.AddressLine1.value || null,
+      zip: systemData.PostalCode.value || null,
     };
     obj.siteIDs.push(systemData.ServiceContractCustomerID.value);
     obj.sites.push(site);
   }
   if (!obj.systemIDs.includes(systemData.EquipmentNbr.value)) {
+    // Change manufacturer in the way in. EX: Toshiba America = Toshiba
+    const re =
+      /(?<manufacturer>(Philips)|(GE)|(Siemens)|(Americomp)|(Toshiba))/;
+    let match;
+    let manufacturer;
+    if(systemData.Manufacturer.value !== undefined) {
+      match = systemData.Manufacturer.value.match(re);
+      manufacturer = match.groups.manufacturer
+    }
+    
     const system = {
-      id: systemData.EquipmentNbr.value,
-      customer_id: systemData.CustomerContractCustomerID.value,
-      site_id: systemData.ServiceContractCustomerID.value,
-      manufacturer: systemData.Manufacturer.value,
-      modality: systemData.Modality.value,
-      model: systemData.Model.value,
-      serial_number: systemData.SerialNbr.value,
-      room: systemData.Room.value,
+      id: systemData.EquipmentNbr.value || null,
+      customer_id: systemData.CustomerContractCustomerID.value || null,
+      site_id: systemData.ServiceContractCustomerID.value || null,
+      manufacturer: manufacturer || null,
+      modality: systemData.Modality.value || null,
+      model: systemData.Model.value || null,
+      serial_number: systemData.SerialNbr.value || null,
+      room: systemData.Room.value || null,
     };
     obj.systemIDs.push(systemData.EquipmentNbr.value);
     obj.systems.push(system);

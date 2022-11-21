@@ -88,7 +88,9 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {},
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
         "SoftwareRelease": {},
         "State": {
             "value": "PA"
@@ -1078,7 +1080,7 @@ const testData = [
             "value": "SME00414"
         },
         "IPAddress": {
-            "value": "10.200.203.40"
+            "value": "10.200.203.113"
         },
         "LastPMCompleted": {},
         "LegacyEquipmentID": {},
@@ -1184,7 +1186,7 @@ const testData = [
             "value": "SME00415"
         },
         "IPAddress": {
-            "value": "10.200.203.113"
+            "value": "10.200.203.40"
         },
         "LastPMCompleted": {
             "value": "2019-12-18T00:00:00+00:00"
@@ -1904,9 +1906,7 @@ const testData = [
             "value": "SME00441"
         },
         "IPAddress": {},
-        "LastPMCompleted": {
-            "value": "2021-09-02T00:00:00+00:00"
-        },
+        "LastPMCompleted": {},
         "LegacyEquipmentID": {},
         "LocationID": {
             "value": "MAIN"
@@ -1926,15 +1926,11 @@ const testData = [
         "ModelDescription": {
             "value": "FD20"
         },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
+        "PMFrequencyinmonths": {},
         "PostalCode": {
             "value": "78251"
         },
-        "Room": {
-            "value": "Cath Lab 1"
-        },
+        "Room": {},
         "SerialNbr": {
             "value": "4987"
         },
@@ -1956,9 +1952,7 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
+        "ShowonRemoteServicesWebsite": {},
         "SoftwareRelease": {},
         "State": {
             "value": "TX"
@@ -2289,7 +2283,13 @@ const testData = [
             "value": "Active"
         },
         "custom": {},
-        "files": []
+        "files": [
+            {
+                "id": "3a4f504a-b74c-4462-879c-fe6ce30f92c3",
+                "filename": "Equipment (SME00444)\\Crothall - Anderson Regional Medical Center - Cath Lab 1 11.11.22.zip",
+                "href": "/entity/AHS/18.200.003/files/3a4f504a-b74c-4462-879c-fe6ce30f92c3"
+            }
+        ]
     },
     {
         "id": "f5593dd1-f4e9-e911-8176-efcdc93cb3d1",
@@ -2514,115 +2514,9 @@ const testData = [
         "files": []
     },
     {
-        "id": "c23a1195-f5e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 25,
-        "note": "Amanda B 4.29.21 - Changed from Cath Lab 2 to Cath Lab 3 per service team confirmation from customer\nAB 4.11.22 - Updated location name per service request ",
-        "AddressLine1": {
-            "value": "4200 Sun N Lake Blvd"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Sebring"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "FH20180711"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001602"
-        },
-        "CustomerName": {
-            "value": "AdventHealth Sebring"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall Florida Hospital Heartland Cath Lab 3"
-        },
-        "EquipmentNbr": {
-            "value": "SME00447"
-        },
-        "IPAddress": {},
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD20"
-        },
-        "ModelDescription": {
-            "value": "FD20"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "33872"
-        },
-        "Room": {
-            "value": "Cath Lab 3"
-        },
-        "SerialNbr": {
-            "value": "2533"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001602"
-        },
-        "ServiceContractCustomerName": {
-            "value": "AdventHealth Sebring"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001990"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {
-            "value": "7.2.9"
-        },
-        "State": {
-            "value": "FL"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "cd79b640-f6e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 26,
-        "note": "Amanda B 4.29.21 - Changed from Cath Lab 3 to Cath Lab 1 per service team confirmation from customer",
+        "rowNumber": 25,
+        "note": "Amanda B 4.29.21 - Changed from Cath Lab 3 to Cath Lab 1 per service team confirmation from customer\n10.26.22 POC benjamin.brown@crothall.com;clifford.springsteen@crothall.com; PAP\n",
         "AddressLine1": {
             "value": "4200 Sun N Lake Blvd"
         },
@@ -2654,9 +2548,11 @@ const testData = [
         "CustomerName": {
             "value": "AdventHealth Sebring"
         },
-        "CustomerUniqueID": {},
+        "CustomerUniqueID": {
+            "value": "1881"
+        },
         "EquipmentDescription": {
-            "value": "Crothall Florida Hospital Heartland Cath Lab 1"
+            "value": "Crothall AdventHealth Sebring - FD20 Cath Lab 2"
         },
         "EquipmentNbr": {
             "value": "SME00449"
@@ -2687,7 +2583,7 @@ const testData = [
             "value": "33872"
         },
         "Room": {
-            "value": "Cath Lab 1"
+            "value": "Cath Lab 2"
         },
         "SerialNbr": {
             "value": "1881"
@@ -2727,7 +2623,7 @@ const testData = [
     },
     {
         "id": "3e0fa395-f6e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 27,
+        "rowNumber": 26,
         "note": null,
         "AddressLine1": {
             "value": "1395 S Pinellas Ave"
@@ -2829,7 +2725,7 @@ const testData = [
     },
     {
         "id": "0d3dbaf7-f6e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 28,
+        "rowNumber": 27,
         "note": "AB 12.23.21 - Updating location\n\n9/14/22 AS:  Removed SME00452 from FCT00002370 - credited back in June 2020",
         "AddressLine1": {
             "value": "7171 N Dale Mabry Hwy"
@@ -2931,7 +2827,7 @@ const testData = [
     },
     {
         "id": "b603a02a-f7e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 29,
+        "rowNumber": 28,
         "note": null,
         "AddressLine1": {
             "value": "3100 E Fletcher Ave"
@@ -3033,7 +2929,7 @@ const testData = [
     },
     {
         "id": "d207cb00-f8e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 30,
+        "rowNumber": 29,
         "note": null,
         "AddressLine1": {
             "value": "3100 E Fletcher Ave"
@@ -3135,7 +3031,7 @@ const testData = [
     },
     {
         "id": "9bcfca9d-f9e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 31,
+        "rowNumber": 30,
         "note": null,
         "AddressLine1": {
             "value": "7050 Gall Blvd"
@@ -3239,7 +3135,7 @@ const testData = [
     },
     {
         "id": "94b810dc-f9e9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 32,
+        "rowNumber": 31,
         "note": null,
         "AddressLine1": {
             "value": "701 W Plymouth Ave"
@@ -3343,7 +3239,7 @@ const testData = [
     },
     {
         "id": "c9644d3d-fae9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 33,
+        "rowNumber": 32,
         "note": null,
         "AddressLine1": {
             "value": "301 Memorial Medical Pkwy"
@@ -3443,7 +3339,7 @@ const testData = [
     },
     {
         "id": "2b9752a6-fae9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 34,
+        "rowNumber": 33,
         "note": "Amanda B  5.10.21 - Changed location from Ship070 to SHIP069 based on contract renewal",
         "AddressLine1": {
             "value": "55 Lake Ave N"
@@ -3468,7 +3364,7 @@ const testData = [
             "value": "Ship To Main Location"
         },
         "CustomerContractStatus": {
-            "value": "Expired"
+            "value": "Active"
         },
         "CustomerID": {
             "value": "C002707"
@@ -3553,7 +3449,7 @@ const testData = [
     },
     {
         "id": "1559b6f4-fae9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 35,
+        "rowNumber": 34,
         "note": "Amanda B 5.10.21 - Changed from FD20/10 to FD20/20 due to contract renewal",
         "AddressLine1": {
             "value": "55 Lake Ave N"
@@ -3578,7 +3474,7 @@ const testData = [
             "value": "Ship To Main Location"
         },
         "CustomerContractStatus": {
-            "value": "Expired"
+            "value": "Active"
         },
         "CustomerID": {
             "value": "C002707"
@@ -3661,7 +3557,7 @@ const testData = [
     },
     {
         "id": "62c2b858-fbe9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 36,
+        "rowNumber": 35,
         "note": "AB 4.8.22 - Added info per parts team",
         "AddressLine1": {
             "value": "55 Lake Ave N"
@@ -3686,7 +3582,7 @@ const testData = [
             "value": "Ship To Main Location"
         },
         "CustomerContractStatus": {
-            "value": "Expired"
+            "value": "Active"
         },
         "CustomerID": {
             "value": "C002707"
@@ -3767,7 +3663,7 @@ const testData = [
     },
     {
         "id": "4f1c5f8b-fbe9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 37,
+        "rowNumber": 36,
         "note": null,
         "AddressLine1": {
             "value": "55 Lake Ave N"
@@ -3792,7 +3688,7 @@ const testData = [
             "value": "Ship To Main Location"
         },
         "CustomerContractStatus": {
-            "value": "Expired"
+            "value": "Active"
         },
         "CustomerID": {
             "value": "C002707"
@@ -3875,7 +3771,7 @@ const testData = [
     },
     {
         "id": "fb4d1db4-fbe9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 38,
+        "rowNumber": 37,
         "note": null,
         "AddressLine1": {
             "value": "Trailer # 73"
@@ -3979,7 +3875,7 @@ const testData = [
     },
     {
         "id": "b28c5c42-fce9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 39,
+        "rowNumber": 38,
         "note": "",
         "AddressLine1": {
             "value": "4301 North Mesa St #100"
@@ -4081,7 +3977,7 @@ const testData = [
     },
     {
         "id": "5d79948a-fce9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 40,
+        "rowNumber": 39,
         "note": null,
         "AddressLine1": {
             "value": "900 8Th Ave"
@@ -4187,7 +4083,7 @@ const testData = [
     },
     {
         "id": "186d3361-fde9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 41,
+        "rowNumber": 40,
         "note": null,
         "AddressLine1": {
             "value": "405 Lionel Way"
@@ -4287,7 +4183,7 @@ const testData = [
     },
     {
         "id": "cf6773c3-fde9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 42,
+        "rowNumber": 41,
         "note": null,
         "AddressLine1": {
             "value": "503 N Maple St"
@@ -4397,7 +4293,7 @@ const testData = [
     },
     {
         "id": "21df6ffc-fde9-e911-8176-efcdc93cb3d1",
-        "rowNumber": 43,
+        "rowNumber": 42,
         "note": null,
         "AddressLine1": {
             "value": "1206 North Mills Ave"
@@ -4507,7 +4403,7 @@ const testData = [
     },
     {
         "id": "973763b7-c3ea-e911-8176-efcdc93cb3d1",
-        "rowNumber": 44,
+        "rowNumber": 43,
         "note": null,
         "AddressLine1": {
             "value": "401 N Ewing St"
@@ -4609,7 +4505,7 @@ const testData = [
     },
     {
         "id": "a250ee89-67eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 45,
+        "rowNumber": 44,
         "note": null,
         "AddressLine1": {
             "value": "70 Dubois St"
@@ -4719,7 +4615,7 @@ const testData = [
     },
     {
         "id": "388d4cc1-67eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 46,
+        "rowNumber": 45,
         "note": null,
         "AddressLine1": {
             "value": "70 Dubois St"
@@ -4829,7 +4725,7 @@ const testData = [
     },
     {
         "id": "324629dd-68eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 47,
+        "rowNumber": 46,
         "note": "Amanda B 12/31/20 - Revised to reflect appropriate parent of REMI and associated to contract",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -4939,7 +4835,7 @@ const testData = [
     },
     {
         "id": "980b1523-69eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 48,
+        "rowNumber": 47,
         "note": null,
         "AddressLine1": {
             "value": "Saline Memorial Hospital"
@@ -5051,7 +4947,7 @@ const testData = [
     },
     {
         "id": "634a4d64-69eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 49,
+        "rowNumber": 48,
         "note": null,
         "AddressLine1": {
             "value": "Saline Memorial Hospital"
@@ -5157,7 +5053,7 @@ const testData = [
     },
     {
         "id": "ba457292-69eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 50,
+        "rowNumber": 49,
         "note": "12/20/21 - Meg added IP address under attributes (10.15.20.130)\n\n2/25/22 - updated IP address to 10.15.20.132\n\n2/28/22 MC - updated IP address to 10.15.20.130 per Travis Boak",
         "AddressLine1": {
             "value": "3001 Sillect Ave"
@@ -5267,7 +5163,7 @@ const testData = [
     },
     {
         "id": "3e0d0961-6aeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 51,
+        "rowNumber": 50,
         "note": "2/28/22 - MC - added IP address is 10.15.20.132 per Travis Boak",
         "AddressLine1": {
             "value": "3001 Sillect Ave"
@@ -5379,7 +5275,7 @@ const testData = [
     },
     {
         "id": "4e9ea414-6beb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 52,
+        "rowNumber": 51,
         "note": "12/20/21 - Meg added Room Cath lab 4 under attributes\n\n2/28/22 MC - added IP address 10.15.20.140 per Travis Boak",
         "AddressLine1": {
             "value": "3001 Sillect Ave"
@@ -5485,8 +5381,8 @@ const testData = [
     },
     {
         "id": "9bbf0110-77eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 53,
-        "note": "AB 9.27.22 - Updated Room number per Remote Team\n\nEquipment ID\tIP Address\tModel\tSerial Number\tCustomer Unique ID/Site ID\tRoom #\tActual room # to change to\nSME00510\t192.168.50.25\tFD10\t42\t504915\t3\t2\nSME00508\t192.168.50.21\tFD10\t44\t504872\t1\t4\nSME00509\t192.168.50.22\tFD10\t77\t504916\t2\t3\nSME00511\t192.168.50.82\tFD10\t81\t504913\t4\t1\n",
+        "rowNumber": 52,
+        "note": "AB 9.27.22 - Updated Room number per Remote Team\n\nEquipment ID\tIP Address\tModel\tSerial Number\tCustomer Unique ID/Site ID\tRoom #\tActual room # to change to\nSME00510\t192.168.50.25\tFD10\t42\t504915\t3\t2\nSME00508\t192.168.50.21\tFD10\t44\t504872\t1\t4\nSME00509\t192.168.50.22\tFD10\t77\t504916\t2\t3\nSME00511\t192.168.50.82\tFD10\t81\t504913\t4\t1\n\n10/27 SME00508..SN 44..Site ID 504872 is in fact: Room 1 NOT Room 4 ...  PWM  \n10/27 SME 00511 .. SN81.. Site ID 504913 is in fact: Room 4    ",
         "AddressLine1": {
             "value": "4810 North Loop 289"
         },
@@ -5520,7 +5416,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "SPBS Lubbock Heart Room 4"
+            "value": "SPBS Lubbock Heart Room 1"
         },
         "EquipmentNbr": {
             "value": "SME00508"
@@ -5597,7 +5493,7 @@ const testData = [
     },
     {
         "id": "be22d870-77eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 54,
+        "rowNumber": 53,
         "note": "AB 9.27.22 - Updated Room number per Remote Team\n\nEquipment ID\tIP Address\tModel\tSerial Number\tCustomer Unique ID/Site ID\tRoom #\tActual room # to change to\nSME00510\t192.168.50.25\tFD10\t42\t504915\t3\t2\nSME00508\t192.168.50.21\tFD10\t44\t504872\t1\t4\nSME00509\t192.168.50.22\tFD10\t77\t504916\t2\t3\nSME00511\t192.168.50.82\tFD10\t81\t504913\t4\t1",
         "AddressLine1": {
             "value": "4810 North Loop 289"
@@ -5709,7 +5605,7 @@ const testData = [
     },
     {
         "id": "d4e4fbf2-77eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 55,
+        "rowNumber": 54,
         "note": "AB 9.27.22 - Updated Room number per Remote Team\n\nEquipment ID\tIP Address\tModel\tSerial Number\tCustomer Unique ID/Site ID\tRoom #\tActual room # to change to\nSME00510\t192.168.50.25\tFD10\t42\t504915\t3\t2\nSME00508\t192.168.50.21\tFD10\t44\t504872\t1\t4\nSME00509\t192.168.50.22\tFD10\t77\t504916\t2\t3\nSME00511\t192.168.50.82\tFD10\t81\t504913\t4\t1",
         "AddressLine1": {
             "value": "4810 North Loop 289"
@@ -5821,7 +5717,7 @@ const testData = [
     },
     {
         "id": "f006152f-78eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 56,
+        "rowNumber": 55,
         "note": "AB 9.27.22 - Updated Room number per Remote Team\n\nEquipment ID\tIP Address\tModel\tSerial Number\tCustomer Unique ID/Site ID\tRoom #\tActual room # to change to\nSME00510\t192.168.50.25\tFD10\t42\t504915\t3\t2\nSME00508\t192.168.50.21\tFD10\t44\t504872\t1\t4\nSME00509\t192.168.50.22\tFD10\t77\t504916\t2\t3\nSME00511\t192.168.50.82\tFD10\t81\t504913\t4\t1\n",
         "AddressLine1": {
             "value": "4810 North Loop 289"
@@ -5933,7 +5829,7 @@ const testData = [
     },
     {
         "id": "548122bb-78eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 57,
+        "rowNumber": 56,
         "note": null,
         "AddressLine1": {
             "value": "222 Medical Circle"
@@ -6043,7 +5939,7 @@ const testData = [
     },
     {
         "id": "44acaa12-79eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 58,
+        "rowNumber": 57,
         "note": null,
         "AddressLine1": {
             "value": "387 Technology Circle NW"
@@ -6145,7 +6041,7 @@ const testData = [
     },
     {
         "id": "3455368a-8aeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 59,
+        "rowNumber": 58,
         "note": null,
         "AddressLine1": {
             "value": "450 N New Ballas Rd"
@@ -6255,7 +6151,7 @@ const testData = [
     },
     {
         "id": "548c0891-8beb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 60,
+        "rowNumber": 59,
         "note": "7/27/22 MC - added 10.20.170.93 from remote tracker",
         "AddressLine1": {
             "value": "1200 N Elm St"
@@ -6367,7 +6263,7 @@ const testData = [
     },
     {
         "id": "b190b5ce-8beb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 61,
+        "rowNumber": 60,
         "note": "7/27/22 MC - added 10.20.145.240 from the remote tracker",
         "AddressLine1": {
             "value": "1200 N Elm St"
@@ -6477,7 +6373,7 @@ const testData = [
     },
     {
         "id": "63f18103-8ceb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 62,
+        "rowNumber": 61,
         "note": "7/27/22 MC - added 170.53.68.139 from remote tracker",
         "AddressLine1": {
             "value": "1200 N Elm St"
@@ -6587,7 +6483,7 @@ const testData = [
     },
     {
         "id": "5c14b550-8ceb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 63,
+        "rowNumber": 62,
         "note": "7/27/22 MC - added IP 170.53.68.142 from remote tracker",
         "AddressLine1": {
             "value": "1200 N Elm St"
@@ -6699,7 +6595,7 @@ const testData = [
     },
     {
         "id": "316cbcb6-8ceb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 64,
+        "rowNumber": 63,
         "note": "7/27/22 MC - added IP 170.53.68.165 from remote tracker",
         "AddressLine1": {
             "value": "1200 N Elm St"
@@ -6809,7 +6705,7 @@ const testData = [
     },
     {
         "id": "359f4605-8eeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 65,
+        "rowNumber": 64,
         "note": "AB 6.13.22 - Updated customer unique ID and site ID",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -6913,7 +6809,7 @@ const testData = [
     },
     {
         "id": "4b2ad93f-8eeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 66,
+        "rowNumber": 65,
         "note": "AB 6.2.22 - Updated the room, and site ID and description",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -7019,7 +6915,7 @@ const testData = [
     },
     {
         "id": "8ea9fa89-8eeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 67,
+        "rowNumber": 66,
         "note": "",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -7123,7 +7019,7 @@ const testData = [
     },
     {
         "id": "51a06bc7-8eeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 68,
+        "rowNumber": 67,
         "note": "Amanda B 11.10 - Clarification Note: System is under contract with Remi\nAB 1.21.22 - Updated attributes",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -7231,7 +7127,7 @@ const testData = [
     },
     {
         "id": "0637bb05-8feb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 69,
+        "rowNumber": 68,
         "note": "",
         "AddressLine1": {
             "value": "670 Stoneleigh Ave"
@@ -7343,7 +7239,7 @@ const testData = [
     },
     {
         "id": "8f1b348f-8feb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 70,
+        "rowNumber": 69,
         "note": "AB 6.29.21 - Updated customer and location per accounting\nAB 10.5.21 - Changed location from C0183 Ship002 to C0170 SHIP001 to make an appointment.\nAB 2.16.22 - Changed customer back to C183 SHIP002 to match contract.",
         "AddressLine1": {
             "value": "5555 W Las Positas Blvd"
@@ -7443,7 +7339,7 @@ const testData = [
     },
     {
         "id": "d0aabfeb-8feb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 71,
+        "rowNumber": 70,
         "note": "3/31/22 MC - in order for engineer to access log files, have to log into https://view.mcleodhealth.org/  - Dustin Z, Michael Deuel, and Kirk Allgood have access - Cory Williams and Scott Whaley will have access once they are approved and assigned log ins on Mcleod's end",
         "AddressLine1": {
             "value": "4000 Highway 9 East"
@@ -7545,7 +7441,7 @@ const testData = [
     },
     {
         "id": "abfc3b2e-90eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 72,
+        "rowNumber": 71,
         "note": "3/31/22 MC - in order for engineer to access log files, have to log into https://view.mcleodhealth.org/  - Dustin Z, Michael Deuel, and Kirk Allgood have access - Cory Williams and Scott Whaley will have access once they are approved and assigned log ins on Mcleod's end",
         "AddressLine1": {
             "value": "4000 Highway 9 East"
@@ -7655,7 +7551,7 @@ const testData = [
     },
     {
         "id": "3539592f-92eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 73,
+        "rowNumber": 72,
         "note": "3/21/22 MC - marked not to show on website since on the tracker it is on RTT",
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -7767,7 +7663,7 @@ const testData = [
     },
     {
         "id": "c4e58bb8-99eb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 74,
+        "rowNumber": 73,
         "note": "5/18/22 AB Changed parent from Vantage C0202 to US Oncology for contract purposes",
         "AddressLine1": {
             "value": "575 North River St"
@@ -7874,122 +7770,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "6d1d4321-9aeb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 75,
-        "note": "3/21/22 MC - marked not to show on the website since it is on Client IT on the tracker\n7/26/22 - removed from site per Nathan Meadows on the phone with Dustin Z when he called to verify IP address because we lost connection, sent email to Kevin H, Remote and Contracts",
-        "AddressLine1": {
-            "value": "1199 Prince Ave"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Athens"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C007635"
-        },
-        "CustomerName": {
-            "value": "Piedmont Athens Regional Medical Center"
-        },
-        "CustomerUniqueID": {
-            "value": "DI8003"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Athens Regional DI8003"
-        },
-        "EquipmentNbr": {
-            "value": "SME00552"
-        },
-        "IPAddress": {
-            "value": "10.232.33.4"
-        },
-        "LastPMCompleted": {
-            "value": "2019-10-07T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD20"
-        },
-        "ModelDescription": {
-            "value": "FD20"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "30606"
-        },
-        "Room": {
-            "value": "PhilipsSPC1"
-        },
-        "SerialNbr": {
-            "value": "000444"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C007635"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Athens Regional Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001881"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {
-            "value": "7.2.16"
-        },
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "58075404-9deb-e911-8176-efcdc93cb3d1",
-        "rowNumber": 76,
+        "rowNumber": 74,
         "note": "4/13 per Justin Friedland email garden state urology, \"Just a heads up. Garden state urology closed their rad onc dept as they currently do not have a doctor (dr retired and they are credentialing a new one). They expect to have the department running / treating patients again in June. While the department is not seeing patients, one of the therapists will be going over there twice a week to power on the system and warm up the tube. They have asked me to continue to perform their monthly QA scans, ensuring everything is OK when they are ready to treat patients.\"\n\n",
         "AddressLine1": {
             "value": "16 Eden lane"
@@ -8099,8 +7881,8 @@ const testData = [
     },
     {
         "id": "246dda7b-29ec-e911-8176-efcdc93cb3d1",
-        "rowNumber": 77,
-        "note": null,
+        "rowNumber": 75,
+        "note": "11/8/22 MC - marked to show on the website, per Kirk A is working and he made manually show",
         "AddressLine1": {
             "value": "1199 Prince Ave"
         },
@@ -8193,7 +7975,7 @@ const testData = [
             "value": "Active"
         },
         "ShowonRemoteServicesWebsite": {
-            "value": false
+            "value": true
         },
         "SoftwareRelease": {},
         "State": {
@@ -8207,7 +7989,7 @@ const testData = [
     },
     {
         "id": "5a6b3ef1-2fec-e911-8176-efcdc93cb3d1",
-        "rowNumber": 78,
+        "rowNumber": 76,
         "note": "AB 7.26.22 - Marked to show on remote\nAB 10.18.22 - Updated IP Address per Kirk",
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -8312,122 +8094,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "b477b5f2-30ec-e911-8176-efcdc93cb3d1",
-        "rowNumber": 79,
-        "note": "",
-        "AddressLine1": {
-            "value": "1968 Peachtree Road NW"
-        },
-        "AddressLine2": {
-            "value": "Biomed/Building 35"
-        },
-        "City": {
-            "value": "Atlanta"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C091405"
-        },
-        "CustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "CustomerUniqueID": {
-            "value": "DI1139"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Atlanta DI1139"
-        },
-        "EquipmentNbr": {
-            "value": "SME00585"
-        },
-        "IPAddress": {
-            "value": "10.21.3.193"
-        },
-        "LastPMCompleted": {
-            "value": "2019-07-24T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "AXIOM ARTIS DBA"
-        },
-        "ModelDescription": {
-            "value": "Axiom Artis Dba"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "30309"
-        },
-        "Room": {
-            "value": "BSR01408"
-        },
-        "SerialNbr": {
-            "value": "53056"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C091405"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001885"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "68442f40-a60b-ea11-8178-8a160fe5cefa",
-        "rowNumber": 80,
+        "rowNumber": 77,
         "note": "AG 11/10 - Changed the customer from Prime healthcare to Bio-Med Services per the service contract.\nAmanda B 3.9.21 - Updated customer and location to match what accounting bills the contract under.\nAmanda B 5.26.21-  Accounting confirmed to use C0253",
         "AddressLine1": {
             "value": "115 Cass Ave"
@@ -8452,7 +8120,7 @@ const testData = [
             "value": "Primary Location"
         },
         "CustomerContractStatus": {
-            "value": "Active"
+            "value": "Expired"
         },
         "CustomerID": {
             "value": "C012858"
@@ -8529,7 +8197,7 @@ const testData = [
     },
     {
         "id": "ed6b7eb4-e20b-ea11-8178-8a160fe5cefa",
-        "rowNumber": 81,
+        "rowNumber": 78,
         "note": null,
         "AddressLine1": {
             "value": "3400 Wake Forest Rd"
@@ -8639,7 +8307,7 @@ const testData = [
     },
     {
         "id": "047f4b0d-e30b-ea11-8178-8a160fe5cefa",
-        "rowNumber": 82,
+        "rowNumber": 79,
         "note": null,
         "AddressLine1": {
             "value": "1320 Bishop Randall Drive"
@@ -8737,7 +8405,7 @@ const testData = [
     },
     {
         "id": "32958875-e30b-ea11-8178-8a160fe5cefa",
-        "rowNumber": 83,
+        "rowNumber": 80,
         "note": "Added type of system to description 05/27/21 BH\n5/31/22 Location 1099 Ivey Cline Rd Concord NC 28027. PAP",
         "AddressLine1": {
             "value": "Trailer # 74"
@@ -8831,7 +8499,7 @@ const testData = [
     },
     {
         "id": "1623f16e-9f0c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 84,
+        "rowNumber": 81,
         "note": "FL # 400-488394",
         "AddressLine1": {
             "value": "2000 Scenic Dr"
@@ -8935,7 +8603,7 @@ const testData = [
     },
     {
         "id": "5cda5868-a00c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 85,
+        "rowNumber": 82,
         "note": null,
         "AddressLine1": {
             "value": "11111 Research Blvd LL2"
@@ -9037,7 +8705,7 @@ const testData = [
     },
     {
         "id": "8e6803bb-8017-ea11-8178-8a160fe5cefa",
-        "rowNumber": 86,
+        "rowNumber": 83,
         "note": "Amanda B 10/23 - Updated Equipment due to contract\nAB 6.22.21 - Updated IP Address",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -9147,7 +8815,7 @@ const testData = [
     },
     {
         "id": "2212eb62-8117-ea11-8178-8a160fe5cefa",
-        "rowNumber": 87,
+        "rowNumber": 84,
         "note": "Amanda B 10/23 - Updated Equipment due to contract ",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -9255,7 +8923,7 @@ const testData = [
     },
     {
         "id": "3e4bc5b2-8117-ea11-8178-8a160fe5cefa",
-        "rowNumber": 88,
+        "rowNumber": 85,
         "note": "Amanda B 10/23 - Updated Equipment due to contract",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -9365,7 +9033,7 @@ const testData = [
     },
     {
         "id": "85d4cef2-8117-ea11-8178-8a160fe5cefa",
-        "rowNumber": 89,
+        "rowNumber": 86,
         "note": "Amanda B 10/23 - Updated Equipment due to contract ",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -9475,7 +9143,7 @@ const testData = [
     },
     {
         "id": "21137a4c-5918-ea11-8178-8a160fe5cefa",
-        "rowNumber": 90,
+        "rowNumber": 87,
         "note": null,
         "AddressLine1": {
             "value": "15 Laurel Avenue"
@@ -9578,124 +9246,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "4a23bb7e-491c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 91,
-        "note": "DI1012 was replaced by DI21-159 SJM 5/27/22\nAB 9.27.22 - Changed from CT1 per Piedmont ",
-        "AddressLine1": {
-            "value": "1968 Peachtree Road NW"
-        },
-        "AddressLine2": {
-            "value": "Biomed/Building 35"
-        },
-        "City": {
-            "value": "Atlanta"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C091405"
-        },
-        "CustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "CustomerUniqueID": {
-            "value": "DI21-159"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Atlanta DI21-159"
-        },
-        "EquipmentNbr": {
-            "value": "SME00811"
-        },
-        "IPAddress": {
-            "value": "10.21.3.115"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CT"
-        },
-        "Model": {
-            "value": "DEFINITION"
-        },
-        "ModelDescription": {
-            "value": "Definition"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30309"
-        },
-        "Room": {
-            "value": "CTDUAL / CT1"
-        },
-        "SerialNbr": {
-            "value": "60457"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C091405"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001885"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": [
-            {
-                "id": "700cee94-c50f-4f58-a43e-28081c8ff143",
-                "filename": "Equipment (SME00811)\\SME00811_Service Key_exp20230624.dat",
-                "href": "/entity/AHS/18.200.003/files/700cee94-c50f-4f58-a43e-28081c8ff143"
-            }
-        ]
-    },
-    {
         "id": "5e553821-4b1c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 92,
+        "rowNumber": 88,
         "note": "AB 9.27.22 - Changed from DI1015 to DI121-161 CT2  and Edge per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -9813,7 +9365,7 @@ const testData = [
     },
     {
         "id": "cc47fc63-4d1c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 93,
+        "rowNumber": 89,
         "note": "AB 9.27.22 - Changed from DI1081 to DI21-147 and changed to Edge + per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -9929,7 +9481,7 @@ const testData = [
     },
     {
         "id": "87a64663-4e1c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 94,
+        "rowNumber": 90,
         "note": "3/21/22 MC - added the customer unique ID DI1108 so that it shows on website instead of SME",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -10045,8 +9597,8 @@ const testData = [
     },
     {
         "id": "3c10a9f0-501c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 95,
-        "note": "Ande G 10/12/20: Updated IP Address from 10.21.67.85 to 10.57.62.135 per Dustin Zimmerman email",
+        "rowNumber": 91,
+        "note": "Ande G 10/12/20: Updated IP Address from 10.21.67.85 to 10.57.62.135 per Dustin Zimmerman email\n10/20/22 - MC - marked to show on website per Kirk",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
         },
@@ -10137,7 +9689,7 @@ const testData = [
             "value": "Active"
         },
         "ShowonRemoteServicesWebsite": {
-            "value": false
+            "value": true
         },
         "SoftwareRelease": {},
         "State": {
@@ -10151,7 +9703,7 @@ const testData = [
     },
     {
         "id": "10f5e955-511c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 96,
+        "rowNumber": 92,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -10261,7 +9813,7 @@ const testData = [
     },
     {
         "id": "29d0b204-521c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 97,
+        "rowNumber": 93,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -10369,7 +9921,7 @@ const testData = [
     },
     {
         "id": "8b3ca04c-521c-ea11-8178-8a160fe5cefa",
-        "rowNumber": 98,
+        "rowNumber": 94,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -10477,7 +10029,7 @@ const testData = [
     },
     {
         "id": "adb5f5d3-241d-ea11-8178-8a160fe5cefa",
-        "rowNumber": 99,
+        "rowNumber": 95,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -10585,7 +10137,7 @@ const testData = [
     },
     {
         "id": "b6cb013e-de20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 100,
+        "rowNumber": 96,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -10693,7 +10245,7 @@ const testData = [
     },
     {
         "id": "a4144a65-e120-ea11-8179-d2e12e40ca40",
-        "rowNumber": 101,
+        "rowNumber": 97,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -10801,7 +10353,7 @@ const testData = [
     },
     {
         "id": "01c1b6d3-e120-ea11-8179-d2e12e40ca40",
-        "rowNumber": 102,
+        "rowNumber": 98,
         "note": null,
         "AddressLine1": {
             "value": "100 Frist Ct"
@@ -10909,7 +10461,7 @@ const testData = [
     },
     {
         "id": "f6021a49-e220-ea11-8179-d2e12e40ca40",
-        "rowNumber": 103,
+        "rowNumber": 99,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -11017,7 +10569,7 @@ const testData = [
     },
     {
         "id": "492db7cf-e220-ea11-8179-d2e12e40ca40",
-        "rowNumber": 104,
+        "rowNumber": 100,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -11125,7 +10677,7 @@ const testData = [
     },
     {
         "id": "4edfb10f-e320-ea11-8179-d2e12e40ca40",
-        "rowNumber": 105,
+        "rowNumber": 101,
         "note": "3/21/22 - marked not to show on the website since it is on RTT now on the tracker since no new files since Oct 2021",
         "AddressLine1": {
             "value": "710 Center St"
@@ -11237,7 +10789,7 @@ const testData = [
     },
     {
         "id": "563fafd2-e920-ea11-8179-d2e12e40ca40",
-        "rowNumber": 106,
+        "rowNumber": 102,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -11349,7 +10901,7 @@ const testData = [
     },
     {
         "id": "2fbd5498-ef20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 107,
+        "rowNumber": 103,
         "note": "3/21/22 MC - marked not to show on website and changed tracker to ARTS, last file 12/30/21, starting sending zip files\nAB 7.14.22 - Marked to show on Remote",
         "AddressLine1": {
             "value": "710 Center St"
@@ -11457,7 +11009,7 @@ const testData = [
     },
     {
         "id": "869265b5-f020-ea11-8179-d2e12e40ca40",
-        "rowNumber": 108,
+        "rowNumber": 104,
         "note": "AB 7.14.22 - Marked to show on Remote",
         "AddressLine1": {
             "value": "710 Center St"
@@ -11565,7 +11117,7 @@ const testData = [
     },
     {
         "id": "83d33624-f120-ea11-8179-d2e12e40ca40",
-        "rowNumber": 109,
+        "rowNumber": 105,
         "note": null,
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -11673,7 +11225,7 @@ const testData = [
     },
     {
         "id": "bce95585-f120-ea11-8179-d2e12e40ca40",
-        "rowNumber": 110,
+        "rowNumber": 106,
         "note": null,
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -11781,7 +11333,7 @@ const testData = [
     },
     {
         "id": "dd99d230-f220-ea11-8179-d2e12e40ca40",
-        "rowNumber": 111,
+        "rowNumber": 107,
         "note": "AB 7.26.22 - Marked to show on remote",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -11887,7 +11439,7 @@ const testData = [
     },
     {
         "id": "42fc1068-f220-ea11-8179-d2e12e40ca40",
-        "rowNumber": 112,
+        "rowNumber": 108,
         "note": "3/21/22 MC - marked not to show on the website and changed to ARTS on tracker, last file 1/27/22, started sending zip files on 1/28/22 and cant process",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -11995,7 +11547,7 @@ const testData = [
     },
     {
         "id": "b72b21c3-fc20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 113,
+        "rowNumber": 109,
         "note": "Amanda B 6/29/21: Marked do not show on remote per Meghans email\n\n10/4/22 MC marked to show on website per Kirk Allgood",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -12103,7 +11655,7 @@ const testData = [
     },
     {
         "id": "78d6670b-fd20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 114,
+        "rowNumber": 110,
         "note": "3/21/22 MC - added the cust unique ID DI3232, so that shows up on the remote website ",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -12209,7 +11761,7 @@ const testData = [
     },
     {
         "id": "7986266a-fd20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 115,
+        "rowNumber": 111,
         "note": null,
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -12316,120 +11868,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "c00f13d3-fd20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 116,
-        "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
-        "AddressLine1": {
-            "value": "1266 Highway 515 S"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Jasper"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C007794"
-        },
-        "CustomerName": {
-            "value": "Piedmont Mountainside Hospital"
-        },
-        "CustomerUniqueID": {
-            "value": "DI4037"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Mountainside DI4037"
-        },
-        "EquipmentNbr": {
-            "value": "SME00861"
-        },
-        "IPAddress": {
-            "value": "10.188.56.68"
-        },
-        "LastPMCompleted": {
-            "value": "2020-01-15T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CT"
-        },
-        "Model": {
-            "value": "SENSATION 64"
-        },
-        "ModelDescription": {
-            "value": "Sensation 64"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "30143"
-        },
-        "Room": {
-            "value": "MHOSCT002"
-        },
-        "SerialNbr": {
-            "value": "55546"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C007794"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Mountainside Hospital"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001886"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "fa45cf49-fe20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 117,
+        "rowNumber": 112,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -12537,7 +11977,7 @@ const testData = [
     },
     {
         "id": "fa45cf49-fe20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 118,
+        "rowNumber": 113,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -12632,222 +12072,6 @@ const testData = [
         },
         "ShowonRemoteServicesWebsite": {
             "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
-        "id": "0358e2b5-ff20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 119,
-        "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
-        "AddressLine1": {
-            "value": "1133 Eagles Landing Pkwy"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Stockbridge"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C000247"
-        },
-        "CustomerName": {
-            "value": "Piedmont Henry Hospital"
-        },
-        "CustomerUniqueID": {
-            "value": "DI5018"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Henry DI5018"
-        },
-        "EquipmentNbr": {
-            "value": "SME00863"
-        },
-        "IPAddress": {
-            "value": "10.121.71.130"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CT"
-        },
-        "Model": {
-            "value": "DEFINITION"
-        },
-        "ModelDescription": {
-            "value": "Definition"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30281"
-        },
-        "Room": {
-            "value": "PHHCT1"
-        },
-        "SerialNbr": {
-            "value": "60357"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C000247"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Henry Hospital"
-        },
-        "ServiceContractID": {
-            "value": "AHS00002729"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
-        "id": "0358e2b5-ff20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 120,
-        "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
-        "AddressLine1": {
-            "value": "960 Hospital Dr"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Stockbridge"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C000247"
-        },
-        "CustomerName": {
-            "value": "Piedmont Henry Hospital"
-        },
-        "CustomerUniqueID": {
-            "value": "DI5018"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Henry DI5018"
-        },
-        "EquipmentNbr": {
-            "value": "SME00863"
-        },
-        "IPAddress": {
-            "value": "10.121.71.130"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CT"
-        },
-        "Model": {
-            "value": "DEFINITION"
-        },
-        "ModelDescription": {
-            "value": "Definition"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30281"
-        },
-        "Room": {
-            "value": "PHHCT1"
-        },
-        "SerialNbr": {
-            "value": "60357"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C108246"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Henry Radiation Oncology Stockbridge"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001884"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
         },
         "SoftwareRelease": {},
         "State": {
@@ -12861,7 +12085,7 @@ const testData = [
     },
     {
         "id": "ae97dcf6-ff20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 121,
+        "rowNumber": 114,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -12969,7 +12193,7 @@ const testData = [
     },
     {
         "id": "ae97dcf6-ff20-ea11-8179-d2e12e40ca40",
-        "rowNumber": 122,
+        "rowNumber": 115,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -13077,7 +12301,7 @@ const testData = [
     },
     {
         "id": "33699836-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 123,
+        "rowNumber": 116,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -13185,7 +12409,7 @@ const testData = [
     },
     {
         "id": "33699836-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 124,
+        "rowNumber": 117,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -13293,7 +12517,7 @@ const testData = [
     },
     {
         "id": "99527977-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 125,
+        "rowNumber": 118,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -13401,7 +12625,7 @@ const testData = [
     },
     {
         "id": "99527977-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 126,
+        "rowNumber": 119,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -13509,7 +12733,7 @@ const testData = [
     },
     {
         "id": "bf920ce9-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 127,
+        "rowNumber": 120,
         "note": "MC 1/4/2022 - changed IP address from 10.60.0.48 to 10.121.168.246 per Kirk A\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -13617,7 +12841,7 @@ const testData = [
     },
     {
         "id": "bf920ce9-0021-ea11-8179-d2e12e40ca40",
-        "rowNumber": 128,
+        "rowNumber": 121,
         "note": "MC 1/4/2022 - changed IP address from 10.60.0.48 to 10.121.168.246 per Kirk A\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -13725,7 +12949,7 @@ const testData = [
     },
     {
         "id": "57337f2f-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 129,
+        "rowNumber": 122,
         "note": "12.17.21 AB updated the location name\n3/18/22 MC - marked not to show on website since no files were showing and it is on RTT to investigate\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -13833,7 +13057,7 @@ const testData = [
     },
     {
         "id": "57337f2f-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 130,
+        "rowNumber": 123,
         "note": "12.17.21 AB updated the location name\n3/18/22 MC - marked not to show on website since no files were showing and it is on RTT to investigate\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -13941,7 +13165,7 @@ const testData = [
     },
     {
         "id": "9b4e1b90-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 131,
+        "rowNumber": 124,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -14049,7 +13273,7 @@ const testData = [
     },
     {
         "id": "9b4e1b90-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 132,
+        "rowNumber": 125,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -14157,7 +13381,7 @@ const testData = [
     },
     {
         "id": "64042eca-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 133,
+        "rowNumber": 126,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -14265,7 +13489,7 @@ const testData = [
     },
     {
         "id": "64042eca-0121-ea11-8179-d2e12e40ca40",
-        "rowNumber": 134,
+        "rowNumber": 127,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -14373,7 +13597,7 @@ const testData = [
     },
     {
         "id": "97758227-0221-ea11-8179-d2e12e40ca40",
-        "rowNumber": 135,
+        "rowNumber": 128,
         "note": null,
         "AddressLine1": {
             "value": "5126 Hospital Dr Ne"
@@ -14481,7 +13705,7 @@ const testData = [
     },
     {
         "id": "21ff7164-0221-ea11-8179-d2e12e40ca40",
-        "rowNumber": 136,
+        "rowNumber": 129,
         "note": null,
         "AddressLine1": {
             "value": "5126 Hospital Dr Ne"
@@ -14509,10 +13733,10 @@ const testData = [
             "value": "Active"
         },
         "CustomerID": {
-            "value": "C012957"
+            "value": "C001779"
         },
         "CustomerName": {
-            "value": "Newton-Wellesley Hospital"
+            "value": "Piedmont Newton Hospital"
         },
         "CustomerUniqueID": {
             "value": "DI6050"
@@ -14589,7 +13813,7 @@ const testData = [
     },
     {
         "id": "444c9cb9-0221-ea11-8179-d2e12e40ca40",
-        "rowNumber": 137,
+        "rowNumber": 130,
         "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -14697,7 +13921,7 @@ const testData = [
     },
     {
         "id": "5fe3e752-0321-ea11-8179-d2e12e40ca40",
-        "rowNumber": 138,
+        "rowNumber": 131,
         "note": "3/22/22 MC - added DI7135 as customer unique # in attributes so shows up on remote website instead of SME\n\nThe DI# was updated old DI # DI7135 new DI21-178 SJM 8-25-22",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -14805,7 +14029,7 @@ const testData = [
     },
     {
         "id": "68a3a7a9-0321-ea11-8179-d2e12e40ca40",
-        "rowNumber": 139,
+        "rowNumber": 132,
         "note": "DI # changed - old DI7144 new DI21-187 SJM 8/25/22",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -14915,7 +14139,7 @@ const testData = [
     },
     {
         "id": "0bab325c-0421-ea11-8179-d2e12e40ca40",
-        "rowNumber": 140,
+        "rowNumber": 133,
         "note": "3/18/22 MC - marked not to show on website since there are no files showing, it is on RT to research, and the last file was from 12/9/21",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -15025,7 +14249,7 @@ const testData = [
     },
     {
         "id": "a18409ab-0421-ea11-8179-d2e12e40ca40",
-        "rowNumber": 141,
+        "rowNumber": 134,
         "note": "AB 7.14.22 - Marked to show on Remote",
         "AddressLine1": {
             "value": "3820 Medical Park Dr"
@@ -15133,7 +14357,7 @@ const testData = [
     },
     {
         "id": "dc6d563c-0521-ea11-8179-d2e12e40ca40",
-        "rowNumber": 142,
+        "rowNumber": 135,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -15243,7 +14467,7 @@ const testData = [
     },
     {
         "id": "a524e067-0621-ea11-8179-d2e12e40ca40",
-        "rowNumber": 143,
+        "rowNumber": 136,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -15353,7 +14577,7 @@ const testData = [
     },
     {
         "id": "2e2840bc-0821-ea11-8179-d2e12e40ca40",
-        "rowNumber": 144,
+        "rowNumber": 137,
         "note": "Updated the child to reflect the correct address 725 S 8th St, Griffin, GA 30224 SJM 7/7/21",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -15461,7 +14685,7 @@ const testData = [
     },
     {
         "id": "a6cde5f3-0821-ea11-8179-d2e12e40ca40",
-        "rowNumber": 145,
+        "rowNumber": 138,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -15569,7 +14793,7 @@ const testData = [
     },
     {
         "id": "a6cde5f3-0821-ea11-8179-d2e12e40ca40",
-        "rowNumber": 146,
+        "rowNumber": 139,
         "note": "8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -15677,7 +14901,7 @@ const testData = [
     },
     {
         "id": "98bd2e18-0b21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 147,
+        "rowNumber": 140,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -15789,7 +15013,7 @@ const testData = [
     },
     {
         "id": "1ed254ab-0b21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 148,
+        "rowNumber": 141,
         "note": "",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -15899,7 +15123,7 @@ const testData = [
     },
     {
         "id": "9adcb702-0c21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 149,
+        "rowNumber": 142,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16011,7 +15235,7 @@ const testData = [
     },
     {
         "id": "e36321c5-0c21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 150,
+        "rowNumber": 143,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16119,7 +15343,7 @@ const testData = [
     },
     {
         "id": "a448df2e-0d21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 151,
+        "rowNumber": 144,
         "note": "Piedmont Healthcare ok to not get PO# up front they get contracted rates and no OT rates. ",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16227,7 +15451,7 @@ const testData = [
     },
     {
         "id": "51efdf9a-0d21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 152,
+        "rowNumber": 145,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16335,7 +15559,7 @@ const testData = [
     },
     {
         "id": "919e8be4-0d21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 153,
+        "rowNumber": 146,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16446,108 +15670,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "8bdbec1e-0e21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 154,
-        "note": "Amanda B 9.7.21 - Per Meg C changed location from Athens to SHIP019 and updated description",
-        "AddressLine1": {
-            "value": "1199 Prince Ave"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Athens"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C092991"
-        },
-        "CustomerName": {
-            "value": "Piedmont Athens Royston Health Campus"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Piedmont Athens - Royston Health Campus - Lightspeed - DI8094 - SN: 314496CN1"
-        },
-        "EquipmentNbr": {
-            "value": "SME00893"
-        },
-        "IPAddress": {},
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "GE Healthcare"
-        },
-        "Modality": {
-            "value": "CT"
-        },
-        "Model": {
-            "value": "LIGHTSPEED"
-        },
-        "ModelDescription": {
-            "value": "LightSpeed"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30606"
-        },
-        "Room": {},
-        "SerialNbr": {
-            "value": "314496CN1"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C007635"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Athens Regional Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001881"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {},
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "da6a8f72-0e21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 155,
+        "rowNumber": 147,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -16655,7 +15779,7 @@ const testData = [
     },
     {
         "id": "007c0ecf-0e21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 156,
+        "rowNumber": 148,
         "note": null,
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -16767,7 +15891,7 @@ const testData = [
     },
     {
         "id": "af33b954-0f21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 157,
+        "rowNumber": 149,
         "note": null,
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -16875,7 +15999,7 @@ const testData = [
     },
     {
         "id": "d465beab-0f21-ea11-8179-d2e12e40ca40",
-        "rowNumber": 158,
+        "rowNumber": 150,
         "note": null,
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -16983,7 +16107,7 @@ const testData = [
     },
     {
         "id": "1aa1bfce-1221-ea11-8179-d2e12e40ca40",
-        "rowNumber": 159,
+        "rowNumber": 151,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -17095,7 +16219,7 @@ const testData = [
     },
     {
         "id": "4aedba4c-395e-ea11-817b-a9605c8569c6",
-        "rowNumber": 160,
+        "rowNumber": 152,
         "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -17205,7 +16329,7 @@ const testData = [
     },
     {
         "id": "684889aa-175f-ea11-817b-a9605c8569c6",
-        "rowNumber": 161,
+        "rowNumber": 153,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -17315,7 +16439,7 @@ const testData = [
     },
     {
         "id": "d4f8b810-1e5f-ea11-817b-a9605c8569c6",
-        "rowNumber": 162,
+        "rowNumber": 154,
         "note": null,
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -17423,7 +16547,7 @@ const testData = [
     },
     {
         "id": "0b0756f2-1e5f-ea11-817b-a9605c8569c6",
-        "rowNumber": 163,
+        "rowNumber": 155,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -17531,7 +16655,7 @@ const testData = [
     },
     {
         "id": "d458e920-215f-ea11-817b-a9605c8569c6",
-        "rowNumber": 164,
+        "rowNumber": 156,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -17639,7 +16763,7 @@ const testData = [
     },
     {
         "id": "cb7a8772-215f-ea11-817b-a9605c8569c6",
-        "rowNumber": 165,
+        "rowNumber": 157,
         "note": null,
         "AddressLine1": {
             "value": "5126 Hospital Dr Ne"
@@ -17747,7 +16871,7 @@ const testData = [
     },
     {
         "id": "00be90a8-285f-ea11-817b-a9605c8569c6",
-        "rowNumber": 166,
+        "rowNumber": 158,
         "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -17855,7 +16979,7 @@ const testData = [
     },
     {
         "id": "3c58d802-9e63-ea11-817b-a9605c8569c6",
-        "rowNumber": 167,
+        "rowNumber": 159,
         "note": null,
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -17963,7 +17087,7 @@ const testData = [
     },
     {
         "id": "1ca2634b-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 168,
+        "rowNumber": 160,
         "note": "",
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -18071,7 +17195,7 @@ const testData = [
     },
     {
         "id": "28a2634b-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 169,
+        "rowNumber": 161,
         "note": "AB 10.12.22 - Changed customer from C007635 to C096215 per Remote and customer request. ",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18179,7 +17303,7 @@ const testData = [
     },
     {
         "id": "251e285c-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 170,
+        "rowNumber": 162,
         "note": "",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18287,7 +17411,7 @@ const testData = [
     },
     {
         "id": "2d1e285c-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 171,
+        "rowNumber": 163,
         "note": "",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18395,7 +17519,7 @@ const testData = [
     },
     {
         "id": "5b370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 172,
+        "rowNumber": 164,
         "note": "",
         "AddressLine1": {
             "value": "2151 W Spring St"
@@ -18503,7 +17627,7 @@ const testData = [
     },
     {
         "id": "67370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 173,
+        "rowNumber": 165,
         "note": "4/21/22 MC- marked not to show on remote website since there are issues with the mag mon, needs GE mag mon replacement, marked Hep to 0 on website as well - so we dont keep getting report that something isn't working. Once working, Joe will notify me and I will mark to show on website again\n\n5/4/22 MC - working, Kirk A changed HEP to 1, Meg marked to show on website on Acumatica",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18611,7 +17735,7 @@ const testData = [
     },
     {
         "id": "73370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 174,
+        "rowNumber": 166,
         "note": "",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18719,7 +17843,7 @@ const testData = [
     },
     {
         "id": "80370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 175,
+        "rowNumber": 167,
         "note": "",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18827,7 +17951,7 @@ const testData = [
     },
     {
         "id": "9b370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 176,
+        "rowNumber": 168,
         "note": "AB 10.12.22 - Changed customer from C007635 to C096215 per Remote and customer request. ",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -18935,7 +18059,7 @@ const testData = [
     },
     {
         "id": "a7370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 177,
+        "rowNumber": 169,
         "note": "Amanda B 9.7.21 - Per Meg C changed location from Athens to SHIP019 and updated description",
         "AddressLine1": {
             "value": "1199 Prince Ave"
@@ -19043,7 +18167,7 @@ const testData = [
     },
     {
         "id": "f2370e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 178,
+        "rowNumber": 170,
         "note": "4/5/22 MC- added room \"Premier Southfield\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)\n\n9/16/22 MC - added FL # 400-191797\nAB 9.27.22 - Changed from DI1095 to DI21-145 per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19164,7 +18288,7 @@ const testData = [
     },
     {
         "id": "0a380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 179,
+        "rowNumber": 171,
         "note": "4/5/22 MC- added room \"Premier Southfield\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)\n\n9/16/22 MC- added FL #\nAB 9.27.22 - Changed from DI1115 to DI21-149  per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19280,7 +18404,7 @@ const testData = [
     },
     {
         "id": "22380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 180,
+        "rowNumber": 172,
         "note": "AB 4.25.22 - Updated description and DI number per customer: \nDI1279 is no longer in our system, so they evidently had to change tags.  Please update.  DI21-143.\n\n9/16/22 MC - added FL # \n",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19396,7 +18520,7 @@ const testData = [
     },
     {
         "id": "2f380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 181,
+        "rowNumber": 173,
         "note": "9/16/22 - MC - added FL # 400-493106\nAB 9.27.22 - Changed from DI1323 to DI21-120 per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19512,7 +18636,7 @@ const testData = [
     },
     {
         "id": "3b380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 182,
+        "rowNumber": 174,
         "note": "9/16/22 MC- added FL #\nAB 9.27.22 - Changed from DI1367 to DI21-165 per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19627,118 +18751,8 @@ const testData = [
         ]
     },
     {
-        "id": "47380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 183,
-        "note": "4/5/22 MC - marked to show on remote website, Joe is installing remote box this week\n\n4/6/22 MC - marked not to show on the remote website, when Joe went he was informed Josh McMoran confirmed with Mike R that this one we replaced with a Signa Artist, DI21-124 at 187 Chastain Rd NW STE13, Kennesaw, GA, 30144.  That new DI # is NOT on the list of 19 they want to add, which is fine. If they ever do want to add it, they just have to get Kevin H all the info. I let Kevin Hogan know that this SME01114 was removed",
-        "AddressLine1": {
-            "value": "1968 Peachtree Road NW"
-        },
-        "AddressLine2": {
-            "value": "Biomed/Building 35"
-        },
-        "City": {
-            "value": "Atlanta"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C091405"
-        },
-        "CustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "CustomerUniqueID": {
-            "value": "DI7075"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Atlanta DI7075"
-        },
-        "EquipmentNbr": {
-            "value": "SME01114"
-        },
-        "IPAddress": {
-            "value": "10.4.9.192"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "GE Healthcare"
-        },
-        "Modality": {
-            "value": "MRI"
-        },
-        "Model": {
-            "value": "SIGNAEXCITE1.5T"
-        },
-        "ModelDescription": {
-            "value": "Signa Excite 1.5T"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30309"
-        },
-        "Room": {
-            "value": "PPGMAR_MRI"
-        },
-        "SerialNbr": {
-            "value": "R687"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C091405"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Healthcare - Peachtree"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001885"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "53380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 184,
+        "rowNumber": 175,
         "note": "4/5/22 MC - marked to show on remote website, Joe is installing remote box this week\n4/25/22 MC - marked NOT to show on the remote website and marked HEP 0, since there is a MSUP issue Joe is still working through, once it is working he will let me know so I can change back\n5/3/22 MC - marked to show on the website and changed HEP to 1 since issue is resloved\n\n9/16/22 MC- added FL #\nAB 9.27.22 - Changed from DI7139 to DI21-181 per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19854,7 +18868,7 @@ const testData = [
     },
     {
         "id": "5f380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 185,
+        "rowNumber": 176,
         "note": "9/16/22 MC- added Fl # 400-535181\n\n10/7/22 MC- marked to show on website per Kirk Allgood",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -19970,7 +18984,7 @@ const testData = [
     },
     {
         "id": "6b380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 186,
+        "rowNumber": 177,
         "note": "",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -20080,7 +19094,7 @@ const testData = [
     },
     {
         "id": "77380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 187,
+        "rowNumber": 178,
         "note": "9/16/22 MC - added FL #\nAB 9.27.22 - Changed from DI7350 to DI21-173 Brookhaven per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -20196,7 +19210,7 @@ const testData = [
     },
     {
         "id": "8f380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 188,
+        "rowNumber": 179,
         "note": "",
         "AddressLine1": {
             "value": "710 Center St"
@@ -20304,7 +19318,7 @@ const testData = [
     },
     {
         "id": "9b380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 189,
+        "rowNumber": 180,
         "note": "",
         "AddressLine1": {
             "value": "710 Center St"
@@ -20404,7 +19418,7 @@ const testData = [
     },
     {
         "id": "a7380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 190,
+        "rowNumber": 181,
         "note": "",
         "AddressLine1": {
             "value": "710 Center St"
@@ -20512,7 +19526,7 @@ const testData = [
     },
     {
         "id": "b3380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 191,
+        "rowNumber": 182,
         "note": "",
         "AddressLine1": {
             "value": "100 Frist Ct"
@@ -20619,116 +19633,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "bf380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 192,
-        "note": "2/2/22 - MC- was marked not to show on remote website like it should be, but is still showing on the website - (we have had this issue with this one before and I have reset in the past, but since it came up again, I reset again, marked to show, saved, marked not to show, saved) walter has said that as avante users we may still see machines on the remote website that the customer wouldnt with their log in even though they are marked not to show on the website.",
-        "AddressLine1": {
-            "value": "1255 Highway 54 W"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Fayetteville"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C000367"
-        },
-        "CustomerName": {
-            "value": "Piedmont Fayette Hospital"
-        },
-        "CustomerUniqueID": {
-            "value": "DI2047"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Fayette DI2047"
-        },
-        "EquipmentNbr": {
-            "value": "SME01124"
-        },
-        "IPAddress": {
-            "value": "10.102.1.30"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "MRI"
-        },
-        "Model": {
-            "value": "SYMPHONY 1.5T"
-        },
-        "ModelDescription": {
-            "value": "Symphony 1.5T"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30214"
-        },
-        "Room": {
-            "value": "PFHMRI001"
-        },
-        "SerialNbr": {
-            "value": "22673"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C000367"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Fayette Hospital"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001883"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "cb380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 193,
+        "rowNumber": 183,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -20836,7 +19742,7 @@ const testData = [
     },
     {
         "id": "d7380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 194,
+        "rowNumber": 184,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -20944,7 +19850,7 @@ const testData = [
     },
     {
         "id": "e3380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 195,
+        "rowNumber": 185,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -21052,7 +19958,7 @@ const testData = [
     },
     {
         "id": "ef380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 196,
+        "rowNumber": 186,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -21160,7 +20066,7 @@ const testData = [
     },
     {
         "id": "fc380e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 197,
+        "rowNumber": 187,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -21268,7 +20174,7 @@ const testData = [
     },
     {
         "id": "08390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 198,
+        "rowNumber": 188,
         "note": "",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
@@ -21376,7 +20282,7 @@ const testData = [
     },
     {
         "id": "14390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 199,
+        "rowNumber": 189,
         "note": "1/10/22 - marked to show on the remote website per Joe Anello this one was installed 12/8 (he had it mixed up with another, marked that one to show now)\n\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -21484,7 +20390,7 @@ const testData = [
     },
     {
         "id": "14390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 200,
+        "rowNumber": 190,
         "note": "1/10/22 - marked to show on the remote website per Joe Anello this one was installed 12/8 (he had it mixed up with another, marked that one to show now)\n\n8.1.22 - Changed customer from C108246 to C000247 per service team request ",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -21592,7 +20498,7 @@ const testData = [
     },
     {
         "id": "20390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 201,
+        "rowNumber": 191,
         "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -21700,7 +20606,7 @@ const testData = [
     },
     {
         "id": "2c390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 202,
+        "rowNumber": 192,
         "note": "4/5/22 MC - marked to show on remote website, Joe is installing remote box this week\nAB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -21807,116 +20713,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "38390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 203,
-        "note": "1/5/2022 - MC - marked to show on remote website\n\nAB 6.13.22 - Changed customer from C092969 (duplicate) to C007794\nMC 7/26/22 - marked not to show on website, removed per Josh M, sent email to remote and contracts and Kevin H",
-        "AddressLine1": {
-            "value": "1266 Highway 515 S"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Jasper"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0137"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Piedmont HealthCare"
-        },
-        "CustomerContractID": {
-            "value": "PIEDMONT"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C007794"
-        },
-        "CustomerName": {
-            "value": "Piedmont Mountainside Hospital"
-        },
-        "CustomerUniqueID": {
-            "value": "DI7108"
-        },
-        "EquipmentDescription": {
-            "value": "Piedmont Mountainside DI7108"
-        },
-        "EquipmentNbr": {
-            "value": "SME01134"
-        },
-        "IPAddress": {
-            "value": "10.3.50.135"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "GE Healthcare"
-        },
-        "Modality": {
-            "value": "MRI"
-        },
-        "Model": {
-            "value": "SIGNAEXCITE1.5T"
-        },
-        "ModelDescription": {
-            "value": "Signa Excite 1.5T"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "30143"
-        },
-        "Room": {
-            "value": "ODMMRI"
-        },
-        "SerialNbr": {
-            "value": "25-7266"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C007794"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Piedmont Mountainside Hospital"
-        },
-        "ServiceContractID": {
-            "value": "FCT00001886"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "GA"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "44390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 204,
+        "rowNumber": 193,
         "note": "Amanda B 9.13.21 - Changed location to SHIP028 due to Meg's request",
         "AddressLine1": {
             "value": "15 Reinhardt College Pkwy"
@@ -22026,7 +20824,7 @@ const testData = [
     },
     {
         "id": "50390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 205,
+        "rowNumber": 194,
         "note": "",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -22134,7 +20932,7 @@ const testData = [
     },
     {
         "id": "5c390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 206,
+        "rowNumber": 195,
         "note": "",
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -22242,7 +21040,7 @@ const testData = [
     },
     {
         "id": "69390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 207,
+        "rowNumber": 196,
         "note": "DI6029 is currently linked to 2014 Washington St Newton Falls, MA\nthis is incorrect and should be linked to Newton, GA\nConfirmed w/ customer and emailed Amanda to update.\nAB 6.10.22 - changed customer to C001779\n6/21/22 MC- marked to show on the website for when the feed is turned back on, emailed remote tech to manually make show for customer. Per Kirk A is ready.",
         "AddressLine1": {
             "value": "5126 Hospital Dr Ne"
@@ -22350,7 +21148,7 @@ const testData = [
     },
     {
         "id": "75390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 208,
+        "rowNumber": 197,
         "note": "",
         "AddressLine1": {
             "value": "5126 Hospital Dr Ne"
@@ -22458,7 +21256,7 @@ const testData = [
     },
     {
         "id": "81390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 209,
+        "rowNumber": 198,
         "note": "4/5/22 MC- added room \"Premier Southfield\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -22572,7 +21370,7 @@ const testData = [
     },
     {
         "id": "8d390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 210,
+        "rowNumber": 199,
         "note": "4/5/22 MC- added room \"Premier Southfield\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "1412 Milstead Ave NE"
@@ -22686,7 +21484,7 @@ const testData = [
     },
     {
         "id": "9a390e7f-b663-ea11-817b-a9605c8569c6",
-        "rowNumber": 211,
+        "rowNumber": 200,
         "note": "Air Products Account ID: CP270186",
         "AddressLine1": {
             "value": "2151 W Spring St"
@@ -22792,7 +21590,7 @@ const testData = [
     },
     {
         "id": "1a5724d5-2969-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 212,
+        "rowNumber": 201,
         "note": null,
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -22900,7 +21698,7 @@ const testData = [
     },
     {
         "id": "db7b07cd-3169-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 213,
+        "rowNumber": 202,
         "note": "",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -23010,7 +21808,7 @@ const testData = [
     },
     {
         "id": "946de255-3269-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 214,
+        "rowNumber": 203,
         "note": null,
         "AddressLine1": {
             "value": "200 Westage Business Ctr Dr."
@@ -23114,7 +21912,7 @@ const testData = [
     },
     {
         "id": "1a97c4ff-3369-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 215,
+        "rowNumber": 204,
         "note": null,
         "AddressLine1": {
             "value": "670 Stoneleigh Ave"
@@ -23216,7 +22014,7 @@ const testData = [
     },
     {
         "id": "78cc141e-e269-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 216,
+        "rowNumber": 205,
         "note": null,
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -23249,9 +22047,7 @@ const testData = [
         "CustomerName": {
             "value": "Vassar Brothers Medical Center"
         },
-        "CustomerUniqueID": {
-            "value": "3134843"
-        },
+        "CustomerUniqueID": {},
         "EquipmentDescription": {
             "value": "Remi Vassar Brothers SN HM0187"
         },
@@ -23259,9 +22055,7 @@ const testData = [
             "value": "SME01168"
         },
         "IPAddress": {},
-        "LastPMCompleted": {
-            "value": "2021-04-12T00:00:00+00:00"
-        },
+        "LastPMCompleted": {},
         "LegacyEquipmentID": {},
         "LocationID": {
             "value": "MAIN"
@@ -23281,9 +22075,7 @@ const testData = [
         "ModelDescription": {
             "value": "Optima 450W 1.5T"
         },
-        "PMFrequencyinmonths": {
-            "value": "3"
-        },
+        "PMFrequencyinmonths": {},
         "PostalCode": {
             "value": "12601"
         },
@@ -23309,9 +22101,7 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
+        "ShowonRemoteServicesWebsite": {},
         "SoftwareRelease": {},
         "State": {
             "value": "NY"
@@ -23324,7 +22114,7 @@ const testData = [
     },
     {
         "id": "16a836c2-e469-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 217,
+        "rowNumber": 206,
         "note": "POC for scheduling - Caroline 518-755-3877",
         "AddressLine1": {
             "value": "45 Reade Pl"
@@ -23432,7 +22222,7 @@ const testData = [
     },
     {
         "id": "b2f337bf-e569-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 218,
+        "rowNumber": 207,
         "note": null,
         "AddressLine1": {
             "value": "1 Columbia St"
@@ -23534,7 +22324,7 @@ const testData = [
     },
     {
         "id": "2e214a0a-e669-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 219,
+        "rowNumber": 208,
         "note": "",
         "AddressLine1": {
             "value": "200 Westage Business Ctr Dr."
@@ -23638,7 +22428,7 @@ const testData = [
     },
     {
         "id": "ecb0804b-e669-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 220,
+        "rowNumber": 209,
         "note": "",
         "AddressLine1": {
             "value": "6511 Spring Brook Ave"
@@ -23746,7 +22536,7 @@ const testData = [
     },
     {
         "id": "9c865b5f-af6a-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 221,
+        "rowNumber": 210,
         "note": "4/15/22 MC - added back IP address 10.60.70.33 per Kirk Allgood\n4/18/22 MC - marked to show on the website since noticed it was marked on the 15th and it shows an active contract",
         "AddressLine1": {
             "value": "101 Wilson Drive"
@@ -23850,7 +22640,7 @@ const testData = [
     },
     {
         "id": "0070356c-d075-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 222,
+        "rowNumber": 211,
         "note": null,
         "AddressLine1": {
             "value": "5801 Oakbend Trail"
@@ -23948,7 +22738,7 @@ const testData = [
     },
     {
         "id": "4fea9fa7-a879-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 223,
+        "rowNumber": 212,
         "note": "Amanda B 10/23 - Updated Equipment due to contract ",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -24056,7 +22846,7 @@ const testData = [
     },
     {
         "id": "f81ca236-327f-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 224,
+        "rowNumber": 213,
         "note": "Amanda 6.10.21 - Updated description\nAmanda B 6.24.21 - Updated parent to reflect contract\n\n This access code has been changed to 0483. 8/25/22 - SJM ",
         "AddressLine1": {
             "value": "301 E Evans St"
@@ -24158,7 +22948,7 @@ const testData = [
     },
     {
         "id": "7f09863b-337f-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 225,
+        "rowNumber": 214,
         "note": "Amanda B 6.10.21 - Updated description\n\n This access code has been changed to 0483. 8/25/22 - SJM ",
         "AddressLine1": {
             "value": "483 N Semoran Blvd"
@@ -24262,7 +23052,7 @@ const testData = [
     },
     {
         "id": "8bc7d286-ec99-ea11-817c-8cbf77a7ab76",
-        "rowNumber": 226,
+        "rowNumber": 215,
         "note": null,
         "AddressLine1": {
             "value": "1700 Esplanade"
@@ -24362,7 +23152,7 @@ const testData = [
     },
     {
         "id": "e260ae76-aca5-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 227,
+        "rowNumber": 216,
         "note": "AB 5.20.22 - Update location for contract ",
         "AddressLine1": {
             "value": "900 Route 70 E"
@@ -24456,7 +23246,7 @@ const testData = [
     },
     {
         "id": "00cb06d9-d8b0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 228,
+        "rowNumber": 217,
         "note": "AB 2.17.22 - Updated Description\nAB 7.7.22 - Unchecked \"Show on Remote\" per Joe Anello.\nMC 7/18/22 marked to show on the website again per Joe Anello",
         "AddressLine1": {
             "value": "540 Ih 45 S"
@@ -24572,7 +23362,7 @@ const testData = [
     },
     {
         "id": "d5c702ff-d8b0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 229,
+        "rowNumber": 218,
         "note": "Amanda B 11.3 - updated site ID per engineer's note on PM\n4/21/22 MC - re-added IP addresss 172.22.21.220 per Kirk Allgood, it had somehow disappeared and marked to show on remote again, and also put the Unique ID again, wasnt sure which was correct, so looked back at PM sheets and I put both the one we had and the other one from Oct 2021\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -24682,7 +23472,7 @@ const testData = [
     },
     {
         "id": "5b5be7ab-d9b0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 230,
+        "rowNumber": 219,
         "note": "AB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -24802,7 +23592,7 @@ const testData = [
     },
     {
         "id": "6cd1c6d3-d9b0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 231,
+        "rowNumber": 220,
         "note": "3/3/22 MC- added the IP address 172.22.21.242 back in and also marked to show on website again, per Kirk, for some reason these settings had disappeared \nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -24912,7 +23702,7 @@ const testData = [
     },
     {
         "id": "ccdc68ed-d9b0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 232,
+        "rowNumber": 221,
         "note": "5/12/22 MC - re-added IP 172.18.21.239 per Kirk Allgood because disappeared somehow, also marked to show on the website again\nAB 6.13.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -25022,7 +23812,7 @@ const testData = [
     },
     {
         "id": "d5aac217-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 233,
+        "rowNumber": 222,
         "note": "5/12/22 MC - re-added IP 172.18.21.237 per Kirk Allgood, had disappeared somehow, and also marked to show on the website again\nAB 6.13.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -25132,7 +23922,7 @@ const testData = [
     },
     {
         "id": "d1550836-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 234,
+        "rowNumber": 223,
         "note": null,
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -25246,8 +24036,8 @@ const testData = [
     },
     {
         "id": "5f4a6266-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 235,
-        "note": "AB 9.14.22  - Updated information based on site survey",
+        "rowNumber": 224,
+        "note": "AB 9.14.22  - Updated information based on site survey\n\nSN 05998/ ID 64195267 Code 141162",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
         },
@@ -25360,7 +24150,7 @@ const testData = [
     },
     {
         "id": "d4aca485-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 236,
+        "rowNumber": 225,
         "note": "AB 7.7.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -25474,7 +24264,7 @@ const testData = [
     },
     {
         "id": "e6983ca4-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 237,
+        "rowNumber": 226,
         "note": "AB 6.13.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey. ",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -25584,7 +24374,7 @@ const testData = [
     },
     {
         "id": "b08ce4cf-dab0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 238,
+        "rowNumber": 227,
         "note": "3/4/22 MC - added back IP 172.22.21.233 per Kirk Allgood\n\n4/7/22 - change IP 172.22.21.233 to 172.19.13.239 per Kirk Allgood\nAB 6.13.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "636 Del Prado Boulevard"
@@ -25694,7 +24484,7 @@ const testData = [
     },
     {
         "id": "1af00c05-dbb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 239,
+        "rowNumber": 228,
         "note": null,
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -25804,7 +24594,7 @@ const testData = [
     },
     {
         "id": "0d37645d-dbb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 240,
+        "rowNumber": 229,
         "note": "AB 7.7.22 - Updated SN ",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -25914,7 +24704,7 @@ const testData = [
     },
     {
         "id": "a91bf77d-dbb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 241,
+        "rowNumber": 230,
         "note": "3/7/22 MC - added back IP 172.18.47.206 per Kirk Allgood, since it disappeared for some reason",
         "AddressLine1": {
             "value": "16281 Bass Rd"
@@ -26020,7 +24810,7 @@ const testData = [
     },
     {
         "id": "e760ff64-dcb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 242,
+        "rowNumber": 231,
         "note": "3/22/22 MC - added IP address 172.17.17.229 back in, since it disappeared somehow , but was on the mirrored equip\n\n5/17/22 MC - re-added IP address 172.17.17.229 per Kirk Allgood and marked to show on website again since disappeared somehow\nAB 7.7.22 - Updated Site ID\nAB 8.8.22 - Changed customer as C009517 is a duplicate per accounting - use C027932\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "2776 Cleveland Ave"
@@ -26130,7 +24920,7 @@ const testData = [
     },
     {
         "id": "49ef7885-dcb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 243,
+        "rowNumber": 232,
         "note": null,
         "AddressLine1": {
             "value": "2441 Surfside Blvd"
@@ -26242,7 +25032,7 @@ const testData = [
     },
     {
         "id": "249e88b4-dcb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 244,
+        "rowNumber": 233,
         "note": "UPS Asset # 148639 and #148638\n\n5/13/22 MC - re-added IP address 172.20.51.247 per Kirk Allgood, somehow disappeared. also marked to show on the webstie again\n\nAB 7.7.22 - Updated Site ID",
         "AddressLine1": {
             "value": "7331 College Pkwy"
@@ -26348,7 +25138,7 @@ const testData = [
     },
     {
         "id": "63384fd5-dcb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 245,
+        "rowNumber": 234,
         "note": "AB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -26458,7 +25248,7 @@ const testData = [
     },
     {
         "id": "b6910a04-ddb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 246,
+        "rowNumber": 235,
         "note": "4/18/22 MC - added back IP address 172.28.39.244 per Kirk Allgood had disappeared somehow, and marked to show on the website\n\nAB 7.7.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -26568,7 +25358,7 @@ const testData = [
     },
     {
         "id": "771d8b94-ddb0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 247,
+        "rowNumber": 236,
         "note": "AG 2/26: Updated IP address from 172.19.17.219 to 10.132.7.211 per Dustin's email\n\n3/8/22 MC- added back IP address 10.132.7.211 per Kirk, it had disappeared\n\nAB 7.7.22 - Updated Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "636 Del Prado Boulevard"
@@ -26676,7 +25466,7 @@ const testData = [
     },
     {
         "id": "cd7dd29b-b7b4-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 248,
+        "rowNumber": 237,
         "note": null,
         "AddressLine1": {
             "value": "670 Stoneleigh Ave"
@@ -26780,7 +25570,7 @@ const testData = [
     },
     {
         "id": "4cad03c2-0bba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 249,
+        "rowNumber": 238,
         "note": "AB 6.23.21- Updated IP address\n\n4/18/22 MC - added back IP address 172.22.23.235 per Kirk Allgood, had somehow disappeared, and marked to show on website\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -26888,7 +25678,7 @@ const testData = [
     },
     {
         "id": "37f98ad8-0cba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 250,
+        "rowNumber": 239,
         "note": null,
         "AddressLine1": {
             "value": "8960 Colonial Center Dr"
@@ -26996,7 +25786,7 @@ const testData = [
     },
     {
         "id": "a039b369-0eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 251,
+        "rowNumber": 240,
         "note": "",
         "AddressLine1": {
             "value": "23450 Via Coconut Pt"
@@ -27104,7 +25894,7 @@ const testData = [
     },
     {
         "id": "b2c79fdc-1aba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 252,
+        "rowNumber": 241,
         "note": "AB 7.7.22 - Updated Site ID",
         "AddressLine1": {
             "value": "2441 Surfside Blvd"
@@ -27206,7 +25996,7 @@ const testData = [
     },
     {
         "id": "95429449-1bba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 253,
+        "rowNumber": 242,
         "note": "AB 9.14.22 - Updated information from Site Survey",
         "AddressLine1": {
             "value": "636 Del Prado Boulevard"
@@ -27316,7 +26106,7 @@ const testData = [
     },
     {
         "id": "c5a8fe7b-1bba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 254,
+        "rowNumber": 243,
         "note": "AB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "636 Del Prado Boulevard"
@@ -27426,7 +26216,7 @@ const testData = [
     },
     {
         "id": "244d38e4-1bba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 255,
+        "rowNumber": 244,
         "note": "4/18/22 MC - added back IP address 172.22.23.200 per Kirk Allgood had disappeared somehow, and marked to show on the website\n\nAB 7.7.22 - Updated Site ID\nAB 9.14.22 - Updated information from site visit. ",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -27536,7 +26326,7 @@ const testData = [
     },
     {
         "id": "49292a09-1eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 256,
+        "rowNumber": 245,
         "note": "4/15/22 MC - added back IP address 172.17.17.206 per Kirk Allgood\nAB 8.8.22 - Changed customer as C009517 is a duplicate per accounting - use C027932\nAB 9.14.22 - Updated information based on site survey",
         "AddressLine1": {
             "value": "2776 Cleveland Ave"
@@ -27642,7 +26432,7 @@ const testData = [
     },
     {
         "id": "86e80148-1eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 257,
+        "rowNumber": 246,
         "note": "4/18/22 MC - added back IP address 172.17.31.213 per Kirk Allgood had somehow disappeared, and marked to show on the website\n\nAB 7.7.22 - Updated Site ID\n\nAB 8.8.22 - Changed customer as C009517 is a duplicate per accounting - use C027932\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "2776 Cleveland Ave"
@@ -27752,7 +26542,7 @@ const testData = [
     },
     {
         "id": "b420d9a2-1eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 258,
+        "rowNumber": 247,
         "note": "5/12/22 MC - updated IP address from 172.18.53.200 to 10.136.23.201 per Michael Deuel \n\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -27785,18 +26575,14 @@ const testData = [
         "CustomerName": {
             "value": "HealthPark Medical Center"
         },
-        "CustomerUniqueID": {
-            "value": "135393"
-        },
+        "CustomerUniqueID": {},
         "EquipmentDescription": {
             "value": "HealthPark Medical Center - GE Discovery 750 HD - Room: Cath Scan Room 1 - SN: 448014CN1"
         },
         "EquipmentNbr": {
             "value": "SME01433"
         },
-        "IPAddress": {
-            "value": "10.136.23.201"
-        },
+        "IPAddress": {},
         "LastPMCompleted": {},
         "LegacyEquipmentID": {},
         "LocationID": {
@@ -27821,9 +26607,7 @@ const testData = [
         "PostalCode": {
             "value": "33908"
         },
-        "Room": {
-            "value": "Cath Scan Room 1"
-        },
+        "Room": {},
         "SerialNbr": {
             "value": "448014CN1"
         },
@@ -27846,11 +26630,9 @@ const testData = [
             "value": "Active"
         },
         "ShowonRemoteServicesWebsite": {
-            "value": true
+            "value": false
         },
-        "SoftwareRelease": {
-            "value": "16MW34.4"
-        },
+        "SoftwareRelease": {},
         "State": {
             "value": "FL"
         },
@@ -27862,7 +26644,7 @@ const testData = [
     },
     {
         "id": "28ca9091-2cba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 259,
+        "rowNumber": 248,
         "note": null,
         "AddressLine1": {
             "value": "16281 Bass Rd"
@@ -27972,7 +26754,7 @@ const testData = [
     },
     {
         "id": "0a53ee30-2dba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 260,
+        "rowNumber": 249,
         "note": "5/16/22 MC - this had a DUP IP address , same as 01435 - I deleted it on here and emailed Kiyon and Tim G to get us the IP address the next time they go",
         "AddressLine1": {
             "value": "12600 Creekside Ln"
@@ -28078,7 +26860,7 @@ const testData = [
     },
     {
         "id": "d05769a3-2dba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 261,
+        "rowNumber": 250,
         "note": "AB 7.7.22 - Updated Site ID\n8/16/22  MC- added back IP 172.22.23.222 and marked to show on website because it had disappeared\nAB 9.14.22 - Updated information based on site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -28112,7 +26894,7 @@ const testData = [
             "value": "Gulf Coast Medical Center"
         },
         "CustomerUniqueID": {
-            "value": "Asset 136780"
+            "value": "136780"
         },
         "EquipmentDescription": {
             "value": "Gulf Coast Medical Center - Sensation 40 - SN: 57302 - Room: CT1"
@@ -28188,7 +26970,7 @@ const testData = [
     },
     {
         "id": "4ad87024-2eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 262,
+        "rowNumber": 251,
         "note": "5/12/22 MC - updated IP to 10.136.23.202  per Michael Deuel, when I came on the IP address was missing completely. Added IP Michael said and marked to show on the website again as well, as that was not marked either\n\n5/16/22 MC - added IP 10.136.23.202 and marked to show on website again because per Dustin and Kirk Allgood, these were missing - again\n\nAB 7.7.22 - Updated Site ID\nAB 9.14.22 - Updated information based on site survey  - ORIGINAL IP: 172.18.53.210",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -28298,7 +27080,7 @@ const testData = [
     },
     {
         "id": "f5954a5c-2eba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 263,
+        "rowNumber": 252,
         "note": "33vxy - tbx41",
         "AddressLine1": {
             "value": "23450 Via Coconut Pt"
@@ -28402,7 +27184,7 @@ const testData = [
     },
     {
         "id": "c147210c-31ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 264,
+        "rowNumber": 253,
         "note": "AB 6.13.22 - Updated Site ID\nAB 9.12.22 - Updated IP Address per Scott W. \nAB 9.14.22 - Updated information from site survey. ",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -28512,7 +27294,7 @@ const testData = [
     },
     {
         "id": "ae727f8a-31ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 265,
+        "rowNumber": 254,
         "note": "made note that it was a biplane per engineers request in description\n\n5/25/2021 sz\n\nAB 6.13.22 - Updated SN and Site ID\nAB 9.14.22 - Updated information from site survey",
         "AddressLine1": {
             "value": "13681 Doctors Way"
@@ -28622,7 +27404,7 @@ const testData = [
     },
     {
         "id": "0cd138bd-31ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 266,
+        "rowNumber": 255,
         "note": "Amanda B 4.12.12 - Updated description of equipment to correct format\nAB 9.14.22 - Updated information from site survey\n",
         "AddressLine1": {
             "value": "636 Del Prado Boulevard"
@@ -28730,7 +27512,7 @@ const testData = [
     },
     {
         "id": "80b6a8f1-31ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 267,
+        "rowNumber": 256,
         "note": "Amanda B 8.18.21 - Updated IP address per Kirk.\n8/9/22 MC - 8/8/22 Per Sam Webster, IP address has changed from 172.18.53.208 to 10.136.23.207 and marked to show on website for customer again because it was unchecked (told Kirk)\nAB 9.14.22 - Updated information based on site survey",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -28844,7 +27626,7 @@ const testData = [
     },
     {
         "id": "8060151f-32ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 268,
+        "rowNumber": 257,
         "note": "AB 7.7.22 - Updated Site ID\nAB 8.8.22 - Changed customer as C009517 is a duplicate per accounting - use C027932\nAB 9.14.22 - Updated information based on site survey",
         "AddressLine1": {
             "value": "2776 Cleveland Ave"
@@ -28954,7 +27736,7 @@ const testData = [
     },
     {
         "id": "a5da1780-32ba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 269,
+        "rowNumber": 258,
         "note": "1/27/22 MC - changed IP address from 172.18.55.228  to 172.18.53.228 per Kirk Allgood - Per Scott Whaley email\nAdded FL#400-559085 to site ID in attributes SWhaley 2/16/2022\n\n8/8/22 MC - IP address change per Sam Webster from 172.18.53.228 to 10.136.23.209\nAB 9.14.2 - Updated information based on site survey ",
         "AddressLine1": {
             "value": "9981 S Healthpark Dr"
@@ -29064,7 +27846,7 @@ const testData = [
     },
     {
         "id": "e70f4ecb-fbba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 270,
+        "rowNumber": 259,
         "note": "6/10/22 - added back IP 172.27.51.246 and marked to show on website again per Dustin, emailed remote tech since freeze on download\n\n8/10/22 AS:  Updated correction to S/N from 30011 to 300111 per Crothal's notification",
         "AddressLine1": {
             "value": "1800 W Charleston Blvd"
@@ -29168,7 +27950,7 @@ const testData = [
     },
     {
         "id": "c0d0e557-fcba-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 271,
+        "rowNumber": 260,
         "note": "AB 8.17.21 - Updated SN per Kaya's request.\n6/10/22 MC- added back IP 172.27.55.222 per dustin had disappeared as well as marked to show on website but had to email remote tech since freeze on download",
         "AddressLine1": {
             "value": "1800 W Charleston Blvd"
@@ -29274,7 +28056,7 @@ const testData = [
     },
     {
         "id": "f226ad72-90bf-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 272,
+        "rowNumber": 261,
         "note": null,
         "AddressLine1": {
             "value": "923 Dana Drive"
@@ -29376,7 +28158,7 @@ const testData = [
     },
     {
         "id": "f5b74f15-5fc0-ea11-817d-fadf9b67cb3d",
-        "rowNumber": 273,
+        "rowNumber": 262,
         "note": "",
         "AddressLine1": {
             "value": "1661 Mission St"
@@ -29478,7 +28260,7 @@ const testData = [
     },
     {
         "id": "7053c75a-54cc-ea11-817e-fabae30ee089",
-        "rowNumber": 274,
+        "rowNumber": 263,
         "note": "AB 2.28.22 - Updated description to fit formatting",
         "AddressLine1": {
             "value": "129 Glover Ave"
@@ -29578,7 +28360,7 @@ const testData = [
     },
     {
         "id": "d51020d2-13d0-ea11-817e-fabae30ee089",
-        "rowNumber": 275,
+        "rowNumber": 264,
         "note": null,
         "AddressLine1": {
             "value": "8791 Conference Drive"
@@ -29682,8 +28464,8 @@ const testData = [
     },
     {
         "id": "029925d7-3bd3-ea11-817e-fabae30ee089",
-        "rowNumber": 276,
-        "note": null,
+        "rowNumber": 265,
+        "note": "10.26.22 POC: benjamin.brown@crothall.com;clifford.springsteen@crothall.com; PAP",
         "AddressLine1": {
             "value": "4200 Sun N Lake Blvd"
         },
@@ -29716,10 +28498,10 @@ const testData = [
             "value": "AdventHealth Sebring"
         },
         "CustomerUniqueID": {
-            "value": "1447943"
+            "value": "1666"
         },
         "EquipmentDescription": {
-            "value": "Crothall Advent Health Sebring Cath Lab 4"
+            "value": "Crothall AdventHealth Sebring - FD20 Cath Lab 4"
         },
         "EquipmentNbr": {
             "value": "SME01510"
@@ -29749,9 +28531,11 @@ const testData = [
         "PostalCode": {
             "value": "33872"
         },
-        "Room": {},
+        "Room": {
+            "value": "Cath Lab 4"
+        },
         "SerialNbr": {
-            "value": "001522 / 1666"
+            "value": "1666"
         },
         "ServiceContractCustomerID": {
             "value": "C001602"
@@ -29786,7 +28570,7 @@ const testData = [
     },
     {
         "id": "708ea92f-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 277,
+        "rowNumber": 266,
         "note": "",
         "AddressLine1": {
             "value": "13530 Michigan Ave"
@@ -29888,7 +28672,7 @@ const testData = [
     },
     {
         "id": "8a8ea92f-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 278,
+        "rowNumber": 267,
         "note": "",
         "AddressLine1": {
             "value": "29001 Cedar Rd, Ste 100"
@@ -29988,7 +28772,7 @@ const testData = [
     },
     {
         "id": "1190a92f-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 279,
+        "rowNumber": 268,
         "note": "8/5/21: Added legacy ID back in to attribute field.\nLocation: Munston Healthcare 1100 East Michigan Ave Grayling MI 49738",
         "AddressLine1": {
             "value": "123 NO SHIP"
@@ -30084,7 +28868,7 @@ const testData = [
     },
     {
         "id": "2b90a92f-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 280,
+        "rowNumber": 269,
         "note": "8/5/21: Added legacy ID back in to attribute field.",
         "AddressLine1": {
             "value": "1400 Old S Telegraph Rd"
@@ -30186,7 +28970,7 @@ const testData = [
     },
     {
         "id": "6567ba35-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 281,
+        "rowNumber": 270,
         "note": "",
         "AddressLine1": {
             "value": "950 W. Wooster St"
@@ -30290,7 +29074,7 @@ const testData = [
     },
     {
         "id": "6a68ba35-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 282,
+        "rowNumber": 271,
         "note": "5/4/2022 Location 1 - Mclaren- McComb Hospital at Shelby - 8180 26 mile Road, Shelby Township, MI 48316 \n5/5/2022 Location 2 - Lenox (Bay River) is at 36267 26 Mile Road, Lenox, MI, 48048\n5/31/22 Location 3 - Ear Nose and Throat Specialist 1501 S Center Road (bldg B) Burton, MI 48509",
         "AddressLine1": {
             "value": "20905 Greenfield Rd, Ste 105"
@@ -30394,7 +29178,7 @@ const testData = [
     },
     {
         "id": "8568ba35-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 283,
+        "rowNumber": 272,
         "note": "8/5/21: Added legacy ID back in to attribute field.\n5/10 Mobile Location: Adams Regional Medical Ctr 230 Medical Center Dr, Seaman, OH 45679. PAP\n6/6 location - Lakeland Community Hospital 42024 Alabama 195, Haleyville AL 35565. PAP",
         "AddressLine1": {
             "value": "123 NO SHIP"
@@ -30492,7 +29276,7 @@ const testData = [
     },
     {
         "id": "9f68ba35-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 284,
+        "rowNumber": 273,
         "note": "8/5/21: Added legacy ID back in to attribute field.\n\nAB 8.31.22 - LOCATED:  Washington Regional MC 749 Roxy Reese Rd Plymoth, NC 27962\n\nPer Ashley Mann at the site - This mobile is located - Washington Regional MC  at 958 US-64Plymouth, NC 27962 SJM 9/21/22",
         "AddressLine1": {
             "value": "123 NO SHIP"
@@ -30594,7 +29378,7 @@ const testData = [
     },
     {
         "id": "0d86b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 285,
+        "rowNumber": 274,
         "note": "",
         "AddressLine1": {
             "value": "4600 Investment Dr, Ste 300"
@@ -30698,7 +29482,7 @@ const testData = [
     },
     {
         "id": "c386b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 286,
+        "rowNumber": 275,
         "note": "",
         "AddressLine1": {
             "value": "1540 Lake Lansing Rd, Ste 107"
@@ -30804,7 +29588,7 @@ const testData = [
     },
     {
         "id": "de86b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 287,
+        "rowNumber": 276,
         "note": "",
         "AddressLine1": {
             "value": "416 Connable Ave"
@@ -30910,7 +29694,7 @@ const testData = [
     },
     {
         "id": "c887b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 288,
+        "rowNumber": 277,
         "note": "AB 8.6.21 - Changed the Location name per customer request. ",
         "AddressLine1": {
             "value": "44200 Woodward Ave"
@@ -31014,7 +29798,7 @@ const testData = [
     },
     {
         "id": "4a88b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 289,
+        "rowNumber": 278,
         "note": "for Support call Christian Masullo (856) 298-9614 and email case christian.masullo@hostlabsllc.com. PAP\n9/29 Per Amy B. Novi Surgery is not affiliated with the Michigan Head and Spine location - they are at the same address, but different suite numbers. It looks like this equipment record got linked to the wrong customer account and we should have created an account for Michigan Head and Spine C009620.\nPAP corrected Bill to on this invoice for PM007302, Amanda will make sure the contract is set up on right customer. PAP\n9.30.22 - AB changed customer from C001131 to C110353 per accounting request ",
         "AddressLine1": {
             "value": "25500 Meadowbrook Rd, Ste 250"
@@ -31047,9 +29831,7 @@ const testData = [
         "CustomerName": {
             "value": "Meadowbrook Medical Center - Novi"
         },
-        "CustomerUniqueID": {
-            "value": "500583"
-        },
+        "CustomerUniqueID": {},
         "EquipmentDescription": {
             "value": "Toshiba CT Aquilion 16 - 500583"
         },
@@ -31101,9 +29883,7 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
+        "ShowonRemoteServicesWebsite": {},
         "SoftwareRelease": {},
         "State": {
             "value": "MI"
@@ -31116,7 +29896,7 @@ const testData = [
     },
     {
         "id": "9888b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 290,
+        "rowNumber": 279,
         "note": "",
         "AddressLine1": {
             "value": "950 W. Wooster St"
@@ -31222,10 +30002,10 @@ const testData = [
     },
     {
         "id": "e688b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 291,
-        "note": "11/22/21 No over time - added addendum to files saz",
+        "rowNumber": 280,
+        "note": "11/22/21 No over time - added addendum to files saz\nAB 10.21.22 - Changed customer from C010255 to C110582 per business purchase. ",
         "AddressLine1": {
-            "value": "28700 Cabot Dr, Suite 500"
+            "value": "29409 Haggerty Rd, Ste 100"
         },
         "AddressLine2": {},
         "City": {
@@ -31250,10 +30030,10 @@ const testData = [
             "value": "Active"
         },
         "CustomerID": {
-            "value": "C010255"
+            "value": "C110582"
         },
         "CustomerName": {
-            "value": "AS Management and Leasing LLC"
+            "value": "Village Medical"
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
@@ -31264,7 +30044,9 @@ const testData = [
         },
         "IPAddress": {},
         "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
+        "LegacyEquipmentID": {
+            "value": "500853"
+        },
         "LocationID": {
             "value": "MOBILE"
         },
@@ -31292,13 +30074,13 @@ const testData = [
             "value": "GDD0823199"
         },
         "ServiceContractCustomerID": {
-            "value": "C010255"
+            "value": "C110582"
         },
         "ServiceContractCustomerName": {
-            "value": "AS Management and Leasing LLC"
+            "value": "Village Medical"
         },
         "ServiceContractID": {
-            "value": "FCT00000990"
+            "value": "AHS00002953"
         },
         "ServiceContractLocationID": {
             "value": "MOBILE"
@@ -31330,7 +30112,7 @@ const testData = [
     },
     {
         "id": "3589b23b-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 292,
+        "rowNumber": 281,
         "note": "",
         "AddressLine1": {
             "value": "5701 Bow Pointe Dr, Ste 110"
@@ -31430,7 +30212,7 @@ const testData = [
     },
     {
         "id": "0b24c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 293,
+        "rowNumber": 282,
         "note": "8/5/21: Added legacy ID back in to attribute field.",
         "AddressLine1": {
             "value": "21003 Mack Ave"
@@ -31532,7 +30314,7 @@ const testData = [
     },
     {
         "id": "db24c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 294,
+        "rowNumber": 283,
         "note": "3/16/22 MC - added host IP 10.150.95.100, given by Wasim (network and security manager)\n\n9/15/22 AS:  There has been confusion and this SME should have been added to cust contract 500053 as it pertained to Hamden not Branford, which was deinstalled SME01878.  \n\n[11:58 AM] Dave Arthur\n    Angela Schwartz - has been added.      Team: I have spoken with Angela after going through history, etc. with Dean Kresge. It appears that when SME01878 (a GE 11x MRI) was removed from service in Nov/Dec 2021 (in Branford CT) AND replaced by a GE 750W - 3T system in Jan. 2022 (SME09782), some how SME01867 (GE 9x Fixed site) in Hamden CT was removed from the contract instead of site SME01878.  Angela will be working on sorting out the documentation to this event and report back here.  In all, it appears that SME01867 should be under active contract.\nEdited",
         "AddressLine1": {
             "value": "84 North Main Street"
@@ -31636,7 +30418,7 @@ const testData = [
     },
     {
         "id": "7725c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 295,
+        "rowNumber": 284,
         "note": "4/5/22 MC - 4/5/22 MC- added room \"Premier Allen Park\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "15670 Southfield Rd"
@@ -31742,7 +30524,7 @@ const testData = [
     },
     {
         "id": "6226c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 296,
+        "rowNumber": 285,
         "note": "12.10.21 Updated Location: \t\nSouthfield Mobile MR\n\n29275 Northwestern Highway; Suite 175, Southfield, MI 48034\n\n4/5/22 - 4/5/22 MC- added room \"Premier Traveling Mobile\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "29275 Northwestern Hwy Ste 100"
@@ -31854,7 +30636,7 @@ const testData = [
     },
     {
         "id": "3227c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 297,
+        "rowNumber": 286,
         "note": "330 Boston Post Road\nOrange, Ct\n\nOr mobile could possibly be at the following address:\n\n12 Bokum Road\nEssex, Ct\n\nAB 2.16.22 - Updated system type per engineer request\n\n3/16/22 MC - added host IP address 10.50.70.10, give by Wasim (network and security manager)",
         "AddressLine1": {
             "value": "2408 Whitney Ave"
@@ -31958,7 +30740,7 @@ const testData = [
     },
     {
         "id": "4c27c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 298,
+        "rowNumber": 287,
         "note": "",
         "AddressLine1": {
             "value": "27555 Middlebelt Rd"
@@ -32058,14 +30840,16 @@ const testData = [
     },
     {
         "id": "6627c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 299,
-        "note": "4/28 Location of Mobile Unit: Maxim MRI 23832 Southfield Rd, Southfield, MI 48075. PAP",
+        "rowNumber": 288,
+        "note": "4/28 Location of Mobile Unit: Maxim MRI 23832 Southfield Rd, Southfield, MI 48075. PAP\n\nSHIP PARTS TO: C083124 Network Imaging Assoc.\n29001 Cedar Rd Suite 100\nLyndhurst OH 44124",
         "AddressLine1": {
-            "value": "1427 Midland Blvd"
+            "value": "29001 Cedar Rd"
         },
-        "AddressLine2": {},
+        "AddressLine2": {
+            "value": "Suite 100"
+        },
         "City": {
-            "value": "Royal Oak"
+            "value": "Lyndhurst"
         },
         "CustomerContractCustomerID": {
             "value": "C072748"
@@ -32123,7 +30907,7 @@ const testData = [
         },
         "PMFrequencyinmonths": {},
         "PostalCode": {
-            "value": "48073"
+            "value": "44124"
         },
         "Room": {},
         "SerialNbr": {
@@ -32152,7 +30936,7 @@ const testData = [
         },
         "SoftwareRelease": {},
         "State": {
-            "value": "MI"
+            "value": "OH"
         },
         "Status": {
             "value": "Active"
@@ -32162,7 +30946,7 @@ const testData = [
     },
     {
         "id": "8027c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 300,
+        "rowNumber": 289,
         "note": "8/5/21 Ande G - Added the legacy ID back into the attribute field.\n12.10.21 - Updated Locations: \n\n43475 Dalcoma Dr.; Suite 150, Clinton Township, MI 48038\n\n25500 Meadowbrook Rd; Suite 150, Novi, MI 48375 1/14\n\n4/5/22 MC- added room \"Premier Southfield\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "201 N Washington Square Rd, Ste 905"
@@ -32270,7 +31054,7 @@ const testData = [
     },
     {
         "id": "b427c141-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 301,
+        "rowNumber": 290,
         "note": "",
         "AddressLine1": {
             "value": "29001 Cedar Rd, Ste 100"
@@ -32374,7 +31158,7 @@ const testData = [
     },
     {
         "id": "11b8d547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 302,
+        "rowNumber": 291,
         "note": "Air Products Account Number: CP270214\nAB 7.8.22 - marked \"show on remote\" per Joe Anello.",
         "AddressLine1": {
             "value": "960 River Centre Dr"
@@ -32476,7 +31260,7 @@ const testData = [
     },
     {
         "id": "7ab8d547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 303,
+        "rowNumber": 292,
         "note": "8/5/21: Added legacy ID back in to attribute field.",
         "AddressLine1": {
             "value": "27301 Schoenherr Rd"
@@ -32578,7 +31362,7 @@ const testData = [
     },
     {
         "id": "7eb9d547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 304,
+        "rowNumber": 293,
         "note": "Added site ID  5/26/2021 sz\n\n8/5/21: Added legacy ID back in to attribute field.",
         "AddressLine1": {
             "value": "208 Columbus St"
@@ -32682,7 +31466,7 @@ const testData = [
     },
     {
         "id": "ccb9d547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 305,
+        "rowNumber": 294,
         "note": "AB 8.6.21 - Changed the Location name per customer request.\n3/11 This Service Agreement has now been activated. Yes, this is under contract.per Amanda Barnes. PAP\n\n4/5/22 MC - 4/5/22 MC- added room \"Premier Madison Heights\" so that it will show on the remote website, per Andy H request for that to be the location (this makes it show on the website without changing the actual location already in Acumatica)",
         "AddressLine1": {
             "value": "30781 Stephenson Hwy"
@@ -32788,7 +31572,7 @@ const testData = [
     },
     {
         "id": "34bad547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 306,
+        "rowNumber": 295,
         "note": "",
         "AddressLine1": {
             "value": "416 Connable Ave"
@@ -32890,7 +31674,7 @@ const testData = [
     },
     {
         "id": "bbbbd547-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 307,
+        "rowNumber": 296,
         "note": "",
         "AddressLine1": {
             "value": "4800 S Saginaw St, Ste 1650"
@@ -32994,7 +31778,7 @@ const testData = [
     },
     {
         "id": "f438d04d-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 308,
+        "rowNumber": 297,
         "note": "Air Products Account ID: CP270137",
         "AddressLine1": {
             "value": "3346 Lennon Rd"
@@ -33019,7 +31803,7 @@ const testData = [
             "value": "Primary Location"
         },
         "CustomerContractStatus": {
-            "value": "Expired"
+            "value": "Active"
         },
         "CustomerID": {
             "value": "C009278"
@@ -33104,7 +31888,7 @@ const testData = [
     },
     {
         "id": "0e39d04d-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 309,
+        "rowNumber": 298,
         "note": "Air Products Account ID: CP270135",
         "AddressLine1": {
             "value": "3346 Lennon Rd"
@@ -33214,7 +31998,7 @@ const testData = [
     },
     {
         "id": "9239d04d-49d5-ea11-817e-fabae30ee089",
-        "rowNumber": 310,
+        "rowNumber": 299,
         "note": "",
         "AddressLine1": {
             "value": "15130 Levan Rd"
@@ -33316,8 +32100,8 @@ const testData = [
     },
     {
         "id": "06adf499-29d8-ea11-817e-fabae30ee089",
-        "rowNumber": 311,
-        "note": "AG 12/30/20: Updated description to say Mobile Lab 069 instead of Trailer to match contract. Also added that as the room number.\n\nCath Lab Manager is Tim Brophy - 407-928-1118 - Silva NC ",
+        "rowNumber": 300,
+        "note": "AG 12/30/20: Updated description to say Mobile Lab 069 instead of Trailer to match contract. Also added that as the room number.\n\nCath Lab Manager is Tim Brophy - 407-928-1118 - Silva NC\n\n11/2/22 ... trailer located: Watertown Medical - 123 Hospital Dr Watertown, WI ....PWM ",
         "AddressLine1": {
             "value": "68 Hospital Rd"
         },
@@ -33418,7 +32202,7 @@ const testData = [
     },
     {
         "id": "fc9ad2c5-9fdd-ea11-817e-fabae30ee089",
-        "rowNumber": 312,
+        "rowNumber": 301,
         "note": "AMANDA B 1.15.21 - Updated attributes due to contract. Check do not show on remote and under contract\nAB 8.12.21 - Added SN and IP per Meg\n8/9/22 MC -  marked NOT to show on website FOR the customer, since CTs and Cath are CONNECT (only their MRIs are vision and get marked to show for the cust on the website)",
         "AddressLine1": {
             "value": "967 N Broadway"
@@ -33453,7 +32237,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "NovaMed St. John's Riverside - Brilliance 64 - SN: 9536"
+            "value": "NovaMed St. John's Riverside - Brilliance 64 - SN: 9536  code 007706 or 02355/ ID 537027"
         },
         "EquipmentNbr": {
             "value": "SME02355"
@@ -33522,7 +32306,7 @@ const testData = [
     },
     {
         "id": "b71b417b-addd-ea11-817e-fabae30ee089",
-        "rowNumber": 313,
+        "rowNumber": 302,
         "note": "AB 3.17.21 - Changed SHIP TO as it was entered incorrectly at time of set up\n\n3/31/22 MC - in order for engineer to access log files, have to log into https://view.mcleodhealth.org/  - Dustin Z, Michael Deuel, and Kirk Allgood have access - Cory Williams and Scott Whaley will have access once they are approved and assigned log ins on Mcleod's end",
         "AddressLine1": {
             "value": "McLeod Main Warehouse Receiving"
@@ -33629,336 +32413,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "b4c1e88e-35e2-ea11-817f-9de998e69b1a",
-        "rowNumber": 314,
-        "note": "AB 6.21.21  - Updated IP address and updated description\nAB 8.31.21 - Updated Customer and Ship to based on accounting.\nAB 10.1.21 - Per Accounting, again, changed customer to C0051 from C063911\nAB 3.2.22 - Changed from C0051 to C063911 for service order closure. Changed back. ",
-        "AddressLine1": {
-            "value": "234 Goodman St"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Cincinnati"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "AHSCATH1"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001029"
-        },
-        "CustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall - University of Cincinnati - Room 1 - FD20 - SN: 1221"
-        },
-        "EquipmentNbr": {
-            "value": "SME02377"
-        },
-        "IPAddress": {
-            "value": "172.29.204.203"
-        },
-        "LastPMCompleted": {
-            "value": "2021-02-23T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD20"
-        },
-        "ModelDescription": {
-            "value": "FD20"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "45219"
-        },
-        "Room": {
-            "value": "Room 1"
-        },
-        "SerialNbr": {
-            "value": "1221"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001029"
-        },
-        "ServiceContractCustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002133"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "OH"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
-        "id": "c9fab979-36e2-ea11-817f-9de998e69b1a",
-        "rowNumber": 315,
-        "note": "AB 6.21.21  - Updated IP address and updated description\nAB 8.31.21 - Updated Customer and Ship to based on accounting.\nAB 10.1.21 - Per Accounting, again, changed customer to C0051 from C063911",
-        "AddressLine1": {
-            "value": "234 Goodman St"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Cincinnati"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "AHSCATH1"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001029"
-        },
-        "CustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall  -University of Cincinnati - Room 2 - FD20 - SN: 680"
-        },
-        "EquipmentNbr": {
-            "value": "SME02378"
-        },
-        "IPAddress": {
-            "value": "172.29.204.202"
-        },
-        "LastPMCompleted": {
-            "value": "2021-02-26T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD20"
-        },
-        "ModelDescription": {
-            "value": "FD20"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "45219"
-        },
-        "Room": {
-            "value": "Room 2"
-        },
-        "SerialNbr": {
-            "value": "680"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001029"
-        },
-        "ServiceContractCustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002133"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "OH"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
-        "id": "320a97ae-e2e6-ea11-817f-9de998e69b1a",
-        "rowNumber": 316,
-        "note": "Ande G 7/2/21 - Per Meghans email \"SME02400 - Crothall - Univ of Cincinnati - will not be getting remote\" I checked the do not show box for remote because the unit is too old. \nAB 8.31.21 - Updated Customer and Ship to based on accounting.\nAB 10.1.21 - Per Accounting, again, changed customer to C0051 from C063911",
-        "AddressLine1": {
-            "value": "234 Goodman St"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Cincinnati"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "AHSCATH1"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001029"
-        },
-        "CustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall University of Cincinnati Cath Lab 3"
-        },
-        "EquipmentNbr": {
-            "value": "SME02400"
-        },
-        "IPAddress": {},
-        "LastPMCompleted": {
-            "value": "2021-01-21T00:00:00+00:00"
-        },
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD10"
-        },
-        "ModelDescription": {
-            "value": "FD10"
-        },
-        "PMFrequencyinmonths": {
-            "value": "6"
-        },
-        "PostalCode": {
-            "value": "45219"
-        },
-        "Room": {
-            "value": "Cath Lab 3"
-        },
-        "SerialNbr": {
-            "value": "95543"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001029"
-        },
-        "ServiceContractCustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002133"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "OH"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "ec7af9e2-8aeb-ea11-817f-9de998e69b1a",
-        "rowNumber": 317,
+        "rowNumber": 303,
         "note": "Amanda B 10.28 - Updated equip based on inspection report",
         "AddressLine1": {
             "value": "2240 College Drive"
@@ -34060,7 +32516,7 @@ const testData = [
     },
     {
         "id": "dee17138-43f4-ea11-817f-9de998e69b1a",
-        "rowNumber": 318,
+        "rowNumber": 304,
         "note": "3/8/22 MC - added IP address 192.9.200.10 back per Kirk Allgood, it had disappeared",
         "AddressLine1": {
             "value": "2024 15Th St"
@@ -34166,7 +32622,7 @@ const testData = [
     },
     {
         "id": "fddda65c-9afd-ea11-8181-1296c0afa970",
-        "rowNumber": 319,
+        "rowNumber": 305,
         "note": "AMANDA B 1.15.21 - Updated attributes due to contract. Check do not show on remote and under contract\nAB 8.12.21 - Updated SN and IP per Meg\nMC 12/28/2021 - added the IP address again because it wasnt there and marked to show on the remote website\n8/9/22 MC - marked NOT to show on website FOR the customer, since CTs and Cath are CONNECT (only their MRIs are vision and get marked to show for the cust on the website)",
         "AddressLine1": {
             "value": "967 N Broadway"
@@ -34270,7 +32726,7 @@ const testData = [
     },
     {
         "id": "3c9e8fc0-65fe-ea11-8181-1296c0afa970",
-        "rowNumber": 320,
+        "rowNumber": 306,
         "note": null,
         "AddressLine1": {
             "value": "91 Hospital Dr"
@@ -34374,7 +32830,7 @@ const testData = [
     },
     {
         "id": "f63f54c5-55ff-ea11-8181-1296c0afa970",
-        "rowNumber": 321,
+        "rowNumber": 307,
         "note": null,
         "AddressLine1": {
             "value": "1 Guthrie Sq"
@@ -34478,7 +32934,7 @@ const testData = [
     },
     {
         "id": "cc82b436-56ff-ea11-8181-1296c0afa970",
-        "rowNumber": 322,
+        "rowNumber": 308,
         "note": "Amanda B - 10/8/20: Updated equipment based on inspection checklist.",
         "AddressLine1": {
             "value": "1 Guthrie Sq"
@@ -34586,7 +33042,7 @@ const testData = [
     },
     {
         "id": "3298c7dd-1f03-eb11-8181-1296c0afa970",
-        "rowNumber": 323,
+        "rowNumber": 309,
         "note": "Amanda B 10.23 - Updated info based on inspection checklist\n\n4/11 Per Steve Clark - changed this SME from Cath Lab 2 to Cath Lab 1.  KD",
         "AddressLine1": {
             "value": "423 E 23rd St"
@@ -34692,7 +33148,7 @@ const testData = [
     },
     {
         "id": "4562cfce-2103-eb11-8181-1296c0afa970",
-        "rowNumber": 324,
+        "rowNumber": 310,
         "note": "10/12/20: BHOGAN, Update system info based off inspection checklist.\n\n4/11 Per FSE Steve Clark - added Cath Lab 2 to this description.  KD",
         "AddressLine1": {
             "value": "423 E 23rd St"
@@ -34798,7 +33254,7 @@ const testData = [
     },
     {
         "id": "243cb8fb-3007-eb11-8181-1296c0afa970",
-        "rowNumber": 325,
+        "rowNumber": 311,
         "note": "AB: Created 10.5 from inspection checklist - VIN: TKH048211B084361\n\nMobile unit is now located at\nOSF HealthCare St. Francis Hospital & Medical Group\n3401 Ludington Street Escanaba, MI 49829",
         "AddressLine1": {
             "value": "11228 Lemen Rd"
@@ -34904,7 +33360,7 @@ const testData = [
     },
     {
         "id": "bacf39b5-f707-eb11-8181-1296c0afa970",
-        "rowNumber": 326,
+        "rowNumber": 312,
         "note": "",
         "AddressLine1": {
             "value": "8915 W Golf Rd"
@@ -35012,7 +33468,7 @@ const testData = [
     },
     {
         "id": "5d888f41-6d09-eb11-8181-1296c0afa970",
-        "rowNumber": 327,
+        "rowNumber": 313,
         "note": null,
         "AddressLine1": {
             "value": "1 Hospital Dr"
@@ -35099,7 +33555,9 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {},
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
         "SoftwareRelease": {},
         "State": {
             "value": "PA"
@@ -35112,7 +33570,7 @@ const testData = [
     },
     {
         "id": "8d81f6f7-680d-eb11-8181-1296c0afa970",
-        "rowNumber": 328,
+        "rowNumber": 314,
         "note": "",
         "AddressLine1": {
             "value": "2024 15Th St"
@@ -35217,8 +33675,116 @@ const testData = [
         "files": []
     },
     {
+        "id": "98ff8b20-b40f-eb11-8183-1296c0afa970",
+        "rowNumber": 315,
+        "note": "8/9/22 AS:  Duplicate to SME00447.\n10.26.22 POC: benjamin.brown@crothall.com;clifford.springsteen@crothall.com; PAP",
+        "AddressLine1": {
+            "value": "4200 Sun N Lake Blvd"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Sebring"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0051"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Crothall Healthcare"
+        },
+        "CustomerContractID": {
+            "value": "FH20180711"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C001602"
+        },
+        "CustomerName": {
+            "value": "AdventHealth Sebring"
+        },
+        "CustomerUniqueID": {
+            "value": "2533"
+        },
+        "EquipmentDescription": {
+            "value": "Crothall AdventHealth Sebring - FD20 Cath Lab 3"
+        },
+        "EquipmentNbr": {
+            "value": "SME02526"
+        },
+        "IPAddress": {},
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "Philips Medical Systems"
+        },
+        "Modality": {
+            "value": "CV/IR"
+        },
+        "Model": {
+            "value": "FD20"
+        },
+        "ModelDescription": {
+            "value": "FD20"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "33872"
+        },
+        "Room": {
+            "value": "Cath Lab 3"
+        },
+        "SerialNbr": {
+            "value": "2533"
+        },
+        "ServiceContractCustomerID": {
+            "value": "C001602"
+        },
+        "ServiceContractCustomerName": {
+            "value": "AdventHealth Sebring"
+        },
+        "ServiceContractID": {
+            "value": "FCT00001990"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {
+            "value": "7.2.9"
+        },
+        "State": {
+            "value": "FL"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
+    },
+    {
         "id": "f44590aa-f412-eb11-8183-1296c0afa970",
-        "rowNumber": 329,
+        "rowNumber": 316,
         "note": "Amanda B 5.7.21 - Updated room number to Room 11 - customer confirmation\n\n5/5/22 MC - re-added IP 10.200.128.195 per Kirk Allgood had disappeared for some reason, also marked to show on the website again",
         "AddressLine1": {
             "value": "254 Easton Ave"
@@ -35324,7 +33890,7 @@ const testData = [
     },
     {
         "id": "30b40b62-b213-eb11-8183-1296c0afa970",
-        "rowNumber": 330,
+        "rowNumber": 317,
         "note": "Amanda B 5.7.21 - Updated room number to Room 12 - customer confirmation",
         "AddressLine1": {
             "value": "254 Easton Ave"
@@ -35434,7 +34000,7 @@ const testData = [
     },
     {
         "id": "c84ec9d0-6b15-eb11-8183-1296c0afa970",
-        "rowNumber": 331,
+        "rowNumber": 318,
         "note": "Amanda B 10.23 - Made new equip for service and contract ",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -35542,7 +34108,7 @@ const testData = [
     },
     {
         "id": "f785b139-7f18-eb11-8183-1296c0afa970",
-        "rowNumber": 332,
+        "rowNumber": 319,
         "note": "amanda b 10/27 - new equip for service\nAmanda B 12.9.20 - Updated equipment base on contract\nAmanda B 1/4/21 - Updated based on new spreadsheet from Scott C.",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -35650,7 +34216,7 @@ const testData = [
     },
     {
         "id": "0ba17de7-d81e-eb11-8183-1296c0afa970",
-        "rowNumber": 333,
+        "rowNumber": 320,
         "note": "ES: Created for inspection 11.4.20\n9/28/22 - Please reach our to Christian Masullo for Tech Support and Service saz",
         "AddressLine1": {
             "value": "1200 Old York Rd"
@@ -35754,7 +34320,7 @@ const testData = [
     },
     {
         "id": "0bd9900e-dc1e-eb11-8183-1296c0afa970",
-        "rowNumber": 334,
+        "rowNumber": 321,
         "note": "ES: Created for Inspection 11.4.20\n\n12/21/2020 Connor Bartlett: labor contract with Christian Masullo",
         "AddressLine1": {
             "value": "111 S 11th St"
@@ -35855,222 +34421,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "cc8b3fd5-9923-eb11-8183-1296c0afa970",
-        "rowNumber": 335,
-        "note": "AB - 6.21.21 - Updated IP address and updated description\nAB 8.31.21 - Updated Customer and Ship to based on accounting.\nAB 10.1.21 - Per Accounting, again, changed customer to C0051 from C063911\n3/4/22 MC- added back IP 172.29.205.221 per Kirk Allgood, somehow was empty",
-        "AddressLine1": {
-            "value": "234 Goodman St"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Cincinnati"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "AHSCATH1"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001029"
-        },
-        "CustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall - University of Cincinnati - FD10 - EP Lab - SN:1430"
-        },
-        "EquipmentNbr": {
-            "value": "SME02579"
-        },
-        "IPAddress": {
-            "value": "172.29.205.221"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD10"
-        },
-        "ModelDescription": {
-            "value": "FD10"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "45219"
-        },
-        "Room": {},
-        "SerialNbr": {
-            "value": "1430"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001029"
-        },
-        "ServiceContractCustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002133"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "OH"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
-        "id": "fa51511d-9a23-eb11-8183-1296c0afa970",
-        "rowNumber": 336,
-        "note": "AB - 2.21.21 - Updated IP address and description.\nAB 8.31.21 - Updated Customer and Ship to based on accounting.\nAB 10.1.21 - Per Accounting, again, changed customer to C0051 from C063911\n3/4/22 MC - added back IP 172.29.200.109 per Kirk Allgood, somehow was blank",
-        "AddressLine1": {
-            "value": "234 Goodman St"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Cincinnati"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0051"
-        },
-        "CustomerContractCustomerName": {
-            "value": "Crothall Healthcare"
-        },
-        "CustomerContractID": {
-            "value": "AHSCATH1"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C001029"
-        },
-        "CustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "Crothall - University of Cincinnati - IR Lab - FD20 - SN: 2156"
-        },
-        "EquipmentNbr": {
-            "value": "SME02580"
-        },
-        "IPAddress": {
-            "value": "172.29.200.109"
-        },
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "Philips Medical Systems"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "FD20"
-        },
-        "ModelDescription": {
-            "value": "FD20"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "45219"
-        },
-        "Room": {},
-        "SerialNbr": {
-            "value": "2156"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C001029"
-        },
-        "ServiceContractCustomerName": {
-            "value": "University of Cincinnati Medical Center"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002133"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "OH"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": [
-            {
-                "id": "b36c1c4e-1f2a-47e5-9355-4ff0c3a0e1fd",
-                "filename": "Equipment (SME02580)\\Crothall University of Cinci IR room 2.16.22.xlsx",
-                "href": "/entity/AHS/18.200.003/files/b36c1c4e-1f2a-47e5-9355-4ff0c3a0e1fd"
-            }
-        ]
-    },
-    {
         "id": "633b4e0e-3b24-eb11-8183-1296c0afa970",
-        "rowNumber": 337,
+        "rowNumber": 322,
         "note": "When next PM is scheduled someone needs to look at the Flowmeter and probably take one with them - per Andy Hoppe\n\n3/26/2021 sz\n\n7/8/21 Ande G. - Hobolink device installed for remote monitoring.",
         "AddressLine1": {
             "value": "1225 N State St"
@@ -36174,7 +34526,7 @@ const testData = [
     },
     {
         "id": "b16d712f-3c24-eb11-8183-1296c0afa970",
-        "rowNumber": 338,
+        "rowNumber": 323,
         "note": null,
         "AddressLine1": {
             "value": "1225 N State St"
@@ -36278,7 +34630,7 @@ const testData = [
     },
     {
         "id": "e1dbf24f-9f27-eb11-8183-1296c0afa970",
-        "rowNumber": 339,
+        "rowNumber": 324,
         "note": "11/15/2020 Connor Bartlett created for service being performed.\n12/9/2020: Revised equipment based on new contract\nAmanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "22725 US-76"
@@ -36388,7 +34740,7 @@ const testData = [
     },
     {
         "id": "b25a9353-f234-eb11-8184-1296c0afa970",
-        "rowNumber": 340,
+        "rowNumber": 325,
         "note": "Amanda B 12.2.20 - Added new equip for contract\n3/29/22 MC - re-added IP address 172.16.116.17, per Kirk Allgood. It had disappeared somehow\n8/19/22 MC - marked to show on website since it was somehow unchecked",
         "AddressLine1": {
             "value": "2024 15Th St"
@@ -36496,7 +34848,7 @@ const testData = [
     },
     {
         "id": "df17ab8d-8b35-eb11-8184-1296c0afa970",
-        "rowNumber": 341,
+        "rowNumber": 326,
         "note": "12/3/2020 Connor Bartlett created for service being performed.\nAmanda B 8.27.21 - Updated equipment Model from customer contract",
         "AddressLine1": {
             "value": "900 8Th Ave"
@@ -36598,7 +34950,7 @@ const testData = [
     },
     {
         "id": "2423a232-b935-eb11-8184-1296c0afa970",
-        "rowNumber": 342,
+        "rowNumber": 327,
         "note": "12/3/2020 Connor Bartlett created for service being performed.",
         "AddressLine1": {
             "value": "170 Alameda De Las Pulgas"
@@ -36700,7 +35052,7 @@ const testData = [
     },
     {
         "id": "82e78d2b-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 343,
+        "rowNumber": 328,
         "note": "Amanda B  - 1/4/21 - Updated based on spreadsheet from Scott C.\nAB 7.13.21 - Updated SN based on customer request to Scott C (Previously CNF/100320\nAB 10.8.21 - Updated SN based on engineer on site. ",
         "AddressLine1": {
             "value": "175 Patewood Drive"
@@ -36737,7 +35089,7 @@ const testData = [
             "value": "1656095 / 10363"
         },
         "EquipmentDescription": {
-            "value": "Crothall - Prisma Patewood Hospital - Brilliance CT 64 - SN: CNF / 100320"
+            "value": "Crothall - Prisma Patewood Hospital - Brilliance CT 64 - SN: CNF / 100320   S/n from Crothall given is 60063"
         },
         "EquipmentNbr": {
             "value": "SME07846"
@@ -36775,7 +35127,7 @@ const testData = [
         },
         "Room": {},
         "SerialNbr": {
-            "value": "95348"
+            "value": "60063"
         },
         "ServiceContractCustomerID": {
             "value": "C095735"
@@ -36810,7 +35162,7 @@ const testData = [
     },
     {
         "id": "18368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 344,
+        "rowNumber": 329,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "830 S Buncombe Rd"
@@ -36920,7 +35272,7 @@ const testData = [
     },
     {
         "id": "d5e78d2b-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 345,
+        "rowNumber": 330,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "129 N Washington St."
@@ -37030,7 +35382,7 @@ const testData = [
     },
     {
         "id": "34368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 346,
+        "rowNumber": 331,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -37138,7 +35490,7 @@ const testData = [
     },
     {
         "id": "71368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 347,
+        "rowNumber": 332,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "298 Memorial Drive"
@@ -37246,7 +35598,7 @@ const testData = [
     },
     {
         "id": "8a368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 348,
+        "rowNumber": 333,
         "note": "Amanda B - 1/4/21 - Updated based on new spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -37354,7 +35706,7 @@ const testData = [
     },
     {
         "id": "ab368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 349,
+        "rowNumber": 334,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.",
         "AddressLine1": {
             "value": "807 N Main St"
@@ -37456,7 +35808,7 @@ const testData = [
     },
     {
         "id": "cc368631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 350,
+        "rowNumber": 335,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.\nAB 5.26.22 - Engineer sent updated room and SN information. ",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -37564,7 +35916,7 @@ const testData = [
     },
     {
         "id": "03378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 351,
+        "rowNumber": 336,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.",
         "AddressLine1": {
             "value": "400 Palmetto Health Pkwy"
@@ -37670,7 +36022,7 @@ const testData = [
     },
     {
         "id": "20378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 352,
+        "rowNumber": 337,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.\n\n4/6/22 MC - changed the IP address from 10.99.24.18 to 10.99.24.20 per Kirk A, and that is what is on the Sharepoint tracker",
         "AddressLine1": {
             "value": "129 N Washington St."
@@ -37780,7 +36132,7 @@ const testData = [
     },
     {
         "id": "44378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 353,
+        "rowNumber": 338,
         "note": null,
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -37817,7 +36169,7 @@ const testData = [
             "value": "1656112"
         },
         "EquipmentDescription": {
-            "value": "Crothall - Prisma Greenville Memorial Hospital - FD20 - Room: Cath Lab 2 - SN: 1842 System Code 722006"
+            "value": "Crothall - Prisma Greenville Memorial Hospital - FD20 - Room: Cath Lab 2 - SN: 1842 System Code 722012"
         },
         "EquipmentNbr": {
             "value": "SME07858"
@@ -37888,7 +36240,7 @@ const testData = [
     },
     {
         "id": "46378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 354,
+        "rowNumber": 339,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.",
         "AddressLine1": {
             "value": "175 Patewood Drive"
@@ -37998,7 +36350,7 @@ const testData = [
     },
     {
         "id": "7d378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 355,
+        "rowNumber": 340,
         "note": "Amanda B - 1/4/21 - Updated based on new spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -38106,7 +36458,7 @@ const testData = [
     },
     {
         "id": "bb378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 356,
+        "rowNumber": 341,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.\n\nSystem Serial:  495\n\nSystem Code:  722006\n\nSite ID:  545443\n\n8/10/22 AS:  Updated Serial from incorrect 926 to correct 495\nAlso Needs to be updated to FD10 from FD20",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -38214,7 +36566,7 @@ const testData = [
     },
     {
         "id": "d7378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 357,
+        "rowNumber": 342,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C. ",
         "AddressLine1": {
             "value": "22725 US-76"
@@ -38324,7 +36676,7 @@ const testData = [
     },
     {
         "id": "f4378631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 358,
+        "rowNumber": 343,
         "note": "AB 6.21.21 - Updated IP address.\n\n8/30/22 AS:  132610 is actually 1842 – we need to figure out how long we have been paying for this duplication. Please check your records, a refund for 132610 may need to be considered. Please use SN 1842.",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -38428,7 +36780,7 @@ const testData = [
     },
     {
         "id": "51388631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 359,
+        "rowNumber": 344,
         "note": null,
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -38540,7 +36892,7 @@ const testData = [
     },
     {
         "id": "70388631-613a-eb11-8184-1296c0afa970",
-        "rowNumber": 360,
+        "rowNumber": 345,
         "note": "Amanda B - 1/4/21 - Updated based on spreadsheet from Scott C.",
         "AddressLine1": {
             "value": "5 Richland Medical Park Dr"
@@ -38651,108 +37003,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "c8c5f04a-863a-eb11-8184-1296c0afa970",
-        "rowNumber": 361,
-        "note": "12/9/2020 Connor Bartlett created for service being performed.\nAB 11.12.21 - Updated Model and customer due to service order.\nAB 11.19.21 - Changed Customer from C103187 -MAIN to C0254 - BC Technical - SHIP003 - New England Veterinary MRI for service order closure.  - Switched back",
-        "AddressLine1": {
-            "value": "730 Randolph Rd"
-        },
-        "AddressLine2": {},
-        "City": {
-            "value": "Middletown"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C103187"
-        },
-        "CustomerContractCustomerName": {
-            "value": "New England Veterinary MRI"
-        },
-        "CustomerContractID": {
-            "value": "NEW ENGLAN"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Primary Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Active"
-        },
-        "CustomerID": {
-            "value": "C103187"
-        },
-        "CustomerName": {
-            "value": "New England Veterinary MRI"
-        },
-        "CustomerUniqueID": {},
-        "EquipmentDescription": {
-            "value": "New England Veterinary - GE MRI 1.5T 9X"
-        },
-        "EquipmentNbr": {
-            "value": "SME07872"
-        },
-        "IPAddress": {},
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Primary Location"
-        },
-        "Manufacturer": {
-            "value": "GE Healthcare"
-        },
-        "Modality": {
-            "value": "MRI"
-        },
-        "Model": {
-            "value": "1.5T 9X"
-        },
-        "ModelDescription": {
-            "value": "1.5T 9X"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "06457"
-        },
-        "Room": {},
-        "SerialNbr": {},
-        "ServiceContractCustomerID": {
-            "value": "C103187"
-        },
-        "ServiceContractCustomerName": {
-            "value": "New England Veterinary MRI"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002289"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Primary Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "CT"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "6c2c8135-d04a-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 362,
+        "rowNumber": 346,
         "note": null,
         "AddressLine1": {
             "value": "374 Stockholm St"
@@ -38854,7 +37106,7 @@ const testData = [
     },
     {
         "id": "de7bbecd-da4a-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 363,
+        "rowNumber": 347,
         "note": null,
         "AddressLine1": {
             "value": "262 Leroy George Dr."
@@ -38954,7 +37206,7 @@ const testData = [
     },
     {
         "id": "adf0840e-dc4e-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 364,
+        "rowNumber": 348,
         "note": null,
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -39062,7 +37314,7 @@ const testData = [
     },
     {
         "id": "2dee8dde-3354-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 365,
+        "rowNumber": 349,
         "note": "AB 8.8.22 - Changed customer from C009012 to C009246 per service team request",
         "AddressLine1": {
             "value": "2400 Hospital Rd"
@@ -39164,7 +37416,7 @@ const testData = [
     },
     {
         "id": "b26f1f3c-a456-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 366,
+        "rowNumber": 350,
         "note": "ES: Equipment added for service request - service contract pending 1.14.21\nAB: Added SN from contract 1.22.21\nAB: Update SN and SW release per Meg Cintron as found on inspection 4.21.21\nPer Kevin Hogan this contract does include PMs - 4/27/22 saz",
         "AddressLine1": {
             "value": "3501 Health Center Blvd"
@@ -39272,7 +37524,7 @@ const testData = [
     },
     {
         "id": "faa256ad-6a57-eb11-8171-12e75f4d5d6d",
-        "rowNumber": 367,
+        "rowNumber": 351,
         "note": "AB 8.12.21 - Added SN and IP per Meg\n3/15/22 MC - added back IP address 10.111.10.41 because it had disappeared somehow per Kirk Allgood",
         "AddressLine1": {
             "value": "967 N Broadway"
@@ -39376,7 +37628,7 @@ const testData = [
     },
     {
         "id": "c65f02a9-d55c-eb11-8172-12e75f4d5d6d",
-        "rowNumber": 368,
+        "rowNumber": 352,
         "note": " This access code has been changed to 0483. 8/25/22 - SJM",
         "AddressLine1": {
             "value": "294 Patterson Rd.  Suite B"
@@ -39474,7 +37726,7 @@ const testData = [
     },
     {
         "id": "cfb4abc7-f15c-eb11-8172-12e75f4d5d6d",
-        "rowNumber": 369,
+        "rowNumber": 353,
         "note": null,
         "AddressLine1": {
             "value": "3501 Health Center Blvd"
@@ -39578,7 +37830,7 @@ const testData = [
     },
     {
         "id": "6546b2c5-fc5c-eb11-8172-12e75f4d5d6d",
-        "rowNumber": 370,
+        "rowNumber": 354,
         "note": null,
         "AddressLine1": {
             "value": "6387 Ramsey St"
@@ -39680,7 +37932,7 @@ const testData = [
     },
     {
         "id": "518b25b0-f271-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 371,
+        "rowNumber": 355,
         "note": "Equipment added for PM request. SCampbell working to get additional details of this system as it's being added to the contract 2/18/21 ES",
         "AddressLine1": {
             "value": "1023 Verdae Bld."
@@ -39782,7 +38034,7 @@ const testData = [
     },
     {
         "id": "17865843-0676-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 372,
+        "rowNumber": 356,
         "note": "AB 6.29.21 - Updated Customer from C0010 to C0011 per accounting request.",
         "AddressLine1": {
             "value": "818 Oak St"
@@ -39886,7 +38138,7 @@ const testData = [
     },
     {
         "id": "c2051c98-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 373,
+        "rowNumber": 357,
         "note": "",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40002,7 +38254,7 @@ const testData = [
     },
     {
         "id": "19834fe0-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 374,
+        "rowNumber": 358,
         "note": "",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40118,7 +38370,7 @@ const testData = [
     },
     {
         "id": "a8834fe0-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 375,
+        "rowNumber": 359,
         "note": "1/10/22 MC - marked not to show on the remote website, per Joe Anello this remote box was not installed (another one was, he had mixed up, marked other to show)\n\n4/5/22 MC - marked to show on the website, Joe is installing remote box this week\n8.1.22 - Changed customer from C108246 to C000247 per service team request\n\n10/4/22 Per Dustin - Just spoke to Larry with Piedmont and he said they are going to be shutting power off to this building starting next week.  It will be shut off every night from like 10 PM-6 am.  This is not on the old site so the alerting will not happen.  We just need to check it every day to monitor the helium loss.  He would like an email sent every day with the new helium level.  Andy Hoppe will be doing that",
         "AddressLine1": {
             "value": "960 Hospital Dr"
@@ -40226,7 +38478,7 @@ const testData = [
     },
     {
         "id": "a8834fe0-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 376,
+        "rowNumber": 360,
         "note": "1/10/22 MC - marked not to show on the remote website, per Joe Anello this remote box was not installed (another one was, he had mixed up, marked other to show)\n\n4/5/22 MC - marked to show on the website, Joe is installing remote box this week\n8.1.22 - Changed customer from C108246 to C000247 per service team request\n\n10/4/22 Per Dustin - Just spoke to Larry with Piedmont and he said they are going to be shutting power off to this building starting next week.  It will be shut off every night from like 10 PM-6 am.  This is not on the old site so the alerting will not happen.  We just need to check it every day to monitor the helium loss.  He would like an email sent every day with the new helium level.  Andy Hoppe will be doing that",
         "AddressLine1": {
             "value": "1133 Eagles Landing Pkwy"
@@ -40334,7 +38586,7 @@ const testData = [
     },
     {
         "id": "44854fe0-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 377,
+        "rowNumber": 361,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40444,7 +38696,7 @@ const testData = [
     },
     {
         "id": "5ff547e6-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 378,
+        "rowNumber": 362,
         "note": "AB 9.27.22 - Changed from DI1420 to DI21-163 ED CT PAH per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40560,7 +38812,7 @@ const testData = [
     },
     {
         "id": "78f742ec-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 379,
+        "rowNumber": 363,
         "note": "AB 6.13.22 - Changed customer from C092969 (duplicate) to C007794",
         "AddressLine1": {
             "value": "1266 Highway 515 S"
@@ -40666,7 +38918,7 @@ const testData = [
     },
     {
         "id": "f4f742ec-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 380,
+        "rowNumber": 364,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40768,7 +39020,7 @@ const testData = [
     },
     {
         "id": "80f842ec-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 381,
+        "rowNumber": 365,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -40878,7 +39130,7 @@ const testData = [
     },
     {
         "id": "a41353f2-ee76-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 382,
+        "rowNumber": 366,
         "note": null,
         "AddressLine1": {
             "value": "745 Poplar Rd"
@@ -40986,7 +39238,7 @@ const testData = [
     },
     {
         "id": "0e3cdbff-0177-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 383,
+        "rowNumber": 367,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41096,7 +39348,7 @@ const testData = [
     },
     {
         "id": "e4a3355d-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 384,
+        "rowNumber": 368,
         "note": "4/5/22 MC - marked to show on website, Joe is installing remote box this week\nAB 9.27.22 - Changed from DI1423 to DI21-156  MR1 per Piedmont ",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41206,7 +39458,7 @@ const testData = [
     },
     {
         "id": "7dcfc26a-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 385,
+        "rowNumber": 369,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41316,7 +39568,7 @@ const testData = [
     },
     {
         "id": "3f8da48f-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 386,
+        "rowNumber": 370,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41426,7 +39678,7 @@ const testData = [
     },
     {
         "id": "6046b295-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 387,
+        "rowNumber": 371,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41536,7 +39788,7 @@ const testData = [
     },
     {
         "id": "e5a5e6a7-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 388,
+        "rowNumber": 372,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41646,7 +39898,7 @@ const testData = [
     },
     {
         "id": "6cab3bf4-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 389,
+        "rowNumber": 373,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41756,7 +40008,7 @@ const testData = [
     },
     {
         "id": "b6ab3bf4-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 390,
+        "rowNumber": 374,
         "note": null,
         "AddressLine1": {
             "value": "710 Center St"
@@ -41862,7 +40114,7 @@ const testData = [
     },
     {
         "id": "557f36fa-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 391,
+        "rowNumber": 375,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -41970,7 +40222,7 @@ const testData = [
     },
     {
         "id": "a07f36fa-0277-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 392,
+        "rowNumber": 376,
         "note": "10/7/22 MC marked to show on website per Kirk Allgood",
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -42078,7 +40330,7 @@ const testData = [
     },
     {
         "id": "c7af3d25-0377-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 393,
+        "rowNumber": 377,
         "note": null,
         "AddressLine1": {
             "value": "1968 Peachtree Road NW"
@@ -42186,7 +40438,7 @@ const testData = [
     },
     {
         "id": "1e6ae6f6-7583-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 394,
+        "rowNumber": 378,
         "note": "Meg C 12/6/21 - added the customer unique CTM # under attributes",
         "AddressLine1": {
             "value": "301 UNIVERSITY BLVD"
@@ -42300,7 +40552,7 @@ const testData = [
     },
     {
         "id": "80900e9f-7683-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 395,
+        "rowNumber": 379,
         "note": null,
         "AddressLine1": {
             "value": "2240 Gulf Fwy S"
@@ -42406,7 +40658,7 @@ const testData = [
     },
     {
         "id": "052a45db-7683-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 396,
+        "rowNumber": 380,
         "note": "Meg C 12/6/21 - added the customer unique CTM # under attributes\n6/16/22 MC- added back IP 129.109.254.152 and marked to show on remote because disappeared, and let apps know so they can manually enter because of download freeze",
         "AddressLine1": {
             "value": "301 UNIVERSITY BLVD"
@@ -42510,7 +40762,7 @@ const testData = [
     },
     {
         "id": "54a85f3b-7783-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 397,
+        "rowNumber": 381,
         "note": null,
         "AddressLine1": {
             "value": "2240 Gulf Fwy S"
@@ -42618,7 +40870,7 @@ const testData = [
     },
     {
         "id": "72884ce9-7783-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 398,
+        "rowNumber": 382,
         "note": "Meg C 12/6/21 - added the customer unique CTM # under attributes",
         "AddressLine1": {
             "value": "301 UNIVERSITY BLVD"
@@ -42728,7 +40980,7 @@ const testData = [
     },
     {
         "id": "b9545d6d-7883-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 399,
+        "rowNumber": 383,
         "note": "Ande G 7/1/21 - Contract paused until December 2021 per email \"RE: Sodexo / UTMB - Pause Billing for Two Systems\"\nMeg C 12/6/21 - added the customer unique CTM # under attributes\nAB 12.23.21 - updated location - changed back",
         "AddressLine1": {
             "value": "301 UNIVERSITY BLVD"
@@ -42838,7 +41090,7 @@ const testData = [
     },
     {
         "id": "111701a4-7883-eb11-8173-12e75f4d5d6d",
-        "rowNumber": 400,
+        "rowNumber": 384,
         "note": "Ande G 7/1/21 - Contract paused until December 2021 per email \"RE: Sodexo / UTMB - Pause Billing for Two Systems\"\nMeg C 12/6/21 - added the customer unique CTM # under attributes\nAB 12.22.21 - updated location - changed back",
         "AddressLine1": {
             "value": "301 UNIVERSITY BLVD"
@@ -42948,7 +41200,7 @@ const testData = [
     },
     {
         "id": "aa845074-c893-eb11-8174-12e75f4d5d6d",
-        "rowNumber": 401,
+        "rowNumber": 385,
         "note": null,
         "AddressLine1": {
             "value": "11201 Benton St"
@@ -42983,7 +41235,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "Cen-Med Enterprises - Department of Veteran Affairs VA Loma Lina Healthcare System (VALLHS) - Main Bldg FL 3 - Room 2 - SN: 56301879"
+            "value": "Cen-Med Enterprises - Department of Veteran Affairs VA Loma Linda Healthcare System (VALLHS) - Main Bldg FL 3 - Room 2 - SN: 56301879"
         },
         "EquipmentNbr": {
             "value": "SME09202"
@@ -43052,7 +41304,7 @@ const testData = [
     },
     {
         "id": "05853fe8-c59b-eb11-8174-12e75f4d5d6d",
-        "rowNumber": 402,
+        "rowNumber": 386,
         "note": null,
         "AddressLine1": {
             "value": "3 Erie Court"
@@ -43070,7 +41322,7 @@ const testData = [
             "value": "Agiliti Health"
         },
         "CustomerContractID": {
-            "value": "LITI020321"
+            "value": "ITI020321A"
         },
         "CustomerContractLocationID": {
             "value": "MAIN"
@@ -43156,7 +41408,7 @@ const testData = [
     },
     {
         "id": "80974e8f-00ac-eb11-8175-12e75f4d5d6d",
-        "rowNumber": 403,
+        "rowNumber": 387,
         "note": "Created 05/03/21 BH\n6/17/21 AB - Updated description\nAB 7.13.21 - Added IP address per Remote team request",
         "AddressLine1": {
             "value": "3401 W Gore Blvd"
@@ -43256,7 +41508,7 @@ const testData = [
     },
     {
         "id": "c777e737-b0ae-eb11-8175-12e75f4d5d6d",
-        "rowNumber": 404,
+        "rowNumber": 388,
         "note": "Ande G 7/2/21 - Added IP Address 10.100.30.173 per Meghan\nAnde G 7/6/21 - Added software rev and serial number per Meghan",
         "AddressLine1": {
             "value": "9101 N Central Expressway, Ste 550"
@@ -43358,8 +41610,8 @@ const testData = [
     },
     {
         "id": "71168671-c8b4-eb11-8175-12e75f4d5d6d",
-        "rowNumber": 405,
-        "note": "Attached please see the network configuration information for the upcoming mobile CT rental in Vacaville, CA. Here are some site contacts:\n\n 1) The primary contact in Radiology for the Field Engineer who will perform startup procedures on the CT is Kevin Lumpkin 707-624-7111.\n2) The contacts for the IT Department to assist the Field Engineer with networking the mobile CT to your facility are Carl Bucks or Leo Dinoso 707-624-5348.\n\n4/13/22 Mobile Unit is located in Vaca Valley Hospital 1000 Nut tree road Vacaville, CA 95687 per Rich Dishman 734.904.4046. PAP",
+        "rowNumber": 389,
+        "note": "Attached please see the network configuration information for the upcoming mobile CT rental in Vacaville, CA. Here are some site contacts:\n\n 1) The primary contact in Radiology for the Field Engineer who will perform startup procedures on the CT is Kevin Lumpkin 707-624-7111.\n2) The contacts for the IT Department to assist the Field Engineer with networking the mobile CT to your facility are Carl Bucks or Leo Dinoso 707-624-5348.\n\n4/13/22 Mobile Unit is located in Vaca Valley Hospital 1000 Nut tree road Vacaville, CA 95687 per Rich Dishman 734.904.4046. PAP\n\n11/8/22  Mobile Unit is located at: Willis-Knighton Regional Center, 2600 Greenwood Rd. Shreveport, LA.  ...... PWM ",
         "AddressLine1": {
             "value": "123 NO SHIP"
         },
@@ -43464,14 +41716,14 @@ const testData = [
     },
     {
         "id": "f8af1a33-f9be-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 406,
+        "rowNumber": 390,
         "note": null,
         "AddressLine1": {
             "value": "763 Johnsonburg Rd"
         },
         "AddressLine2": {},
         "City": {
-            "value": "St. Mary's"
+            "value": "St. Marys"
         },
         "CustomerContractCustomerID": {
             "value": "C0093"
@@ -43566,7 +41818,7 @@ const testData = [
     },
     {
         "id": "b2dd3553-c7c7-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 407,
+        "rowNumber": 391,
         "note": "2/1/22 - MC - updated with the serial # UA0092 taken from purchase contract with Nationwide Imaging and added the IP address of 10.150.11.100 that we got from the customer.\n\n10/19/22 - Service and PMs being done by Signature MRI saz",
         "AddressLine1": {
             "value": "84 N Main St"
@@ -43676,7 +41928,7 @@ const testData = [
     },
     {
         "id": "7bf07911-3eca-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 408,
+        "rowNumber": 392,
         "note": "6/10/21 Connor Bartlett created for service\n6.17.21 AB - Description updated!\nAB 7.13.21 - Added IP address per Remote team request",
         "AddressLine1": {
             "value": "3401 W Gore Blvd"
@@ -43778,7 +42030,7 @@ const testData = [
     },
     {
         "id": "e63ce052-77cf-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 409,
+        "rowNumber": 393,
         "note": null,
         "AddressLine1": {
             "value": "7945 Wolf River Road"
@@ -43880,7 +42132,7 @@ const testData = [
     },
     {
         "id": "eee95601-a7cf-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 410,
+        "rowNumber": 394,
         "note": "AB 7.13.21 - Added IP address per Remote team request\n\n3/2/22 MC - IP address assigned for the MRI Remote magnet monitor box is 172.20.6.18\n\n4/11/22 MC - marked to show on the website, since the mag mon remote box install is tomorrow night, and I am out of the office tomorrow.\n\n6/9/22 MC - added back IP address of HOST 172.20.30.210 and marked to show on the website again (mag mon was installed, cant automate host log files yet since still working on new siemens way) and added back site ID 400-418851 - since disappeared",
         "AddressLine1": {
             "value": "3401 W Gore Blvd"
@@ -43982,7 +42234,7 @@ const testData = [
     },
     {
         "id": "e3da6ceb-a7cf-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 411,
+        "rowNumber": 395,
         "note": "AB 7.13.21 - Added IP address per Remote team request",
         "AddressLine1": {
             "value": "3401 W Gore Blvd"
@@ -44080,7 +42332,7 @@ const testData = [
     },
     {
         "id": "00c4a715-a8cf-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 412,
+        "rowNumber": 396,
         "note": "AB 7.13.21 - Added IP address per Remote team request",
         "AddressLine1": {
             "value": "3401 W Gore Blvd"
@@ -44182,7 +42434,7 @@ const testData = [
     },
     {
         "id": "0c0010f7-55d0-eb11-8176-12e75f4d5d6d",
-        "rowNumber": 413,
+        "rowNumber": 397,
         "note": "",
         "AddressLine1": {
             "value": "1201 W Frank Ave"
@@ -44290,7 +42542,7 @@ const testData = [
     },
     {
         "id": "b86f08d8-18e3-eb11-8177-12e75f4d5d6d",
-        "rowNumber": 414,
+        "rowNumber": 398,
         "note": "created for PM\nsz 7/12/21\nAB 7.14.21 - Updated description to match formatting. ",
         "AddressLine1": {
             "value": "1210 W Faris Rd."
@@ -44394,7 +42646,7 @@ const testData = [
     },
     {
         "id": "24074c88-f8e3-eb11-8177-12e75f4d5d6d",
-        "rowNumber": 415,
+        "rowNumber": 399,
         "note": "Amanda B 9.13.21 - Updated SN for Will M.\n\n4/15/22 MC- re-added IP address 10.1.50.13 per Kirk Allgood\n4/18/22 MC - marked to show on the website, since it wasnt marked when looked on the 15th and this shows an active contract",
         "AddressLine1": {
             "value": "4825 FM 3009"
@@ -44500,7 +42752,7 @@ const testData = [
     },
     {
         "id": "23bfb20a-0de4-eb11-8177-12e75f4d5d6d",
-        "rowNumber": 416,
+        "rowNumber": 400,
         "note": "AB 7.19.21 - Added Site ID CT room 2 per the request of Jeff Cockrell.",
         "AddressLine1": {
             "value": "1900 S Main St"
@@ -44608,7 +42860,7 @@ const testData = [
     },
     {
         "id": "f3c53fc6-d3e8-eb11-8177-12e75f4d5d6d",
-        "rowNumber": 417,
+        "rowNumber": 401,
         "note": null,
         "AddressLine1": {
             "value": "15990 Medical Dr S"
@@ -44710,7 +42962,7 @@ const testData = [
     },
     {
         "id": "a22f4df3-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 418,
+        "rowNumber": 402,
         "note": "Meg C 12/6/21 - updated the serial #, customer unique ID, software version and IP address with what the customer provided during the remote connection set up process\n\n3/7/22 MC - IP address for remote mag mon box 10.9.230.100\n\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1151 Hospital Way, Bldg B"
@@ -44820,7 +43072,7 @@ const testData = [
     },
     {
         "id": "be2f4df3-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 419,
+        "rowNumber": 403,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "403 Columbia St"
@@ -44926,7 +43178,7 @@ const testData = [
     },
     {
         "id": "da2f4df3-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 420,
+        "rowNumber": 404,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1630 Commanche Ave"
@@ -45032,7 +43284,7 @@ const testData = [
     },
     {
         "id": "15f5aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 421,
+        "rowNumber": 405,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1638 Esplanade"
@@ -45138,7 +43390,7 @@ const testData = [
     },
     {
         "id": "31f5aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 422,
+        "rowNumber": 406,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1638 Esplanade"
@@ -45244,7 +43496,7 @@ const testData = [
     },
     {
         "id": "bcf5aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 423,
+        "rowNumber": 407,
         "note": null,
         "AddressLine1": {
             "value": "1901 SE 18th Ave"
@@ -45350,7 +43602,7 @@ const testData = [
     },
     {
         "id": "d8f5aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 424,
+        "rowNumber": 408,
         "note": null,
         "AddressLine1": {
             "value": "1490 SE Magnolia Ext"
@@ -45454,7 +43706,7 @@ const testData = [
     },
     {
         "id": "f4f5aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 425,
+        "rowNumber": 409,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1601 Monte Vista Avenue"
@@ -45560,7 +43812,7 @@ const testData = [
     },
     {
         "id": "10f6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 426,
+        "rowNumber": 410,
         "note": "5/24/22 MC - added \"Georgetown location\" as the Room so will show on Avante remote to distinguish the 3 Beebe sites\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "21635 Biden Ave"
@@ -45668,7 +43920,7 @@ const testData = [
     },
     {
         "id": "2cf6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 427,
+        "rowNumber": 411,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "3200 Westhill Dr"
@@ -45774,7 +44026,7 @@ const testData = [
     },
     {
         "id": "48f6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 428,
+        "rowNumber": 412,
         "note": null,
         "AddressLine1": {
             "value": "9228 S Mingo Rd, Ste 200"
@@ -45880,7 +44132,7 @@ const testData = [
     },
     {
         "id": "64f6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 429,
+        "rowNumber": 413,
         "note": "5/24/22 MC - added \"Millville location\" to Room so that it will show on the Avante website to distinguish between the 3 Beebe locations\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "32550 Doc's Place"
@@ -45988,7 +44240,7 @@ const testData = [
     },
     {
         "id": "80f6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 430,
+        "rowNumber": 414,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1040 Gulf Breeze Pkwy."
@@ -46096,7 +44348,7 @@ const testData = [
     },
     {
         "id": "9cf6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 431,
+        "rowNumber": 415,
         "note": "Meg C 12/6/21 - added cust site ID (is just the serial #) according to what they provided during remote connection set up\n\nMeg C 2/3/22 - added IP address 10.141.164.214 in atributes, provided by Lily Wisenski.  (The IP address for the remote box will be 10.141.164.217)\n\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "7010 SW 9th Ave"
@@ -46204,7 +44456,7 @@ const testData = [
     },
     {
         "id": "f0f6aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 432,
+        "rowNumber": 416,
         "note": "IP address of the Avante Host Computer is 10.152.196.40 (static)   \nIP address of the GE Magmon is 10.152.196.41 (static)\n \nIT Contact Info -  Marcos for the Women's.  5056597865\nRenovo Contact for the Site - rgriego@renovo1.com\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "4701 Montgomery Blvd Ne"
@@ -46312,7 +44564,7 @@ const testData = [
     },
     {
         "id": "0cf7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 433,
+        "rowNumber": 417,
         "note": null,
         "AddressLine1": {
             "value": "2525 Martin Luther King Blvd"
@@ -46416,7 +44668,7 @@ const testData = [
     },
     {
         "id": "28f7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 434,
+        "rowNumber": 418,
         "note": "5/24/22 MC - added \"Lewes Location\" to the Room so it shows on the avante remote website to distinguish between the 3 sites\n\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "424 Savannah Rd"
@@ -46524,7 +44776,7 @@ const testData = [
     },
     {
         "id": "5ff7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 435,
+        "rowNumber": 419,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "2401 W Main St"
@@ -46630,7 +44882,7 @@ const testData = [
     },
     {
         "id": "97f7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 436,
+        "rowNumber": 420,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "135 S Gibson St"
@@ -46736,7 +44988,7 @@ const testData = [
     },
     {
         "id": "b3f7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 437,
+        "rowNumber": 421,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "112 E 5Th Ave"
@@ -46842,7 +45094,7 @@ const testData = [
     },
     {
         "id": "cff7aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 438,
+        "rowNumber": 422,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "111 N Bailey St"
@@ -46948,7 +45200,7 @@ const testData = [
     },
     {
         "id": "07f8aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 439,
+        "rowNumber": 423,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1120 S Utica Ave"
@@ -47054,7 +45306,7 @@ const testData = [
     },
     {
         "id": "23f8aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 440,
+        "rowNumber": 424,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "10501 Golf Course Rd NW"
@@ -47160,7 +45412,7 @@ const testData = [
     },
     {
         "id": "5bf8aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 441,
+        "rowNumber": 425,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "915 W Michigan St"
@@ -47266,7 +45518,7 @@ const testData = [
     },
     {
         "id": "78f8aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 442,
+        "rowNumber": 426,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "8801 S 101St East Ave"
@@ -47372,7 +45624,7 @@ const testData = [
     },
     {
         "id": "94f8aefb-e6f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 443,
+        "rowNumber": 427,
         "note": "Air Products Site ID: CP270185\nAB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "850 W Central Texas Expy"
@@ -47478,7 +45730,7 @@ const testData = [
     },
     {
         "id": "49c3b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 444,
+        "rowNumber": 428,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "410 Dewey St"
@@ -47584,7 +45836,7 @@ const testData = [
     },
     {
         "id": "65c3b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 445,
+        "rowNumber": 429,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "333 Pine Ridge Blvd"
@@ -47690,7 +45942,7 @@ const testData = [
     },
     {
         "id": "81c3b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 446,
+        "rowNumber": 430,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "333 Pine Ridge Blvd"
@@ -47796,7 +46048,7 @@ const testData = [
     },
     {
         "id": "9dc3b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 447,
+        "rowNumber": 431,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "2817 New Pinery Rd"
@@ -47904,7 +46156,7 @@ const testData = [
     },
     {
         "id": "d5c3b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 448,
+        "rowNumber": 432,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1798 N Garey Ave"
@@ -48010,7 +46262,7 @@ const testData = [
     },
     {
         "id": "0dc4b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 449,
+        "rowNumber": 433,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1202 N Muskogee Pl"
@@ -48116,7 +46368,7 @@ const testData = [
     },
     {
         "id": "29c4b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 450,
+        "rowNumber": 434,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "1145 West Redondo Beach Blvd"
@@ -48222,7 +46474,7 @@ const testData = [
     },
     {
         "id": "45c4b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 451,
+        "rowNumber": 435,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "11190 Health Park Blvd"
@@ -48328,7 +46580,7 @@ const testData = [
     },
     {
         "id": "61c4b001-e7f2-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 452,
+        "rowNumber": 436,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "106th & Garnett"
@@ -48434,7 +46686,7 @@ const testData = [
     },
     {
         "id": "c57a9efb-03fa-eb11-8178-12e75f4d5d6d",
-        "rowNumber": 453,
+        "rowNumber": 437,
         "note": "AB 10.4.21 - Changed customer number per Amy B.\nAB 11.5.21 - Changed customer from C001906 to C095692 - Sarasota Vascular to closed SVC order - Changed back\nAB 11.11.21 - Changed to C095692 for service order closure. Changed back to C001906\nAB 11.12.21 - Added SN from contract\nAB 12.1.21 - Changed customer from C001906 to C095692 - Sarasota Vascular to closed SVC order - Changed Back",
         "AddressLine1": {
             "value": "600 N Cattlemen Rd Ste 220"
@@ -48538,7 +46790,7 @@ const testData = [
     },
     {
         "id": "586f51a1-0102-ec11-8179-12e75f4d5d6d",
-        "rowNumber": 454,
+        "rowNumber": 438,
         "note": "8/20/21 Connor Bartlett created for service. CB",
         "AddressLine1": {
             "value": "900 8Th Ave"
@@ -48642,7 +46894,7 @@ const testData = [
     },
     {
         "id": "3a830e41-6d0a-ec11-8179-12e75f4d5d6d",
-        "rowNumber": 455,
+        "rowNumber": 439,
         "note": null,
         "AddressLine1": {
             "value": "1200 B Gale Wilson Blvd"
@@ -48742,7 +46994,7 @@ const testData = [
     },
     {
         "id": "f8adfc3b-9a0a-ec11-8179-12e75f4d5d6d",
-        "rowNumber": 456,
+        "rowNumber": 440,
         "note": "AB 2.17.22 - Updated description and location per service request\nAB 2.17.22 - Updated SN and customer # based on contract\nAB 2.23.22 - Changed customer from C017728 Ship002 to C101453  Ship001 for appointment creation - changed back.\nAB 3.10.22 - Changed customer from C017728 - SHIP002 to C101453 MAIN for service order closure\nAB 3.14.22 - Changed customer to C017728 - SHIP002 from C101453 MAIN\nALB 05.23.22 -Changed customer to C101453 -SHIP001 from C017728 - SHIP002 for svc order closure - updating back once svc is complete\nAB 5.31.22 - Updated customer number back to C017728 for service contract\nAB 7.7.22 - Marked to show on remote per Joe Anello ",
         "AddressLine1": {
             "value": "2006 S Loop 336 W Ste 500"
@@ -49060,7 +47312,7 @@ const testData = [
     },
     {
         "id": "0c71b7ae-1f17-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 457,
+        "rowNumber": 441,
         "note": "Added for inspectioni 9/16/2021 steph z\nAB 1.7.22 - Changed customer from C083124 001 to C104252 per Angela request.\nAB 1.12.22 - Changed Customer back for service order closure - changed back\nAB 1.24.22 - Changed Customer back from C104252  to C083124 service order closure - changed back",
         "AddressLine1": {
             "value": "5260 Smith Rd"
@@ -49160,7 +47412,7 @@ const testData = [
     },
     {
         "id": "b47aa3c3-db1b-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 458,
+        "rowNumber": 442,
         "note": "9/6/22 AS:  Russ added as a placeholder, I am updating record with details from Trinity Remote Agreement.  ",
         "AddressLine1": {
             "value": "801 5Th St"
@@ -49262,7 +47514,7 @@ const testData = [
     },
     {
         "id": "5d5b43a9-1822-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 459,
+        "rowNumber": 443,
         "note": null,
         "AddressLine1": {
             "value": "3100 E Fletcher Ave"
@@ -49368,7 +47620,7 @@ const testData = [
     },
     {
         "id": "48e4b6da-2222-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 460,
+        "rowNumber": 444,
         "note": "3/31/22 MC - once this one is set up (Kirk has to work with Mcleod since IP didn't ping today) in order for engineer to access log files, have to log into https://view.mcleodhealth.org/  - Dustin Z, Michael Deuel, and Kirk Allgood have access - Cory Williams and Scott Whaley will have access once they are approved and assigned log ins on Mcleod's end",
         "AddressLine1": {
             "value": "McLeod Main Warehouse Receiving"
@@ -49476,7 +47728,7 @@ const testData = [
     },
     {
         "id": "6e05c3d2-3d25-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 461,
+        "rowNumber": 445,
         "note": "new equipment added by SJM 10/4\nAB 12.21.21 - UPDATED SN AND SITE ID BASED ON CONTRACT",
         "AddressLine1": {
             "value": "41 Mall Rd"
@@ -49582,7 +47834,7 @@ const testData = [
     },
     {
         "id": "d292677c-0326-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 462,
+        "rowNumber": 446,
         "note": "AB 10.14.21 - Updated customer from Sodexo to C000413 to add service contract.",
         "AddressLine1": {
             "value": "1309 Sheldon Rd"
@@ -49617,7 +47869,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "Sodexo - North Ottawa Community Health - Lightspeed VCT"
+            "value": "Trinity - North Ottawa Community Health - Lightspeed VCT"
         },
         "EquipmentNbr": {
             "value": "SME10957"
@@ -49682,7 +47934,7 @@ const testData = [
     },
     {
         "id": "951ca1e0-b92a-ec11-817a-12e75f4d5d6d",
-        "rowNumber": 463,
+        "rowNumber": 447,
         "note": "created for service 10-11-2021 saz\nUpdated SN based on contract - 11/1/21",
         "AddressLine1": {
             "value": "450 Stanyan St"
@@ -49784,7 +48036,7 @@ const testData = [
     },
     {
         "id": "29a52d30-ee2c-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 464,
+        "rowNumber": 448,
         "note": "Created for PM 10-14-21 saz\nAB 12.21.21 - UPDATED SN AND SITE ID BASED ON CONTRACT",
         "AddressLine1": {
             "value": "41 Highland Ave"
@@ -49885,116 +48137,8 @@ const testData = [
         "files": []
     },
     {
-        "id": "7a823a21-9133-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 465,
-        "note": "Made for PM - PM contract - 10/22/21 saz\nAB 10.25.21 - Added Site ID and edited description",
-        "AddressLine1": {
-            "value": "7924 Gateway East Blvd"
-        },
-        "AddressLine2": {
-            "value": "Suite J"
-        },
-        "City": {
-            "value": "El Paso"
-        },
-        "CustomerContractCustomerID": {
-            "value": "C0164"
-        },
-        "CustomerContractCustomerName": {
-            "value": "South Plains Biomedical Services"
-        },
-        "CustomerContractID": {
-            "value": "Q040141"
-        },
-        "CustomerContractLocationID": {
-            "value": "MAIN"
-        },
-        "CustomerContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "CustomerContractStatus": {
-            "value": "Expired"
-        },
-        "CustomerID": {
-            "value": "C0179"
-        },
-        "CustomerName": {
-            "value": "Texan Procedure Center, PLLC"
-        },
-        "CustomerUniqueID": {
-            "value": "400-497143"
-        },
-        "EquipmentDescription": {
-            "value": "SPBS - Texas Procedure Center - Siemens Axiom Artis - SN:1155"
-        },
-        "EquipmentNbr": {
-            "value": "SME11188"
-        },
-        "IPAddress": {},
-        "LastPMCompleted": {},
-        "LegacyEquipmentID": {},
-        "LocationID": {
-            "value": "MAIN"
-        },
-        "LocationName": {
-            "value": "Ship To Main Location"
-        },
-        "Manufacturer": {
-            "value": "Siemens Healthineers"
-        },
-        "Modality": {
-            "value": "CV/IR"
-        },
-        "Model": {
-            "value": "AXIOM ARTIS"
-        },
-        "ModelDescription": {
-            "value": "Axiom Artis"
-        },
-        "PMFrequencyinmonths": {},
-        "PostalCode": {
-            "value": "79915"
-        },
-        "Room": {
-            "value": "I.I"
-        },
-        "SerialNbr": {
-            "value": "1155"
-        },
-        "ServiceContractCustomerID": {
-            "value": "C0179"
-        },
-        "ServiceContractCustomerName": {
-            "value": "Texan Procedure Center, PLLC"
-        },
-        "ServiceContractID": {
-            "value": "FCT00002255"
-        },
-        "ServiceContractLocationID": {
-            "value": "MAIN"
-        },
-        "ServiceContractLocationName": {
-            "value": "Ship To Main Location"
-        },
-        "ServiceContractStatus": {
-            "value": "Active"
-        },
-        "ShowonRemoteServicesWebsite": {
-            "value": false
-        },
-        "SoftwareRelease": {},
-        "State": {
-            "value": "TX"
-        },
-        "Status": {
-            "value": "Active"
-        },
-        "custom": {},
-        "files": []
-    },
-    {
         "id": "b1f038c1-ce35-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 466,
+        "rowNumber": 449,
         "note": null,
         "AddressLine1": {
             "value": "1600 N Rose Ave"
@@ -50100,7 +48244,7 @@ const testData = [
     },
     {
         "id": "e07772ff-8936-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 467,
+        "rowNumber": 450,
         "note": "AB 3.31.22 - Updated the description and added SN and Site ID provided from Patrick in SVC.\n\nAB 8.29.22 - Updated mark to show on remote per Joe Anello request ",
         "AddressLine1": {
             "value": "44405 Woodward Ave"
@@ -50134,7 +48278,7 @@ const testData = [
             "value": "St Joseph Mercy Oakland"
         },
         "CustomerUniqueID": {
-            "value": "PO217456 / 10432915"
+            "value": "400-555078"
         },
         "EquipmentDescription": {
             "value": "St Joseph Mercy Oakland - Siemens Skyra 3T - SN: 145403"
@@ -50206,7 +48350,7 @@ const testData = [
     },
     {
         "id": "28b9a493-9a36-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 468,
+        "rowNumber": 451,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\nserial # is of the system 458475\non inspection report the gantry sn is 326086CN6\n1/27/22 - MC marked to show on the website per Kirk\n6/24/22 MC - marked not to show on the website and asked remote tech (Lan) to make not show.  Per Rick Leur at Mckesson they have powerd off this machine and stopped seeing patients as the practice is leaving the network the end of July. Sent email to Dave Lamoureux, Keith Steward and Remote Tech",
         "AddressLine1": {
             "value": "470 John Young Way"
@@ -50322,7 +48466,7 @@ const testData = [
     },
     {
         "id": "e0109d23-9d36-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 469,
+        "rowNumber": 452,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk\n4/26/22 MC - added back IP 10.128.137.195 per Kirk Allgood and marked to show on the website again since disappeared for some reason",
         "AddressLine1": {
             "value": "2560 Enterprise Road"
@@ -50362,9 +48506,7 @@ const testData = [
         "EquipmentNbr": {
             "value": "SME11228"
         },
-        "IPAddress": {
-            "value": "10.128.137.195"
-        },
+        "IPAddress": {},
         "LastPMCompleted": {},
         "LegacyEquipmentID": {},
         "LocationID": {
@@ -50411,9 +48553,7 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {
-            "value": true
-        },
+        "ShowonRemoteServicesWebsite": {},
         "SoftwareRelease": {},
         "State": {
             "value": "FL"
@@ -50426,7 +48566,7 @@ const testData = [
     },
     {
         "id": "1af5d5ed-a036-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 470,
+        "rowNumber": 453,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk",
         "AddressLine1": {
             "value": "698 Duluth Hwy"
@@ -50534,7 +48674,7 @@ const testData = [
     },
     {
         "id": "2e226024-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 471,
+        "rowNumber": 454,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk",
         "AddressLine1": {
             "value": "1703 N Bunner St"
@@ -50642,7 +48782,7 @@ const testData = [
     },
     {
         "id": "d61acf4e-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 472,
+        "rowNumber": 455,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC",
         "AddressLine1": {
             "value": "308 Deep South Farm Road"
@@ -50746,7 +48886,7 @@ const testData = [
     },
     {
         "id": "b1daec6c-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 473,
+        "rowNumber": 456,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC",
         "AddressLine1": {
             "value": "1144 N Road St"
@@ -50858,7 +48998,7 @@ const testData = [
     },
     {
         "id": "5d0fedb4-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 474,
+        "rowNumber": 457,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk\n5/9/22 MC - re-added IP 10.128.90.79 per Kirk Allgood, had disappeared somehow, and also marked to show on the website again as well since that had changed, too.",
         "AddressLine1": {
             "value": "7174 Wheat St"
@@ -50945,7 +49085,9 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {},
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
         "SoftwareRelease": {},
         "State": {
             "value": "GA"
@@ -50958,7 +49100,7 @@ const testData = [
     },
     {
         "id": "aa4ee8d2-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 475,
+        "rowNumber": 458,
         "note": "1/24/21 - MC added IP address 10.128.97.79\n1/27/22 - MC marked to show on the website per Kirk",
         "AddressLine1": {
             "value": "2349 Lawrenceville Highway"
@@ -51062,8 +49204,8 @@ const testData = [
     },
     {
         "id": "50d9c5fc-a136-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 476,
-        "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk\n5/11/22 MC - added back IP address 10.128.39.79 per Kirk Allgood again and marked to show on the website , these had disappeared somehow ",
+        "rowNumber": 459,
+        "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC\n1/27/22 - MC marked to show on the website per Kirk\n5/11/22 MC - added back IP address 10.128.39.79 per Kirk Allgood again and marked to show on the website , these had disappeared somehow",
         "AddressLine1": {
             "value": "311 Phillip Blvd"
         },
@@ -51166,7 +49308,7 @@ const testData = [
     },
     {
         "id": "6631ec1a-a236-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 477,
+        "rowNumber": 460,
         "note": "12/15/21 - MC, added info like serial #, IP address, SW from inspection report MC",
         "AddressLine1": {
             "value": "1770 Presidential Circle"
@@ -51272,7 +49414,7 @@ const testData = [
     },
     {
         "id": "b6ffce44-5637-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 478,
+        "rowNumber": 461,
         "note": "10/27/21 Connor Bartlett created for service\nAB 12.30.21 - Updated information\n3/15/22 MC - added IP address 10.75.163.238\n5/31/22 MC - added SW 7.2.16 per Chirags spreadsheet for remote connection project\nAB 6.23.22 - Updated show on remote site",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -51380,7 +49522,7 @@ const testData = [
     },
     {
         "id": "18d81094-523e-ec11-817b-12e75f4d5d6d",
-        "rowNumber": 479,
+        "rowNumber": 462,
         "note": null,
         "AddressLine1": {
             "value": "1115 S Sunset Ave"
@@ -51482,7 +49624,7 @@ const testData = [
     },
     {
         "id": "7a3a5017-a348-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 480,
+        "rowNumber": 463,
         "note": "created for PM 11/18/2021 saz\nAB 12.21.21 - UPDATED SN AND SITE ID BASED ON CONTRACT\n3/15/22 MC - added IP address 10.75.163.100 given by customer\n5/31/22 MC - added SW 8.1.17.2 from spreadsheet from Chirag for remote connection project, as well as added back IP address, customer and site ID, as they seem to have disappeared\nAB 6.23.22 - Updated show on remote site",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -51590,7 +49732,7 @@ const testData = [
     },
     {
         "id": "3930d1b3-a548-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 481,
+        "rowNumber": 464,
         "note": "Created for PM 11/18/21 saz\nAB 12.21.21 - UPDATED SN AND SITE ID BASED ON CONTRACT\n3/15/22 MC - added IP address 10.75.163.135\n5/31/22 MC - added SW 5.1 per Chirags spreadsheet for the remote connection project\nAB 6.23.22 - Updated Customer Unique ID and show on remote site",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -51704,7 +49846,7 @@ const testData = [
     },
     {
         "id": "fabc061b-6349-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 482,
+        "rowNumber": 465,
         "note": "11/19/21 Connor Bartlett created for service\n2.23.22 - Updated Description and customer for contract.",
         "AddressLine1": {
             "value": "700 High St"
@@ -51815,8 +49957,8 @@ const testData = [
     },
     {
         "id": "ee9955b6-8049-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 483,
-        "note": "AB 7.25.22 - Added SN per Dur",
+        "rowNumber": 466,
+        "note": "AB 7.25.22 - Added SN per Dur\n11/1/22 Ryan Rood is no longer with Crothall per emanuel.rodrigues@crothall.com. PAP",
         "AddressLine1": {
             "value": "455 Toll Gate Rd"
         },
@@ -51917,8 +50059,8 @@ const testData = [
     },
     {
         "id": "2915e504-8149-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 484,
-        "note": "AB 7.25.22 - Added SN per Dur",
+        "rowNumber": 467,
+        "note": "AB 7.25.22 - Added SN per Dur\n11/1/22 Ryan Rood is no longer with Crothall per emanuel.rodrigues@crothall.com. PAP",
         "AddressLine1": {
             "value": "455 Toll Gate Rd"
         },
@@ -52019,7 +50161,7 @@ const testData = [
     },
     {
         "id": "b3fb2898-8954-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 485,
+        "rowNumber": 468,
         "note": "12/3/21 created for service saz\nAB 5.10.22 - Changed customer per service/Will M request\nAB 7.8.22 - Changed customer to match contract C099962\n7/11/22 MC - added IP address 10.153.80.23 from sharepoint",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -52125,7 +50267,7 @@ const testData = [
     },
     {
         "id": "b9f13be2-bc57-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 486,
+        "rowNumber": 469,
         "note": "12/7/21 created for services saz\nAB 5.10.22 - Changed customer per service/Will M request\n7/11/22 MC - added IP address 10.153.80.10 from sharepoint",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -52233,7 +50375,7 @@ const testData = [
     },
     {
         "id": "82d4771e-3c58-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 487,
+        "rowNumber": 470,
         "note": "12/8/21 created for service saz\nAB 5.10.22 - Changed customer per service/Will M request\n7/11/22 MC - added IP address 192.168.101.141 from sharepoint",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -52339,7 +50481,7 @@ const testData = [
     },
     {
         "id": "fdfba0c0-3c58-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 488,
+        "rowNumber": 471,
         "note": "12/8/2021 created for service saz\nAB 5.10.22 - Changed customer per service/Will M request\n7/11/22 MC - added IP address 192.168.101.20 from sharepoint",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -52447,7 +50589,7 @@ const testData = [
     },
     {
         "id": "6aa2b93e-3d58-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 489,
+        "rowNumber": 472,
         "note": "12/8/2021 created for service saz\nAB 5.10.22 - Changed customer per service/Will M request\n7/11/22 MC - added IP address 192.168.101.52 from sharepoint",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -52555,8 +50697,8 @@ const testData = [
     },
     {
         "id": "69a08898-545c-ec11-817c-12e75f4d5d6d",
-        "rowNumber": 490,
-        "note": "5/23 Dupe SME00009 is correct one. PAP",
+        "rowNumber": 473,
+        "note": "5/23 Dupe SME00009 disposed of 5.23.22 this is correct one. PAP",
         "AddressLine1": {
             "value": "1111 W La Palma Ave"
         },
@@ -52590,7 +50732,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "INNOVA 2100"
+            "value": "AHMC Anaheim Regional Medical Center - Innova 2100 - SN: 588333BU5"
         },
         "EquipmentNbr": {
             "value": "SME11834"
@@ -52659,7 +50801,7 @@ const testData = [
     },
     {
         "id": "c71d8f66-9b62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 491,
+        "rowNumber": 474,
         "note": "3/22/22 MC - added IP 10.75.163.82 per customers spread sheet\n5/31/22 MC - added SW 6.13 per Chirags spreadsheet , as well as added back the IP address and customer asset #  and room since seems to have disappeared\nAB 6.23.22 - Updated show on remote site",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -52767,7 +50909,7 @@ const testData = [
     },
     {
         "id": "cbef8d50-9c62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 492,
+        "rowNumber": 475,
         "note": "3/15/22 MC - added IP address 10.75.22.235 given by the customer\n5/31/22 MC - added SW 5.1 per Chirags spreadsheet for remote connection project\nAB 6.23.22 - Updated show on remote site",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -52875,7 +51017,7 @@ const testData = [
     },
     {
         "id": "9b34919e-9c62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 493,
+        "rowNumber": 476,
         "note": null,
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -52977,7 +51119,7 @@ const testData = [
     },
     {
         "id": "87cba9e6-9c62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 494,
+        "rowNumber": 477,
         "note": "AB 12.28.21 - Updated model per engineer\n3/15/22 MC - added IP address 165.100.10.1 per customer\n5/31/22 MC - added the SW version Solaris M3B1.20.1 per the spreadsheet from Chirag for the remote connection project\n6/3/22 MC - removed the IP 165.100.10.1 since per Anne Wheeler it is not correct. Waiting on correct IP address\nAB 6.23.22 - Updated show on remote site and customer unique ID\nMC 9/8/22 - Samantha Edmonds at Crothall gave us IP address 192.168.1.2, added to attributes",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -53085,7 +51227,7 @@ const testData = [
     },
     {
         "id": "933cfc10-9d62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 495,
+        "rowNumber": 478,
         "note": "3/15/22 MC - added IP address 10.75.15.5 per customer\n5/31/22 MC - added SW IGS5_1.0 per Chirags spreadsheet for remote connection project\nAB 6.23.22 - Updated show on remote site and customer unique ID",
         "AddressLine1": {
             "value": "330 Brookline Ave"
@@ -53193,7 +51335,7 @@ const testData = [
     },
     {
         "id": "8c571647-9d62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 496,
+        "rowNumber": 479,
         "note": null,
         "AddressLine1": {
             "value": "41 Mall Rd"
@@ -53297,7 +51439,7 @@ const testData = [
     },
     {
         "id": "b3627177-9d62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 497,
+        "rowNumber": 480,
         "note": "FL# 400-506953",
         "AddressLine1": {
             "value": "41 Mall Rd"
@@ -53403,7 +51545,7 @@ const testData = [
     },
     {
         "id": "9227aca1-9d62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 498,
+        "rowNumber": 481,
         "note": "8/11/22 AS:  Updated S/N to reflect the correct record.  Changed from 105025 to 400-507449 per Crothal\n\n8/23- S/n is 105025- FL# is 400-507449",
         "AddressLine1": {
             "value": "41 Mall Rd"
@@ -53507,7 +51649,7 @@ const testData = [
     },
     {
         "id": "7b27abc5-9d62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 499,
+        "rowNumber": 482,
         "note": null,
         "AddressLine1": {
             "value": "41 Mall Rd"
@@ -53611,7 +51753,7 @@ const testData = [
     },
     {
         "id": "94870814-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 500,
+        "rowNumber": 483,
         "note": "AB 12.28.21 - Updated system type per engineer\n3/15/22 MC - added IP address 10.207.8.219 per customer",
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -53717,7 +51859,7 @@ const testData = [
     },
     {
         "id": "b6f0403e-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 501,
+        "rowNumber": 484,
         "note": "AB 12.28.21 - Updated SN per engineer\n3/15/22 MC - added IP address 10.207.208.207 per customer",
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -53752,7 +51894,7 @@ const testData = [
         },
         "CustomerUniqueID": {},
         "EquipmentDescription": {
-            "value": "Crothall - Mouth Auburn Hospital - FD10 - Procedure Room 2 - SN: 2626/37"
+            "value": "Crothall - Mouth Auburn Hospital - FD20 - Procedure Room 2 - SN: 2626/37"
         },
         "EquipmentNbr": {
             "value": "SME11937"
@@ -53773,10 +51915,10 @@ const testData = [
             "value": "CV/IR"
         },
         "Model": {
-            "value": "FD10"
+            "value": "FD20"
         },
         "ModelDescription": {
-            "value": "FD10"
+            "value": "FD20"
         },
         "PMFrequencyinmonths": {},
         "PostalCode": {
@@ -53819,7 +51961,7 @@ const testData = [
     },
     {
         "id": "1e4d6c6e-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 502,
+        "rowNumber": 485,
         "note": "",
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -53929,7 +52071,7 @@ const testData = [
     },
     {
         "id": "edd8ad9e-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 503,
+        "rowNumber": 486,
         "note": null,
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -54033,7 +52175,7 @@ const testData = [
     },
     {
         "id": "282fb4c2-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 504,
+        "rowNumber": 487,
         "note": null,
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -54137,7 +52279,7 @@ const testData = [
     },
     {
         "id": "e297aeec-9e62-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 505,
+        "rowNumber": 488,
         "note": "3/15/22 MC - added IP address 10.207.208.204 per customer",
         "AddressLine1": {
             "value": "330 Mount Auburn St"
@@ -54239,8 +52381,8 @@ const testData = [
     },
     {
         "id": "a9d7a8b3-426e-ec11-817d-12e75f4d5d6d",
-        "rowNumber": 506,
-        "note": null,
+        "rowNumber": 489,
+        "note": "10/21/22 mC- just changed the attribute customer Unique ID from DI211-13 to the DI21-113",
         "AddressLine1": {
             "value": "1255 Highway 54 W"
         },
@@ -54273,7 +52415,7 @@ const testData = [
             "value": "Piedmont Fayette Hospital"
         },
         "CustomerUniqueID": {
-            "value": "DI211-13"
+            "value": "DI21-113"
         },
         "EquipmentDescription": {
             "value": "Piedmont - Fayetteville - Siemens Sola MRI - DI21-113 - SN: 183264"
@@ -54343,7 +52485,7 @@ const testData = [
     },
     {
         "id": "7d3ed48a-b67e-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 507,
+        "rowNumber": 490,
         "note": "AB 2.23.22 - Changed customer information to match contract.\nAB 2.23.22 - Updated Site ID per Tommy LeSage\nAB 2.25.22 - Changed from C017728 SHIP001 to C101453 SHIP001 for service order closure. - Changed back.",
         "AddressLine1": {
             "value": "540 Ih 45 S"
@@ -54449,7 +52591,7 @@ const testData = [
     },
     {
         "id": "ac1260d2-e282-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 508,
+        "rowNumber": 491,
         "note": "AB 7.22.22 - SN added per Dur\n\n9/27/22 .... Make sure the FE, knows not to confuse the SN's, it has happened a couple of times, this is NOT SN9761 (same system type). ..... PWM",
         "AddressLine1": {
             "value": "825 Chalkstone Ave"
@@ -54551,7 +52693,7 @@ const testData = [
     },
     {
         "id": "99508f21-e382-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 509,
+        "rowNumber": 492,
         "note": "AB 7.22.22 - SN added per Dur\n\n9/27/22 .... Make sure the FE, knows not to confuse the SN's, it has happened a couple of times, this is NOT SN9802(same system type). ",
         "AddressLine1": {
             "value": "200 High Service Ave"
@@ -54653,7 +52795,7 @@ const testData = [
     },
     {
         "id": "9d7a58f5-9f83-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 510,
+        "rowNumber": 493,
         "note": null,
         "AddressLine1": {
             "value": "139 Garau St"
@@ -54755,7 +52897,7 @@ const testData = [
     },
     {
         "id": "77f24b8a-e689-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 511,
+        "rowNumber": 494,
         "note": null,
         "AddressLine1": {
             "value": "6800 N Frontage Road"
@@ -54857,7 +52999,7 @@ const testData = [
     },
     {
         "id": "e5067d9c-6f8b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 512,
+        "rowNumber": 495,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "1330 Taylor At Marion St"
@@ -54963,7 +53105,7 @@ const testData = [
     },
     {
         "id": "8723b04a-708b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 513,
+        "rowNumber": 496,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "129 N Washington St."
@@ -55071,7 +53213,7 @@ const testData = [
     },
     {
         "id": "f8435e9f-708b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 514,
+        "rowNumber": 497,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "129 N Washington St."
@@ -55179,7 +53321,7 @@ const testData = [
     },
     {
         "id": "43c3da23-718b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 515,
+        "rowNumber": 498,
         "note": "5/16/22 MC - added IP 10.120.5.213 provided by mario\n5/24/22 MC - marked to show on the website since initial connection completed per Kirk",
         "AddressLine1": {
             "value": "5 Richland Medical Park Dr"
@@ -55285,7 +53427,7 @@ const testData = [
     },
     {
         "id": "d7de53b4-718b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 516,
+        "rowNumber": 499,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "400 Palmetto Health Pkwy"
@@ -55391,7 +53533,7 @@ const testData = [
     },
     {
         "id": "7cf997fc-718b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 517,
+        "rowNumber": 500,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "129 N Washington St."
@@ -55499,7 +53641,7 @@ const testData = [
     },
     {
         "id": "bd07d026-728b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 518,
+        "rowNumber": 501,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign\n5/16/22 - Mario gave IP for GE Mag Mon 167.171.166.178\n6/6/22 MC - changed IP from 167.171.16.176 to 167.171.166.176, was missing one number - emailed to Remote tech on 6/29/22",
         "AddressLine1": {
             "value": "5 Richland Medical Park Dr"
@@ -55605,7 +53747,7 @@ const testData = [
     },
     {
         "id": "ca5316c4-728b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 519,
+        "rowNumber": 502,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign\n5/16/22 MC- Mario gave GE Mag Mon IP of 167.171.166.167",
         "AddressLine1": {
             "value": "5 Richland Medical Park Dr"
@@ -55711,7 +53853,7 @@ const testData = [
     },
     {
         "id": "8b59253c-738b-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 520,
+        "rowNumber": 503,
         "note": "2/22/22 MC - marked to show on website\n2/23/22 MC - marked not to show on the website per Dustin since they didn't pay yet\n4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign\n5/16/22 MC - Mario gave IP address for the GE Mag Mon box 10.40.130.43",
         "AddressLine1": {
             "value": "400 Palmetto Health Pkwy"
@@ -55817,7 +53959,7 @@ const testData = [
     },
     {
         "id": "622d8e56-af8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 521,
+        "rowNumber": 504,
         "note": "2/14/22 created for PM saz\nAB 3.8.22 - Updated customer and location for contract.",
         "AddressLine1": {
             "value": "675 Babcock St"
@@ -55923,7 +54065,7 @@ const testData = [
     },
     {
         "id": "07421dd3-b48d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 522,
+        "rowNumber": 505,
         "note": "5/13/22 MC - Mario gave IP address for GE Mag Mon 167.171.115.91\n6/2/22 MC - David Womack gave different IP address, so changed from 167.171.82.121 to 167.171.115.90\n7/19/22 MC - marked to show on website per Joe A",
         "AddressLine1": {
             "value": "1330 Taylor At Marion St"
@@ -56031,7 +54173,7 @@ const testData = [
     },
     {
         "id": "4bb58081-bb8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 523,
+        "rowNumber": 506,
         "note": "AB 4.13.22- Updated IP Address per Remote Request\nNote: Customer Unique/Site ID # 1698591 is correct per Patrick Goodman (the # on the contract was incorrect)\n\n5/24/22 MC - i marked this to show on remote website since initial connection completed and is working per Kirk Allgood (so long as they set up the machine firewall appropriately, as Mario had to disabled it so that it would work)",
         "AddressLine1": {
             "value": "200 Fleetwood Dr"
@@ -56137,7 +54279,7 @@ const testData = [
     },
     {
         "id": "02d473c9-bb8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 524,
+        "rowNumber": 507,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "830 S Buncombe Rd"
@@ -56243,7 +54385,7 @@ const testData = [
     },
     {
         "id": "d2057bff-bb8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 525,
+        "rowNumber": 508,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "298 Memorial Drive"
@@ -56349,7 +54491,7 @@ const testData = [
     },
     {
         "id": "be905e3b-bc8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 526,
+        "rowNumber": 509,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "729 SE Main St."
@@ -56455,7 +54597,7 @@ const testData = [
     },
     {
         "id": "6531a09b-bc8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 527,
+        "rowNumber": 510,
         "note": null,
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -56561,7 +54703,7 @@ const testData = [
     },
     {
         "id": "69dba4e9-bc8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 528,
+        "rowNumber": 511,
         "note": "5/16/22 MC - changed IP from 10.10.10.10 to 10.184.10.205 that got from Mario\n8/17/22 MC - changed IP from  10.184.10.205     to 10.64.35.207 (we had been given Baptist Easley and this one swapped) and marked to show on website since this IP was getting log files",
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -56669,7 +54811,7 @@ const testData = [
     },
     {
         "id": "ca13775b-bd8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 529,
+        "rowNumber": 512,
         "note": null,
         "AddressLine1": {
             "value": "701 Grove Rd"
@@ -56773,7 +54915,7 @@ const testData = [
     },
     {
         "id": "25c275c7-bd8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 530,
+        "rowNumber": 513,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "175 Patewood Drive"
@@ -56879,7 +55021,7 @@ const testData = [
     },
     {
         "id": "1074aa03-be8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 531,
+        "rowNumber": 514,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign",
         "AddressLine1": {
             "value": "298 Memorial Drive"
@@ -56985,7 +55127,7 @@ const testData = [
     },
     {
         "id": "9ad09933-be8d-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 532,
+        "rowNumber": 515,
         "note": "4/15/22 MC - marked to show on the website since Kevin rec'd the PO for the remote monitoring contract, Ric D just has to countersign\nab 4.18.22 - Updated location to the correct Ship to.\n8/17/22 MC - changed the IP from  10.64.35.207    to 10.184.10.205 (we were given Greenville Excite and this one swapped)",
         "AddressLine1": {
             "value": "200 Fleetwood Dr"
@@ -57093,7 +55235,7 @@ const testData = [
     },
     {
         "id": "8e6b8c27-a38e-ec11-817e-12e75f4d5d6d",
-        "rowNumber": 533,
+        "rowNumber": 516,
         "note": "",
         "AddressLine1": {
             "value": "6800 N Frontage Road"
@@ -57195,7 +55337,7 @@ const testData = [
     },
     {
         "id": "787f3b69-2f90-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 534,
+        "rowNumber": 517,
         "note": "AB 10.11.22 - Updated Customer Unique ID ",
         "AddressLine1": {
             "value": "900 Illinois Ave"
@@ -57299,7 +55441,7 @@ const testData = [
     },
     {
         "id": "e9a323db-2f90-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 535,
+        "rowNumber": 518,
         "note": null,
         "AddressLine1": {
             "value": "1901 Westwood Center Blvd"
@@ -57403,7 +55545,7 @@ const testData = [
     },
     {
         "id": "72968d01-3990-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 536,
+        "rowNumber": 519,
         "note": "AB 2.24.22 - Updated Site ID and SN per Tommy LeSage",
         "AddressLine1": {
             "value": "2006 S Loop 336 W Ste 500"
@@ -57505,7 +55647,7 @@ const testData = [
     },
     {
         "id": "09a4d2ed-3990-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 537,
+        "rowNumber": 520,
         "note": "",
         "AddressLine1": {
             "value": "135 Vision Park Blvd"
@@ -57613,7 +55755,7 @@ const testData = [
     },
     {
         "id": "c1610358-0c94-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 538,
+        "rowNumber": 521,
         "note": null,
         "AddressLine1": {
             "value": "1319 S International Pkwy"
@@ -57715,7 +55857,7 @@ const testData = [
     },
     {
         "id": "99d0288c-0e94-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 539,
+        "rowNumber": 522,
         "note": null,
         "AddressLine1": {
             "value": "1319 S International Pkwy"
@@ -57817,7 +55959,7 @@ const testData = [
     },
     {
         "id": "37106ee6-0e94-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 540,
+        "rowNumber": 523,
         "note": null,
         "AddressLine1": {
             "value": "1319 S International Pkwy"
@@ -57919,7 +56061,7 @@ const testData = [
     },
     {
         "id": "6d54789e-d79b-ec11-817f-12e75f4d5d6d",
-        "rowNumber": 541,
+        "rowNumber": 524,
         "note": "Site Contact for Inspection and PM scheduling:\nKathy Howard\nCardiac Cath Lab Director\nMain:   936-569-4128\nOffice: 936-569-4606\n\nMedygate main contact:\nSteven Leadley\nMedygate Inc.\n714-612-7109\n\nEmail Service Reports to:\nfnosrati@medygate.com\nsleadley@medygate.com\npconley@medygate.com",
         "AddressLine1": {
             "value": "1204 N Mound St"
@@ -58021,7 +56163,7 @@ const testData = [
     },
     {
         "id": "bd8139cc-5ba5-ec11-8180-12e75f4d5d6d",
-        "rowNumber": 542,
+        "rowNumber": 525,
         "note": "AB 3.21.22 - Updated Information based on new contract",
         "AddressLine1": {
             "value": "2060 Niagara Falls Blvd"
@@ -58125,7 +56267,7 @@ const testData = [
     },
     {
         "id": "f9d16c53-e6b5-ec11-8180-12e75f4d5d6d",
-        "rowNumber": 543,
+        "rowNumber": 526,
         "note": "AB 6.13.22 - Updated system model per contract. Updated customer from C0051 SHIP135 to C000507 per new customer model change\nAB 8.16.22 - Brian Drummy had changed this back to C0051. Updated system model per contract. Updated customer from C0051 SHIP135 to C000507 per new customer model change",
         "AddressLine1": {
             "value": "1415 E Kincaid St"
@@ -58212,7 +56354,9 @@ const testData = [
         "ServiceContractStatus": {
             "value": "Active"
         },
-        "ShowonRemoteServicesWebsite": {},
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
         "SoftwareRelease": {},
         "State": {
             "value": "WA"
@@ -58225,7 +56369,7 @@ const testData = [
     },
     {
         "id": "6792a0c7-7bb7-ec11-8180-12e75f4d5d6d",
-        "rowNumber": 544,
+        "rowNumber": 527,
         "note": null,
         "AddressLine1": {
             "value": "36000 Euclid Ave"
@@ -58327,7 +56471,7 @@ const testData = [
     },
     {
         "id": "3e449d3a-79d0-ec11-8181-12e75f4d5d6d",
-        "rowNumber": 545,
+        "rowNumber": 528,
         "note": null,
         "AddressLine1": {
             "value": "123 NO SHIP"
@@ -58427,8 +56571,8 @@ const testData = [
     },
     {
         "id": "84c67659-f4e2-ec11-8182-12e75f4d5d6d",
-        "rowNumber": 546,
-        "note": "GE Magmon 4K (1 PSI magnet) + EDU Unit 390 Tier 3\n\n9/2/22 AS:  Updated Place holder that Russ created with actual system details provided by customer. ",
+        "rowNumber": 529,
+        "note": "GE Magmon 4K (1 PSI magnet) + EDU Unit 390 Tier 3\n\n9/2/22 AS:  Updated Place holder that Russ created with actual system details provided by customer.\n\nAB 11.1.22 - Updated from Customer C009816 to C044257 to match the service contract and service orders. ",
         "AddressLine1": {
             "value": "1S260 Summit Ave"
         },
@@ -58529,7 +56673,7 @@ const testData = [
     },
     {
         "id": "4348c7db-a2e6-ec11-8182-12e75f4d5d6d",
-        "rowNumber": 547,
+        "rowNumber": 530,
         "note": "AB 7.25.22 - Added SN per Dur",
         "AddressLine1": {
             "value": "455 Toll Gate Rd"
@@ -58631,7 +56775,7 @@ const testData = [
     },
     {
         "id": "92a0b84b-d9fe-ec11-8184-12e75f4d5d6d",
-        "rowNumber": 548,
+        "rowNumber": 531,
         "note": "AB 9.29.22 - Updated description to match formatting ",
         "AddressLine1": {
             "value": "1900 Pine St"
@@ -58737,8 +56881,8 @@ const testData = [
     },
     {
         "id": "736873a3-c10e-ed11-8185-12e75f4d5d6d",
-        "rowNumber": 549,
-        "note": null,
+        "rowNumber": 532,
+        "note": "",
         "AddressLine1": {
             "value": "1233 E 2Nd St"
         },
@@ -58771,15 +56915,17 @@ const testData = [
             "value": "Wyoming Medical Center - Central Campus"
         },
         "CustomerUniqueID": {
-            "value": "15150698"
+            "value": "15153392"
         },
         "EquipmentDescription": {
-            "value": "Wyoming Medical Center - FD20 - 536726"
+            "value": "Wyoming Medical Center Central Campus - FD20 - Cath Lab 2 - SN: 431"
         },
         "EquipmentNbr": {
             "value": "SME14220"
         },
-        "IPAddress": {},
+        "IPAddress": {
+            "value": "10.60.187.2"
+        },
         "LastPMCompleted": {},
         "LegacyEquipmentID": {},
         "LocationID": {
@@ -58804,9 +56950,11 @@ const testData = [
         "PostalCode": {
             "value": "82601"
         },
-        "Room": {},
+        "Room": {
+            "value": "Cath Lab 2"
+        },
         "SerialNbr": {
-            "value": "536726"
+            "value": "431"
         },
         "ServiceContractCustomerID": {
             "value": "C007750"
@@ -58829,7 +56977,9 @@ const testData = [
         "ShowonRemoteServicesWebsite": {
             "value": false
         },
-        "SoftwareRelease": {},
+        "SoftwareRelease": {
+            "value": "8.1.17.2"
+        },
         "State": {
             "value": "WY"
         },
@@ -58837,11 +56987,17 @@ const testData = [
             "value": "Active"
         },
         "custom": {},
-        "files": []
+        "files": [
+            {
+                "id": "dc982557-2298-4515-8aac-7c503c53785c",
+                "filename": "Equipment (SME14220)\\PhilipsCV_SME14220-Banner Wyoming Medical Center - Central Campus-Rm-2.pdf",
+                "href": "/entity/AHS/18.200.003/files/dc982557-2298-4515-8aac-7c503c53785c"
+            }
+        ]
     },
     {
         "id": "80503369-5a0f-ed11-8185-12e75f4d5d6d",
-        "rowNumber": 550,
+        "rowNumber": 533,
         "note": null,
         "AddressLine1": {
             "value": "2100 Silas Creek Parkway"
@@ -58943,7 +57099,7 @@ const testData = [
     },
     {
         "id": "6e756d4d-1335-ed11-8188-12e75f4d5d6d",
-        "rowNumber": 551,
+        "rowNumber": 534,
         "note": null,
         "AddressLine1": {
             "value": "13810 Crayton Blvd"
@@ -59040,9 +57196,113 @@ const testData = [
         "files": []
     },
     {
+        "id": "3e488961-d43d-ed11-8188-12e75f4d5d6d",
+        "rowNumber": 535,
+        "note": "11/4/22 AS:  Added to Piedmont Contract per Russ G. ",
+        "AddressLine1": {
+            "value": "5126 Hospital Dr Ne"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Covington"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0137"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Piedmont HealthCare"
+        },
+        "CustomerContractID": {
+            "value": "PIEDMONT"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C001779"
+        },
+        "CustomerName": {
+            "value": "Piedmont Newton Hospital"
+        },
+        "CustomerUniqueID": {
+            "value": "DI6086"
+        },
+        "EquipmentDescription": {
+            "value": "Piedmont Newton - Siemens Definition Edge - DI6086"
+        },
+        "EquipmentNbr": {
+            "value": "SME14864"
+        },
+        "IPAddress": {
+            "value": "10.150.114.234"
+        },
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "Siemens Healthineers"
+        },
+        "Modality": {
+            "value": "CT"
+        },
+        "Model": {
+            "value": "DEFINITION EDGE"
+        },
+        "ModelDescription": {
+            "value": "Definition Edge"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "30014"
+        },
+        "Room": {},
+        "SerialNbr": {},
+        "ServiceContractCustomerID": {
+            "value": "C001779"
+        },
+        "ServiceContractCustomerName": {
+            "value": "Piedmont Newton Hospital"
+        },
+        "ServiceContractID": {
+            "value": "FCT00001888"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {},
+        "State": {
+            "value": "GA"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
+    },
+    {
         "id": "26b06623-2044-ed11-8188-12e75f4d5d6d",
-        "rowNumber": 552,
-        "note": "10/4/22 AS:  Magmon Unverified Settings\n192.168.200.104\n255.255.255\n192.168.200.1\nDNS:\n10.20.0.20\n10.0.2.224",
+        "rowNumber": 536,
+        "note": "10/4/22 AS:  Magmon Unverified Settings\n192.168.200.104\n255.255.255\n192.168.200.1\nDNS:\n10.20.0.20\n10.0.2.224\n\nAB 10.21.22 - Updated customer unique field and description for formatting. ",
         "AddressLine1": {
             "value": "2701 W 68Th St"
         },
@@ -59074,9 +57334,11 @@ const testData = [
         "CustomerName": {
             "value": "Holy Cross Hospital"
         },
-        "CustomerUniqueID": {},
+        "CustomerUniqueID": {
+            "value": "H4917"
+        },
         "EquipmentDescription": {
-            "value": "GE Signa Excite 1.5T - CE Tag# H4917"
+            "value": "Holy Cross Hospital - GE Signa Excite 1.5T - SN: 773884HCMR"
         },
         "EquipmentNbr": {
             "value": "SME14950"
@@ -59190,6 +57452,420 @@ const testData = [
                 "href": "/entity/AHS/18.200.003/files/1b4cece5-a274-4676-b324-fcf6f92403fd"
             }
         ]
+    },
+    {
+        "id": "902ddd88-a95b-ed11-8189-12e75f4d5d6d",
+        "rowNumber": 537,
+        "note": null,
+        "AddressLine1": {
+            "value": "1600 Wallace Blvd"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Amarillo"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0151"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Renovo Solutions, LLC"
+        },
+        "CustomerContractID": {
+            "value": "CPPAHS67"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C000634"
+        },
+        "CustomerName": {
+            "value": "BSA Hospital"
+        },
+        "CustomerUniqueID": {
+            "value": "125136"
+        },
+        "EquipmentDescription": {
+            "value": "BSA Hospital - GE Signa HDxt 1.5T Echospeed - SN: 806327500"
+        },
+        "EquipmentNbr": {
+            "value": "SME15261"
+        },
+        "IPAddress": {},
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "GE Healthcare"
+        },
+        "Modality": {
+            "value": "MRI"
+        },
+        "Model": {
+            "value": "ECHOSPEED1.5T"
+        },
+        "ModelDescription": {
+            "value": "ECHOSPEED1.5T__"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "79106"
+        },
+        "Room": {},
+        "SerialNbr": {
+            "value": "806327500"
+        },
+        "ServiceContractCustomerID": {
+            "value": "C000634"
+        },
+        "ServiceContractCustomerName": {
+            "value": "BSA Hospital"
+        },
+        "ServiceContractID": {
+            "value": "AHS00002981"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {},
+        "State": {
+            "value": "TX"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
+    },
+    {
+        "id": "d400e6c4-a95b-ed11-8189-12e75f4d5d6d",
+        "rowNumber": 538,
+        "note": null,
+        "AddressLine1": {
+            "value": "1600 Wallace Blvd"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Amarillo"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0151"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Renovo Solutions, LLC"
+        },
+        "CustomerContractID": {
+            "value": "CPPAHS67"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C000634"
+        },
+        "CustomerName": {
+            "value": "BSA Hospital"
+        },
+        "CustomerUniqueID": {
+            "value": "125660"
+        },
+        "EquipmentDescription": {
+            "value": "BSA Hospital - GE Signa HDxt 1.5T Echospeed - SN: 806212LX2"
+        },
+        "EquipmentNbr": {
+            "value": "SME15262"
+        },
+        "IPAddress": {},
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "GE Healthcare"
+        },
+        "Modality": {
+            "value": "MRI"
+        },
+        "Model": {
+            "value": "ECHOSPEED1.5T"
+        },
+        "ModelDescription": {
+            "value": "ECHOSPEED1.5T__"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "79106"
+        },
+        "Room": {},
+        "SerialNbr": {
+            "value": "806212LX2"
+        },
+        "ServiceContractCustomerID": {
+            "value": "C000634"
+        },
+        "ServiceContractCustomerName": {
+            "value": "BSA Hospital"
+        },
+        "ServiceContractID": {
+            "value": "AHS00002981"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {},
+        "State": {
+            "value": "TX"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
+    },
+    {
+        "id": "f7bd13ef-a95b-ed11-8189-12e75f4d5d6d",
+        "rowNumber": 539,
+        "note": null,
+        "AddressLine1": {
+            "value": "1600 Wallace Blvd"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Amarillo"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0151"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Renovo Solutions, LLC"
+        },
+        "CustomerContractID": {
+            "value": "CPPAHS67"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C000634"
+        },
+        "CustomerName": {
+            "value": "BSA Hospital"
+        },
+        "CustomerUniqueID": {
+            "value": "202738"
+        },
+        "EquipmentDescription": {
+            "value": "BSA Hospital - GE Signa Excite 3T - SN: 806212MR3T"
+        },
+        "EquipmentNbr": {
+            "value": "SME15263"
+        },
+        "IPAddress": {},
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "GE Healthcare"
+        },
+        "Modality": {
+            "value": "MRI"
+        },
+        "Model": {
+            "value": "EXCITE 3T"
+        },
+        "ModelDescription": {
+            "value": "SIGNA EXCITE 3T"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "79106"
+        },
+        "Room": {},
+        "SerialNbr": {
+            "value": "806212MR3T"
+        },
+        "ServiceContractCustomerID": {
+            "value": "C000634"
+        },
+        "ServiceContractCustomerName": {
+            "value": "BSA Hospital"
+        },
+        "ServiceContractID": {
+            "value": "AHS00002981"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {},
+        "State": {
+            "value": "TX"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
+    },
+    {
+        "id": "0e4ba17a-5d60-ed11-8189-12e75f4d5d6d",
+        "rowNumber": 540,
+        "note": null,
+        "AddressLine1": {
+            "value": "11937 Us Highway 271"
+        },
+        "AddressLine2": {},
+        "City": {
+            "value": "Tyler"
+        },
+        "CustomerContractCustomerID": {
+            "value": "C0151"
+        },
+        "CustomerContractCustomerName": {
+            "value": "Renovo Solutions, LLC"
+        },
+        "CustomerContractID": {
+            "value": "CPPAHS66"
+        },
+        "CustomerContractLocationID": {
+            "value": "MAIN"
+        },
+        "CustomerContractLocationName": {
+            "value": "Ship To Main Location"
+        },
+        "CustomerContractStatus": {
+            "value": "Active"
+        },
+        "CustomerID": {
+            "value": "C000284"
+        },
+        "CustomerName": {
+            "value": "UT Health North Campus Tyler"
+        },
+        "CustomerUniqueID": {},
+        "EquipmentDescription": {
+            "value": "UT Health North Campus - GE Optima 450W - SN: HM0847"
+        },
+        "EquipmentNbr": {
+            "value": "SME15305"
+        },
+        "IPAddress": {},
+        "LastPMCompleted": {},
+        "LegacyEquipmentID": {},
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "Manufacturer": {
+            "value": "GE Healthcare"
+        },
+        "Modality": {
+            "value": "MRI"
+        },
+        "Model": {
+            "value": "OPTIMA 450W1.5T"
+        },
+        "ModelDescription": {
+            "value": "Optima 450W 1.5T"
+        },
+        "PMFrequencyinmonths": {},
+        "PostalCode": {
+            "value": "75708"
+        },
+        "Room": {},
+        "SerialNbr": {
+            "value": "HM0847"
+        },
+        "ServiceContractCustomerID": {
+            "value": "C000284"
+        },
+        "ServiceContractCustomerName": {
+            "value": "UT Health North Campus Tyler"
+        },
+        "ServiceContractID": {
+            "value": "AHS00003000"
+        },
+        "ServiceContractLocationID": {
+            "value": "MAIN"
+        },
+        "ServiceContractLocationName": {
+            "value": "Primary Location"
+        },
+        "ServiceContractStatus": {
+            "value": "Active"
+        },
+        "ShowonRemoteServicesWebsite": {
+            "value": false
+        },
+        "SoftwareRelease": {},
+        "State": {
+            "value": "TX"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "custom": {},
+        "files": []
     }
 ]
 
