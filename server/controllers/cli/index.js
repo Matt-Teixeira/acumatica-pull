@@ -8,6 +8,7 @@ const {
   acceptDeltas,
   backupTables,
   restoreTables,
+  detailedDelta,
 } = require("../../jobs");
 
 const { question, readline } = require("../../utils/readlinePromisify");
@@ -18,6 +19,7 @@ class Interface {
     2: "Merge Deltas",
     3: "Backup Tables",
     4: "Restore Tables",
+    5: "Detailed Delta",
   };
 
   async viewOptions() {
@@ -42,6 +44,9 @@ class Interface {
         break;
       case "4":
         await restoreTables();
+        break;
+      case "5":
+        await detailedDelta(formattedData);
         break;
       default:
         console.log(option + " is not an option");

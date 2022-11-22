@@ -1,7 +1,6 @@
 ("use strict");
 require("dotenv").config();
 const { log } = require("../logger");
-const pgPool = require("../db/pg-pool");
 const {
   updateCustomerDeltas,
   updateSiteDeltas,

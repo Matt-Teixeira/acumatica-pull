@@ -5,7 +5,7 @@ const {
   callLogin,
   getApiData,
 } = require("../controllers/acumaticaAPI/apiCall");
-//const testData = require("../controllers/acumaticaAPI/testData");
+const testData = require("../controllers/acumaticaAPI/testData");
 
 // Will run production or development api calls based on process.env.ENV === 'dev' || 'prod'
 
@@ -15,10 +15,10 @@ const runJob = async (acumaticLogin, acumaticEquipEndpoint) => {
     acumaticEquipEndpoint: acumaticEquipEndpoint,
   });
   // CALL API
-  const cookies = await callLogin(acumaticLogin);
-  const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
+  //const cookies = await callLogin(acumaticLogin);
+  //const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
 
-  return await equipmentData;
+  return await testData;
 };
 
 const apiCall = async () => {
