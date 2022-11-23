@@ -7,7 +7,7 @@ const date_time = require("../utils/dateFormat");
 async function customerDeltaQueryToString(customer, key) {
   let date = date_time();
   const migrationString =
-    `UPDATE customers SET ${key} = '${customer.incoming[key]}' WHERE id = '${customer.customer}'` +
+    `UPDATE customers SET ${key} = '${customer.incoming[key]}' WHERE id = '${customer.customer_id}'` +
     "\n";
   await fs.writeFile(
     `./migrationQueries/updateDeltaQueries_${date}.txt`,
@@ -19,7 +19,7 @@ async function customerDeltaQueryToString(customer, key) {
 async function siteDeltaQueryToString(site, key) {
   let date = date_time();
   const migrationString =
-    `UPDATE sites SET ${key} = '${site.incoming[key]}' WHERE id = '${site.site}'` +
+    `UPDATE sites SET ${key} = '${site.incoming[key]}' WHERE id = '${site.site_id}'` +
     "\n";
   await fs.writeFile(
     `./migrationQueries/updateDeltaQueries_${date}.txt`,
@@ -31,7 +31,7 @@ async function siteDeltaQueryToString(site, key) {
 async function systemDeltaQueryToString(system, key) {
   let date = date_time();
   const migrationString =
-    `UPDATE systems SET ${key} = '${system.incoming[key]}' WHERE id = '${system.system}'` +
+    `UPDATE systems SET ${key} = '${system.incoming[key]}' WHERE id = '${system.system_id}'` +
     "\n";
   await fs.writeFile(
     `./migrationQueries/updateDeltaQueries_${date}.txt`,

@@ -3,23 +3,23 @@ const { log } = require("../../logger");
 const {
   apiCall,
   formatApiData,
-  getDelta,
+  findRemoveAdd,
   updateWithAdditions,
-  acceptDeltas,
   backupTables,
   restoreTables,
   detailedDelta,
+  acceptDetailedDeltas
 } = require("../../jobs");
 
 const { question, readline } = require("../../utils/readlinePromisify");
 
 class Interface {
   options = {
-    1: "Insert New Data",
-    2: "Merge Deltas",
-    3: "Backup Tables",
-    4: "Restore Tables",
-    5: "Detailed Delta",
+    1: "View Deltas",
+    2: "Insert New Data",
+    3: "Merge Deltas",
+    4: "Backup Tables",
+    5: "Restore Tables",
   };
 
   async viewOptions() {
@@ -28,25 +28,28 @@ class Interface {
     });
     const equipmentData = await apiCall();
     const formattedData = await formatApiData(equipmentData);
-    const delta = await getDelta(formattedData);
+    const deltas = await findRemoveAdd(formattedData);
+
+    console.log("Modifying: " + process.env.PG_DB)
     console.table(this.options);
     const option = await question("What would you like to do? ");
     switch (option) {
       case "1":
-        await updateWithAdditions(delta.add);
+        await detailedDelta(formattedData, deltas);
         break;
       case "2":
-        await acceptDeltas(delta.deltas);
+        await updateWithAdditions(deltas.add);
         break;
       case "3":
+        const delta = await detailedDelta(formattedData, deltas);
+        await acceptDetailedDeltas(delta)
+        break;
+      case "4":
         readline.close();
         await backupTables();
         break;
-      case "4":
-        await restoreTables();
-        break;
       case "5":
-        await detailedDelta(formattedData);
+        await restoreTables();
         break;
       default:
         console.log(option + " is not an option");

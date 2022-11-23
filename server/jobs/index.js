@@ -1,19 +1,19 @@
 const apiCall = require("./getAllApiData");
 const formatApiData = require("./formatApiData");
-const getDelta = require("./getDelta");
+const findRemoveAdd = require("./findRemoveAdd");
 const updateWithAdditions = require("./updateWithAdditions");
-const acceptDeltas = require("./acceptDeltas");
 const backupTables = require("./backupTables");
 const restoreTables = require("./restoreTables");
 const detailedDelta = require("./detailedDelta");
+const acceptDetailedDeltas = require("./acceptDetailedDelta");
 
 module.exports = {
   apiCall,
   formatApiData,
-  getDelta,
+  findRemoveAdd,
   updateWithAdditions,
-  acceptDeltas,
   backupTables,
   restoreTables,
   detailedDelta,
+  acceptDetailedDeltas,
 };

@@ -5,20 +5,14 @@ const { systemQuery, customersQuery, sitesQuery } = require("../utils/queries");
 const {
   proposeRemoveFromDb,
   proposeAddToDb,
-  currentStateDeltas,
 } = require("../controllers/acumaticaAPI/deltas");
 
-const getDelta = async (equipmentData) => {
+const findRemoveAdd = async (equipmentData) => {
   try {
-    await log("info", "NA", "NA", "getDelta", `FN CALL`);
+    await log("info", "NA", "NA", "findRemoveAdd", `FN CALL`);
     const delta = {
       remove: {},
       add: {},
-      deltas: {
-        customers: [],
-        sites: [],
-        systems: [],
-      },
     };
   
     // Get existing customer, site, and system ids in the database
@@ -44,29 +38,12 @@ const getDelta = async (equipmentData) => {
     );
     delta.add = addData;
   
-    // for in Loop through API Customer Data and compare it to corrolated db data
-  
-    await currentStateDeltas(
-      equipmentData,
-      systemDbData,
-      customerDbData,
-      siteDbData,
-      delta
-    );
-
-    await log("info", "NA", "NA", "getDelta", `FN CALL`, {
-      customer_deltas: delta.deltas.customers.length,
-      site_deltas: delta.deltas.sites.length,
-      system_deltas: delta.deltas.systems.length,
-      delta: delta
-    });
-  
     return delta;
   } catch (error) {
-    await log("error", "NA", "NA", "getDelta", `FN CALL`, {
+    await log("error", "NA", "NA", "findRemoveAdd", `FN CALL`, {
       error: error
     });
   }
 };
 
-module.exports = getDelta;
+module.exports = findRemoveAdd;

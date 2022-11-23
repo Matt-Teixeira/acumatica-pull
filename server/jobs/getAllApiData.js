@@ -15,8 +15,8 @@ const runJob = async (acumaticLogin, acumaticEquipEndpoint) => {
     acumaticEquipEndpoint: acumaticEquipEndpoint,
   });
   // CALL API
-  //const cookies = await callLogin(acumaticLogin);
-  //const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
+  // const cookies = await callLogin(acumaticLogin);
+  // const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
 
   return await testData;
 };
