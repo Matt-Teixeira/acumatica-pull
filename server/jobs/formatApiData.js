@@ -27,6 +27,9 @@ const formatApiData = async (equipmentData) => {
     // modify formattedSystemData object with each iteration
     await filterApiData(system, formattedSystemData);
   }
+  const systemsInApi = JSON.stringify(formattedSystemData.systemIDs);
+  // console.log(formattedSystemData.systemIDs.length);
+  await fs.writeFile("systems.txt", systemsInApi);
   return await formattedSystemData;
 };
 
@@ -60,7 +63,7 @@ async function filterApiData(systemData, obj) {
     obj.comboData.sites.push(site);
   }
   if (!obj.systemIDs.includes(systemData.EquipmentNbr.value)) {
-    // Change manufacturer in the way in. EX: Toshiba America = Toshiba
+    // Change manufacturer on the way in. EX: Toshiba America = Toshiba
     const re =
       /(?<manufacturer>(Philips)|(GE)|(Siemens)|(Americomp)|(Toshiba))/;
     let match;

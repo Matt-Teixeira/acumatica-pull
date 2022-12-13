@@ -12,11 +12,11 @@ const {
   systemDeltaQueryToString,
 } = require("../utils/saveQueriesToString");
 
+const { checkForNullSystems } = require("../utils/checkForNullUpdates");
+
 async function acceptDetailedDeltas(deltas) {
   try {
     // Customer Deltas
-
-    console.log(deltas)
 
     for await (let customer of deltas.customers) {
       let keys = Object.keys(customer.incoming);
@@ -61,19 +61,27 @@ async function acceptDetailedDeltas(deltas) {
     // System Deltas
 
     for await (let system of deltas.systems) {
-      let keys = Object.keys(system.incoming);
-      for (let key of keys) {
-        const updatedRow = await updateSystemDeltas(system, key);
-        if (!updatedRow) {
-          throw new Error(
-            `Could not update ${site.site} with ${site.incoming[key]}`
-          );
+      const hasNulls = await checkForNullSystems(system);
+      if (!hasNulls) {
+        let keys = Object.keys(system.incoming);
+        for await (let key of keys) {
+          const updatedRow = await updateSystemDeltas(system, key);
+          if (!updatedRow) {
+            throw new Error(
+              `Could not update ${system.system_id} with ${system.incoming[key]}`
+            );
+          }
+
+          await systemDeltaQueryToString(system, key);
+
+          await log("info", "NA", "NA", "acceptDetailedDeltas", `FN CALL`, {
+            updated: system,
+          });
         }
-
-        await systemDeltaQueryToString(system, key);
-
-        await log("info", "NA", "NA", "acceptDetailedDeltas", `FN CALL`, {
-          updated: system,
+      } else {
+        await log("warn", "NA", "NA", "updateWithAdditions", `FN CALL`, {
+          message: "Null values detected for constraint values",
+          system: system,
         });
       }
     }

@@ -8,7 +8,9 @@ const {
   backupTables,
   restoreTables,
   detailedDelta,
-  acceptDetailedDeltas
+  acceptDetailedDeltas,
+  updateWithAdditionsQueryStr,
+  acceptDetailedDeltaQueryStr,
 } = require("../../jobs");
 
 const { question, readline } = require("../../utils/readlinePromisify");
@@ -20,6 +22,8 @@ class Interface {
     3: "Merge Deltas",
     4: "Backup Tables",
     5: "Restore Tables",
+    6: "Write queries for additions",
+    7: "Write queries for updates",
   };
 
   async viewOptions() {
@@ -30,7 +34,7 @@ class Interface {
     const formattedData = await formatApiData(equipmentData);
     const deltas = await findRemoveAdd(formattedData);
 
-    console.log("Modifying: " + process.env.PG_DB)
+    console.log("* * * * * Modifying: " + process.env.PG_DB + " * * * * *");
     console.table(this.options);
     const option = await question("What would you like to do? ");
     switch (option) {
@@ -42,7 +46,7 @@ class Interface {
         break;
       case "3":
         const delta = await detailedDelta(formattedData, deltas);
-        await acceptDetailedDeltas(delta)
+        await acceptDetailedDeltas(delta);
         break;
       case "4":
         readline.close();
@@ -50,6 +54,13 @@ class Interface {
         break;
       case "5":
         await restoreTables();
+        break;
+      case "6":
+        await updateWithAdditionsQueryStr(deltas.add);
+        break;
+      case "7":
+        const delta_ = await detailedDelta(formattedData, deltas);
+        await acceptDetailedDeltaQueryStr(delta_);
         break;
       default:
         console.log(option + " is not an option");

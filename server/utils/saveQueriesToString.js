@@ -1,6 +1,5 @@
 ("use strict");
 require("dotenv").config();
-const { log } = require("../logger");
 const fs = require("fs").promises;
 const date_time = require("../utils/dateFormat");
 
@@ -10,7 +9,7 @@ async function customerDeltaQueryToString(customer, key) {
     `UPDATE customers SET ${key} = '${customer.incoming[key]}' WHERE id = '${customer.customer_id}'` +
     "\n";
   await fs.writeFile(
-    `./migrationQueries/updateDeltaQueries_${date}.txt`,
+    `./migrationQueries/updates/updated/updateDeltaQueries_${date}.txt`,
     migrationString,
     { encoding: "utf-8", flag: "a" }
   );
@@ -22,7 +21,7 @@ async function siteDeltaQueryToString(site, key) {
     `UPDATE sites SET ${key} = '${site.incoming[key]}' WHERE id = '${site.site_id}'` +
     "\n";
   await fs.writeFile(
-    `./migrationQueries/updateDeltaQueries_${date}.txt`,
+    `./migrationQueries/updates/updated/updateDeltaQueries_${date}.txt`,
     migrationString,
     { encoding: "utf-8", flag: "a" }
   );
@@ -34,7 +33,7 @@ async function systemDeltaQueryToString(system, key) {
     `UPDATE systems SET ${key} = '${system.incoming[key]}' WHERE id = '${system.system_id}'` +
     "\n";
   await fs.writeFile(
-    `./migrationQueries/updateDeltaQueries_${date}.txt`,
+    `./migrationQueries/updates/updated/updateDeltaQueries_${date}.txt`,
     migrationString,
     { encoding: "utf-8", flag: "a" }
   );

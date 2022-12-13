@@ -18,13 +18,14 @@ async function updateWithAdditions(deltas) {
       const queryStr = "INSERT INTO customers(id, name) VALUES($1, $2)";
       const values = [customer.id, customer.name];
 
+      // Check for null values for columns with NOT NULL constraint
       const hasNulls = await checkForNullCustomers(customer);
       if (!hasNulls) {
         const migrationString =
           `INSERT INTO customers(id, name) VALUES('${customer.id}', '${customer.name}');` +
           "\n";
         await fs.writeFile(
-          `./migrationQueries/additionQueries_${date}.txt`,
+          `./migrationQueries/additions/inserted/additionQueries_${date}.txt`,
           migrationString,
           { encoding: "utf-8", flag: "a" }
         );
@@ -59,7 +60,7 @@ async function updateWithAdditions(deltas) {
           `INSERT INTO sites(id, customer_id, name, state, city, street_address, zip) VALUES('${site.id}', '${site.customer_id}', '${site.name}', '${site.state}', '${site.city}', '${site.street_address}', '${site.zip}');` +
           "\n";
         await fs.writeFile(
-          `./migrationQueries/additionQueries_${date}.txt`,
+          `./migrationQueries/additions/inserted/additionQueries_${date}.txt`,
           migrationString,
           { encoding: "utf-8", flag: "a" }
         );
@@ -94,7 +95,7 @@ async function updateWithAdditions(deltas) {
           `INSERT INTO systems(id, customer_id, site_id, manufacturer, modality, model, serial_number, room) VALUES('${system.id}', '${system.customer_id}', '${system.site_id}', '${system.manufacturer}', '${system.modality}', '${system.model}', '${system.serial_number}', '${system.room}');` +
           "\n";
         await fs.writeFile(
-          `./migrationQueries/additionQueries_${date}.txt`,
+          `./migrationQueries/additions/inserted/additionQueries_${date}.txt`,
           migrationString,
           { encoding: "utf-8", flag: "a" }
         );

@@ -2,7 +2,7 @@
 require("dotenv").config();
 const { log } = require("../logger");
 const { systemQuery, customersQuery, sitesQuery } = require("../utils/queries");
-const acceptDeltas = require("./acceptDetailedDelta");
+// const acceptDeltas = require("./acceptDetailedDelta");
 
 async function detailedDelta(equipmentData, deltas) {
   await log("info", "NA", "NA", "detailedDelta", `FN CALL`);
@@ -111,15 +111,17 @@ async function detailedDelta(equipmentData, deltas) {
     }
   }
 
-  deltas.deltas = delta
+  // modify incoming delta object from findRemoveAdd() and append new delta object
+  deltas.deltas = delta;
+
+  // console.log(delta);
 
   await log("info", "NA", "NA", "detailedDelta", `FN CALL`, {
-    deltas: deltas
+    deltas: deltas,
   });
 
   // Returning only the delta object created here. Used to merge deltas.
   return delta;
-  
 }
 
 module.exports = detailedDelta;

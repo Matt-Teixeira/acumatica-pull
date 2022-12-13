@@ -7,6 +7,8 @@ const {
   proposeAddToDb,
 } = require("../controllers/acumaticaAPI/deltas");
 
+// Function finds customers, sites, and systems that are not in API, but in DB aw well as whit is in DB, but not in API. 
+// Does not make any modifications to db.
 const findRemoveAdd = async (equipmentData) => {
   try {
     await log("info", "NA", "NA", "findRemoveAdd", `FN CALL`);

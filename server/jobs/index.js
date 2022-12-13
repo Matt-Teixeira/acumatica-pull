@@ -6,6 +6,8 @@ const backupTables = require("./backupTables");
 const restoreTables = require("./restoreTables");
 const detailedDelta = require("./detailedDelta");
 const acceptDetailedDeltas = require("./acceptDetailedDelta");
+const updateWithAdditionsQueryStr = require("./updateWithAdditionsQueryStr");
+const acceptDetailedDeltaQueryStr = require("./acceptDetailedDeltaQueryStr")
 
 module.exports = {
   apiCall,
@@ -16,4 +18,6 @@ module.exports = {
   restoreTables,
   detailedDelta,
   acceptDetailedDeltas,
+  updateWithAdditionsQueryStr,
+  acceptDetailedDeltaQueryStr
 };
