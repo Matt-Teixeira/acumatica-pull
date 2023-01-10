@@ -17,7 +17,7 @@ ALTER TABLE sites
 RENAME COLUMN network_id TO customer_id;
 
 ALTER TABLE sites
-ALTER COLUMN state TYPE VARCHAR(2);
+ALTER COLUMN state TYPE VARCHAR(4);
 
 ALTER TABLE sites
 DROP CONSTRAINT fk_network_id;

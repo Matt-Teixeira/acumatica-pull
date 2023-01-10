@@ -13,7 +13,7 @@ async function updateWithAdditionsQueryStr(deltas) {
         `INSERT INTO customers(id, name) VALUES('${customer.id}', '${customer.name}');` +
         "\n";
       await fs.writeFile(
-        `./migrationQueries/additionQueries${date}.txt`,
+        `./migrationQueries/additions/proposed/additionQueries${date}.txt`,
         migrationString,
         { encoding: "utf-8", flag: "a" }
       );
@@ -24,7 +24,7 @@ async function updateWithAdditionsQueryStr(deltas) {
         `INSERT INTO sites(id, customer_id, name, state, city, street_address, zip) VALUES('${site.id}', '${site.customer_id}', '${site.name}', '${site.state}', '${site.city}', '${site.street_address}', '${site.zip}');` +
         "\n";
       await fs.writeFile(
-        `./migrationQueries/additionQueries${date}.txt`,
+        `./migrationQueries/additions/proposed/additionQueries${date}.txt`,
         migrationString,
         { encoding: "utf-8", flag: "a" }
       );
