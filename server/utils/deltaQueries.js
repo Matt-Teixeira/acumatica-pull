@@ -116,4 +116,80 @@ async function updateSystemDeltas(system, key) {
   }
 }
 
-module.exports = { updateSiteDeltas, updateCustomerDeltas, updateSystemDeltas };
+async function updateAcuTable(delta, key) {
+  try {
+    let queryString;
+    let values = [];
+    switch (key) {
+      case "customercontractcustomerid":
+        queryString = "UPDATE acumatica_systems SET customercontractcustomerid = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "customercontractcustomername":
+        queryString = "UPDATE acumatica_systems SET customercontractcustomername = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "servicecontractcustomerid":
+        queryString = "UPDATE acumatica_systems SET servicecontractcustomerid = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "servicecontractcustomername":
+        queryString = "UPDATE acumatica_systems SET servicecontractcustomername = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "state":
+        queryString = "UPDATE acumatica_systems SET state = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "city":
+        queryString = "UPDATE acumatica_systems SET city = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "addressline1":
+        queryString = "UPDATE acumatica_systems SET addressline1 = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "postalcode":
+        queryString = "UPDATE acumatica_systems SET postalcode = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "manufacturer":
+        queryString = "UPDATE acumatica_systems SET manufacturer = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "modality":
+        queryString = "UPDATE acumatica_systems SET modality = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "model":
+        queryString = "UPDATE acumatica_systems SET model = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "serialnbr":
+        queryString = "UPDATE acumatica_systems SET serialnbr = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      case "room":
+        queryString = "UPDATE acumatica_systems SET room = $1 WHERE equipmentnbr = $2";
+        values = [delta.deltas[key], delta.system];
+        break;
+      default:
+        break;
+    }
+
+    await pgPool.query(queryString, values);
+
+    return true;
+  } catch (error) {
+    await log("error", "NA", "NA", "updateAcuTable", `FN CALL`, {
+      error: error.message,
+    });
+  }
+}
+
+module.exports = {
+  updateSiteDeltas,
+  updateCustomerDeltas,
+  updateSystemDeltas,
+  updateAcuTable,
+};

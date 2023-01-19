@@ -34,6 +34,22 @@ CREATE TABLE systems(
             REFERENCES sites(id)
 );
 
+CREATE TABLE acumatica_systems(
+    equipmentNbr TEXT PRIMARY KEY,
+    customercontractcustomerID TEXT,
+    customercontractcustomerName TEXT,
+    servicecontractcustomerID TEXT,
+    servicecontractcustomername TEXT,
+    state VARCHAR(2),
+    city TEXT,
+    addressline1 TEXT,
+    postalcode TEXT,
+    manufacturer TEXT,
+    modality TEXT,
+    model TEXT,
+    serialnbr TEXT,
+    room TEXT
+);
 
 
 
