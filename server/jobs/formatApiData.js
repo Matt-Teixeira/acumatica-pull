@@ -70,7 +70,11 @@ async function filterApiData(systemData, obj) {
     let manufacturer;
     if (systemData.Manufacturer.value !== undefined) {
       match = systemData.Manufacturer.value.match(re);
-      manufacturer = match.groups.manufacturer;
+      if (match === null) {
+        manufacturer = systemData.Manufacturer.value;
+      } else {
+        manufacturer = match.groups.manufacturer;
+      }
     }
 
     const system = {

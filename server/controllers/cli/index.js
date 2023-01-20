@@ -82,6 +82,7 @@ class Interface {
         break;
       case "10":
         await findDeltas(formattedAcuData);
+        return;
         break;
       case "11":
         const acuDeltas = await findDeltas(formattedAcuData);
