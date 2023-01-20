@@ -29,7 +29,6 @@ async function initRedis() {
 
     return redisClient;
   } catch (error) {
-    await redisClient.quit();
     await log("error", "NA", "NA", "initRedis", `FN CALL`, {
       error: error,
     });

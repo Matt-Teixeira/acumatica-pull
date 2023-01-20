@@ -5,7 +5,12 @@ const {
   callLogin,
   getApiData,
 } = require("../controllers/acumaticaAPI/apiCall");
-const testData = require("../controllers/acumaticaAPI/testData");
+//const testData = require("../controllers/acumaticaAPI/testData");
+const {
+  getRedisDT,
+  setApiData,
+  getRedisData,
+} = require("../redis/redisHelpers");
 
 // Will run production or development api calls based on process.env.ENV === 'dev' || 'prod'
 
@@ -15,10 +20,10 @@ const runJob = async (acumaticLogin, acumaticEquipEndpoint) => {
     acumaticEquipEndpoint: acumaticEquipEndpoint,
   });
   // CALL API
-  //const cookies = await callLogin(acumaticLogin);
-  //const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
+  const cookies = await callLogin(acumaticLogin);
+  const equipmentData = await getApiData(acumaticEquipEndpoint, cookies);
 
-  return await testData;
+  return equipmentData;
 };
 
 const apiCall = async () => {
@@ -44,7 +49,21 @@ const apiCall = async () => {
     default:
       break;
   }
-  const data = runJob(acumaticLogin, acumaticEquipEndpoint);
+
+  const redisDataAge = await getRedisDT();
+  console.log(redisDataAge);
+
+  let data;
+  if (redisDataAge > 0.33) {
+    console.log("REFRESHING REDIS DATA");
+    // IF data is over 8 hr old, pull from api and set in redis
+    data = await runJob(acumaticLogin, acumaticEquipEndpoint);
+    await setApiData(data);
+  } else {
+    console.log("SENDING REDIS DATA");
+    data = await getRedisData();
+  }
+
   return data;
 };
 
